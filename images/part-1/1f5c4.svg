@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 36" style="enable-background:new 0 0 24 36;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#292F33;}
+	.st1{fill:#66757F;}
+	.st2{fill:#E1E8ED;}
+	.st3{fill:#FF0000;}
+	.st4{fill:#00FF00;}
+	.st5{fill:#0000FF;}
+	.st6{fill:none;}
+	.st7{fill:#FFFFFF;}
+	.st8{font-family:'ArialRoundedMTBold';}
+	.st9{font-size:7px;}
+</style>
+<path class="st0" d="M24,34c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2V34z"/>
+<path class="st1" d="M21,2H3C2.4,2,2,2.4,2,3v30c0,0.6,0.4,1,1,1h18c0.6,0,1-0.4,1-1V3C22,2.4,21.6,2,21,2z"/>
+<path class="st2" d="M18,11.4c0,0.5-0.4,1-1,1H7c-0.5,0-1-0.4-1-1v-0.1c0-0.5,0.4-1,1-1H17C17.6,10.3,18,10.8,18,11.4L18,11.4z"/>
+<path class="st2" d="M18,16.7c0,0.5-0.4,1-1,1H7c-0.5,0-1-0.4-1-1v-0.1c0-0.5,0.4-1,1-1H17C17.6,15.7,18,16.1,18,16.7
+	C18,16.6,18,16.7,18,16.7z"/>
+<path class="st2" d="M18,22c0,0.5-0.4,1-1,1H7c-0.5,0-1-0.4-1-1V22c0-0.5,0.4-1,1-1H17C17.6,21,18,21.4,18,22C18,22,18,22,18,22z"/>
+<circle class="st3" cx="7" cy="6" r="1"/>
+<circle class="st4" cx="12" cy="6" r="1"/>
+<circle class="st5" cx="17" cy="6" r="1"/>
+<rect x="2" y="26.9" class="st6" width="20" height="7"/>
+<text transform="matrix(1 0 0 1 4.4245 31.9528)" class="st7 st8 st9">DNS</text>
+</svg>

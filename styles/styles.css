@@ -1,0 +1,42 @@
+@import url(https://api.fontshare.com/css?f[]=chillax@1&f[]=plein@1,2&display=swap);
+
+body {
+	font-family: 'Plein', sans-serif;
+}
+
+h1, h2, h3, h4, h5, .fs-1, .fs-2, .fs-3, .fs-4 {
+	font-family: 'Chillax';
+}
+
+main {
+	scroll-behavior: smooth;
+}
+
+.color-buas {
+	color: #ee7622;
+}
+
+.color-blue {
+	color: #13426b;
+}
+
+.bg-gray {
+	background-color: #eeeff0;
+}
+
+.bg-lightblue {
+	background-color:  #e2f4fb;
+}
+
+.bg-lightorange {
+	background-color: #fdf1e9;
+}
+
+.section-header {
+	background-color:  #13426B;
+	border-top: 1.5em solid #ee7622;
+}
+
+.section-header h5 {
+
+}
