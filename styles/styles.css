@@ -37,6 +37,7 @@ main {
 	border-top: 1.5em solid #ee7622;
 }
 
-.section-header h5 {
-
+.bg-hero {
+	background-image: url(../images/common/hero-bg.svg);
+	background-size: cover;
 }
