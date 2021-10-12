@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <title>Bootstrap Base Template</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="80" tabindex="0" class="position-relative">
+
+    <nav id="main-nav" class="bg-secondary sticky-top p-1 justify-content-start">
+      <ul class="nav nav-pills align-items-center">
+        <li class="nav-item fs-4">
+          <a class="nav-link text-light" href="index.html">
+            PRJ4
+            <span class="d-none d-sm-inline">Guide</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Part 1</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#part_1">Publishing your first page</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#overview_goals">Overview & goals</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#what_is_a_webpage">What is a web page?</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#cybersecurity">Cybersecurity and privacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#basic_html">The basic structure of HTML</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Part 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Part 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Part 4</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container-fluid">
+
+      <section id="part_1" class="py-5 bg-hero row justify-content-center">
+        <div class="col-12 col-lg-11 col-xxl-10">
+          <h1 class="display-2 lh-1 fw-bold text-center m-5 text-light">Part 1: Publishing your first page</h1>
+          <ul class="d-flex justify-content-evenly flex-wrap list-unstyled">
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#overview_goals">Overview & goals</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#what_is_a_webpage">What is a web page?</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#cybersecurity">Cybersecurity & privacy</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#basic_html">The basic structure of HTML</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="overview_goals">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-md-6 col-xxl-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Overview & Goals</h2>
+          </div>
+          <div class="col-md-6 col-xxl-5">
+            <h5>
+              <img class="me-1" src="images/common/trophy.svg" width="16" alt="trophy icon">
+              At the end of this part, you will be able to:
+            </h5>
+            <ul>
+              <li>Know the basics of what HTML is and how it works.</li>
+              <li>Set up the tools you will use for the rest of the class.</li>
+              <li>Edit your first web page with Dreamweaver.</li>
+              <li>Publish this web page with GitHub.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-buas text-center">Contents of this part</h4>
+            <p>This first chapter brings you theoretical knowledge into how the web works.</p>
+            <ul>
+              <li>In &ldquo;<a href="#what_is_a_webpage">What is a web page?</a>&rdquo;, you will learn how the client-server model works on the web, what the difference between &ldquo;web&rdquo; and &ldquo;internet&rdquo; is, and what a programming language is.</li>
+              <li>The section on <a href="#cybersecurity">Cybersecurity & Privacy</a> gives you tips to stay safe online and explains what cookies are.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h4 class="color-blue text-center">Do the work, step by step</h4>
+            <ol>
+              <li>Install the tools: GitHub Desktop and Dreamweaver.</li>
+              <li>Create a GitHub account</li>
+              <li>Clone the résumé template into a repository your GitHub account.</li>
+              <li>Synchronize this repository with your laptop.</li>
+              <li>Edit the code to write your own name with Dreamweaver.</li>
+              <li>Publish it onto GitHub pages.</li>
+              <li>Visit your very own page, anywhere and on any device!</li>
+            </ol>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="what_is_a_webpage">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-md-6 col-xxl-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">What is a web page?</h2>
+          </div>
+          <div class="col-md-6 col-xxl-5">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>A web page is a document written in the HTML programming language.</li>
+              <li>When you load a web page, your computer (client) will ask for this web page.</li>
+              <li>Your browser will read the HTML code and turn it into a beautiful-looking page.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <div class="mb-4">
+              <h4 class="color-buas text-center">The web is not the internet</h4>
+              <p>The word &ldquo;<a href="https://en.wikipedia.org/wiki/Internet" target="_blank">internet</a>&rdquo; is used to describe the whole infrastructure connecting computers and other devices around the world. It is the direct descendant of academic and military networks developed in the United States in the 1960s and 1970s.</p>
+              <p>Multiple <strong>services</strong> run on the internet, including <strong>email</strong> (which has existed since 1971). The web is another of these services.</p>
+              <p>The World Wide Web has been created in 1990 by Tim-Berners Lee and his colleagues to share information within the European Organization for Nuclear Research (CERN) in Geneva.</p>
+              <p>The web is based on a series of technologies: The Hyper-Text Transfer Protocol (HTTP) to retrieve pages from web server, HTML for describing pages (see below), etc.</p>
+            </div>
+            <div class="mb-4">
+              <h4 class="color-buas text-center">Servers and Clients</h4>
+              <p>A server is a computer connected to the internet that will provide information upon request.</p>
+              <p>For example, a <strong>Domain Name Server</strong> will provide the translation between host names (e.g. <strong>www.buas.nl</strong>) and IP addresses (e.g. <strong>83.96.243.158</strong>)</p>
+              <p>A <strong>web server</strong> will be providing the content (HTML pages, images, videos, etc.) that you see when visiting a web page</p>
+              <p>A computer asking information to a server is called a client</p>
+            </div>
+            <div class="mb-4">
+              <h4 class="color-buas text-center">Web browsers</h4>
+              <p>You can open web pages, including this one, with a category of app called a Web Browser.</p>
+              <p>The most common used browsers are Google Chrome and Apple Safari. You can check how common browsers are by visiting Statcounter.</p>
+              <p>Since 55% of web visits in the Netherlands come from mobile phones, you must make sure that your website works on very small screen sizes.</p>
+            </div>
+            <div class="mb-4">
+              <h4 class="color-buas text-center">Programming languages</h4>
+              <p>A programming language can be defined as a formal language comprising a set of <strong>instructions</strong> that produce various kinds of <strong>output</strong>.</p>
+              <p>For example, in <strong>HTML</strong> (HyperText Markup Language), the code that you will write produces the visual aspect of a web page.</p>
+              <p>Other languages used commonly on the web include:</p>
+              <ul>
+                <li>
+                  <strong>CSS</strong> (Cascading Style Sheets), which is used to bring styling to your page: Use it to fine-tune the layout, colours and fonts of your pages.
+                </li>
+                <li>
+                  <strong>JavaScript</strong> (also known as JS), which is used to bring bring interactive features to your pages.
+                </li>
+              </ul>
+              <p>HTML, CSS and JS are languages that your web browser reads (or &ldquo;inteprets&rdquo;) to display web pages. You can always see the source code for a web page by using the Developer Tools (Press <span class="border border-dark bg-light px-1 rounded">F12</span> on Windows or <span class="border border-dark bg-light px-1 rounded">Command</span>+<span class="border border-dark bg-light px-1 rounded">Option</span>+<span class="border border-dark bg-light px-1 rounded">I</span> on a Mac).</p>
+              <p>There are other programming languages that run on servers and whose role is to show HTML pages that will be different each time you visit them &ndash; this is the case of social media feeds and news websites. An example of a popular server-side language is PHP (which stands for Personal Home Page)</p>
+              <p>Based on other definitions, you might read elsewhere that HTML isn&rsquo;t a programming language, since it lacks some features (e.g. writing algorithms).</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h4 class="color-blue text-center">What happens when you ask for a web page?</h4>
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/computer-user.svg" width="40" alt="Computer user">
+              <div class="w-75 px-2 m-2 bg-white bg-gradient rounded-3 border border-primary">
+                <h5 class="text-primary my-1">Computer user</h5>
+                <p class="my-1">Hi, Browser! Can I have a look at the page at <strong>www.buas.nl</strong>?</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">Sure, just wait a second, I need to make a few server requests!</p>
+              </div>
+            </div>
+            <hr class="w-50 mx-auto">
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">Hi, DNS server! Can you tell me where www.buas.nl is?</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/dns-server.svg" width="30" alt="DNS Server">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-secondary">
+                <h5 class="text-secondary my-1">DNS Server</h5>
+                <p class="my-1">Yes, the IP is 83.96.243.158</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">OK, now I&rsquo;ll get in touch with that web server.</p>
+              </div>
+            </div>
+            <hr class="w-50 mx-auto">
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">Hi, Web server! Can you give me the home page for www.buas.nl</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/www-server.svg" width="30" alt="Web server">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-success">
+                <h5 class="text-success my-1">Web server</h5>
+                <p class="my-1">Here&rsquo;s some HTML code</p>
+                <div class="m-2 p-2 border border-dark bg-white fs-6 font-monospace">
+                  &lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Breda University of Applied Sciences&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&hellip;
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">Thanks, Web server! Based on the code you sent me, I will also need some stylesheets and some images so I can make it look nice</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/www-server.svg" width="30" alt="Web server">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-success">
+                <h5 class="text-success my-1">Web server</h5>
+                <p class="my-1">Here you are!</p>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="w-25">
+                    <img class="w-100" src="images/common/logo-buas.svg" alt="Image sent by the server">
+                  </div>
+                  <div class="w-25">
+                    <img class="w-100 rounded-3" src="images/part-1/homepage-image.jpg" alt="Image sent by the server">
+                  </div>
+                  <div class="w-25 text-center h1">&hellip;</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">I&rsquo;ve got everything now, I can render the page for the user!</p>
+              </div>
+            </div>
+            <hr class="w-50 mx-auto">
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">Hello again, computer user, here is the page you asked for:</p>
+                <img class="d-block my-1 mx-auto mw-100 rounded-3" src="images/part-1/buas-homepage.png" alt="Final result">
+              </div>
+            </div>
+            <div class="d-flex justify-content-start">
+              <img src="images/part-1/computer-user.svg" width="40" alt="Computer user">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-primary">
+                <h5 class="text-primary my-1">Computer user</h5>
+                <p class="my-1">Thanks, this looks great! Now I will click on &ldquo;Our programmes&rdquo;</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse justify-content-start">
+              <img src="images/part-1/chrome.svg" width="40" alt="Browser">
+              <div class="w-75 px-2 m-2 bg-white rounded-3 border border-danger">
+                <h5 class="text-danger my-1">Browser</h5>
+                <p class="my-1">OK, I&rsquo;ll fetch the page at <strong>www.buas.nl/en/programmes</strong></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#what_is_a_webpage">↑ Back to the top of &ldquo;What is a web page?&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="cybersecurity">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-md-6 col-xxl-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Cybersecurity & Privacy</h2>
+          </div>
+          <div class="col-md-6 col-xxl-5">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>Always use secure, encrypted connections.</li>
+              <li>A password manager is the best way to ensure you are using safe passwords.</li>
+              <li>Be mindful of the traces you leave online.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-buas text-center">Nothing here yet</h4>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h4 class="color-blue text-center">Come back later &hellip;</h4>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+
+      <section id="basic_html">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-md-6 col-xxl-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">The basic structure of HTML</h2>
+          </div>
+          <div class="col-md-6 col-xxl-5">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>HTML uses a specific syntax to define the structure of elements in a page.</li>
+              <li>An element can contain other elements, called children. This forms a family tree, also known as DOM Tree.</li>
+              <li>Elements can have attributes, including &ldquo;ID&rdquo; and &ldquo;class&rdquo;.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-buas text-center">A simple HTML element</h4>
+            <p>This example shows a simple paragraph element, made of three parts:</p>
+            <ul>
+              <li>An opening (or start) tag, <span class="text-success font-monospace fw-bold">&lt;p&gt;</span></li>
+              <li>The content of the element, <span class="text-primary font-monospace fw-bold">Hello, world!</span></li>
+              <li>A closing (or end) tag, <span class="text-danger font-monospace fw-bold">&lt;/p&gt;</span></li>
+            </ul>
+            <p>The name of the element, <strong>P</strong> stands for &ldquo;paragraph&rdquo;</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
+            <div class="col-6">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace">
+                 <span class="text-success">&lt;p&gt;</span><span class="text-primary">Hello, world!</span><span class="text-danger">&lt;/p&gt;</span>
+              </div>
+              <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              <div class="p-2 border bg-light">
+                  <p>Hello, world!</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+              <svg class="d-block mx-auto" viewBox="0 0 100 140" style="width: min(100%, 100px);">
+                <path stroke="#000000" d="M50,50l0,30" />
+                <g transform="translate(0,0)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="50">
+                    <p class="text-center m-0 p-0 text-success fw-bold">&lt;p&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(0,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="50">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">Hello, world!</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text content)</p>
+                  </foreignobject>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-blue text-center">Nested elements</h4>
+            <p>In this second example, we create a new element inside the paragraph (<strong>p</strong> element).</p>
+            <p>This element, <strong>strong</strong>, makes its content bold.</p>
+            <p>The <strong>strong</strong> element is a <strong>child</strong> of the <strong>p</strong> element.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
+            <div class="col-6">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                 <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;strong&gt;</span>
+                 <br>
+                 world<span class="text-danger">&lt;/strong&gt;</span>!<span class="text-success">&lt;/p&gt;</span>
+              </div>
+              <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              <div class="p-2 border bg-light">
+                  <p>Hello, <strong>world</strong>!</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+              <svg class="d-block mx-auto" viewBox="0 0 320 200" style="width: min(100%, 320px);">
+                <path stroke="#000000" fill="none" d="M160,50l0,130M50,80q0,-15,15,-15l190,0q15,0,15,15" />
+                <g transform="translate(110,0)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-success fw-bold">&lt;p&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(0,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">Hello,</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(110,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-danger fw-bold">&lt;strong&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(220,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">!</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(110,150)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">world</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-buas text-center">Self-closing elements</h4>
+            <p>Some elements do not contain any text and therefore do not require any closing tags.</p>
+            <p>This is the case for <strong>br</strong> (the line <strong>br</strong>eak element) and for <strong>img</strong> (the <strong>im</strong>a<strong>g</strong>e element).</p>
+            <p>Sometimes, you will see these elements written with an additional slash: <strong>&lt;br&nbsp;/&gt;</strong></p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
+            <div class="col-6">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                 <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;br&gt;</span>
+                 world!<span class="text-success">&lt;/p&gt;</span>
+              </div>
+              <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              <div class="p-2 border bg-light">
+                  <p>Hello, <br>world!</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+              <svg class="d-block mx-auto" viewBox="0 0 320 130" style="width: min(100%, 320px);">
+                <path stroke="#000000" fill="none" d="M160,50l0,30M50,80q0,-15,15,-15l190,0q15,0,15,15" />
+                <g transform="translate(110,0)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-success fw-bold">&lt;p&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(0,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">Hello,</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(110,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-danger fw-bold">&lt;br&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(220,80)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">world!</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+    </main>
+  </body>
+</html>
