@@ -7,13 +7,13 @@
     		<path stroke="#3BB4E5" stroke-width="1" fill="none" d="M0,0L100,173M0,173L100,0M0,86.5H100M0,0H100M0,173H100" />
     		<circle cx="50" cy="86.5" r="4" fill="#3BB4E5" />
         </pattern>
-        <linearGradient id="gradient" gradientTransform="rotate(20)">
-            <stop offset="40%" stop-color="#00406B" stop-opacity="0" />
-            <stop offset="80%" stop-color="#00406B" stop-opacity=".6" />
-        </linearGradient>
+        <radialGradient id="gradient">
+            <stop offset="20%" stop-color="#00406B" stop-opacity="0" />
+            <stop offset="100%" stop-color="#00406B" stop-opacity=".9" />
+        </radialGradient>
     </defs>
     <rect stroke="none" fill="#13426b" x="0" y="0" width="2000" height="1000" />
     <rect opacity=".5" stroke="none" fill="url(#lines)" x="0" y="0" width="2000" height="1000" />
     <rect transform="scale(.5) rotate(-5)" stroke="none" fill="url(#lines)" filter="url(#blur)" x="-200" y="0" width="5000" height="3000" />
-    <rect stroke="none" fill="url(#gradient)" x="0" y="0" width="2000" height="1000" /> 
+    <rect stroke="none" fill="url(#gradient)" x="0" y="-500" width="2000" height="2000" /> 
 </svg>

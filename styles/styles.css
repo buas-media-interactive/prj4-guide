@@ -38,6 +38,7 @@ main {
 }
 
 .bg-hero {
-	background-image: url(../images/common/hero-bg.svg);
+	background-image: url(../images/common/hero-bg.jpg);
 	background-size: cover;
+	background-position: center;
 }
