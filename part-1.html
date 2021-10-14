@@ -12,7 +12,7 @@
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <title>Bootstrap Base Template</title>
+    <title>PRJ4 Guide | Part 1: Publishing your first page</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="80" tabindex="0" class="position-relative">
 
@@ -43,7 +43,13 @@
               <a class="dropdown-item" href="#cybersecurity">Cybersecurity and privacy</a>
             </li>
             <li>
+              <a class="dropdown-item" href="#">Setting up your tools</a>
+            </li>
+            <li>
               <a class="dropdown-item" href="#basic_html">The basic structure of HTML</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Editing and publishing</a>
             </li>
           </ul>
         </li>
@@ -124,7 +130,7 @@
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
-            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+            <a class="btn btn-outline-secondary m-1" href="#overview_goals">↑ Back to the top of &ldquo;Overview & Goals&rdquo;</a>
           </div>
         </footer>
       </section>
@@ -324,16 +330,71 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">Nothing here yet</h4>
+            <h4 class="color-buas text-center">Tip #1: Use secure connections</h4>
+            <p>A secure connection is a connection between services, computers and/or people where the contents can only be accessed by the legitimate participants in the connection. This is generally achieved through the use of encryption, whereby only the receiver of messages has the private key necessary to decrypt the content of the messages.</p>
+            <ul>
+              <li>When visiting a website, make sure that there is a <strong>lock sign</strong> in the address bar. This means you are using the secure version of HTTP (HTTPS). If you are using the unsecure version, never enter a password or a credit card number.</li>
+              <li><strong>WiFi connections</strong> that do not have a lock sign and/or do not require a password are not secure, therefore computers located on the same WiFi access point can read what goes into and comes out of your computer. This includes the Guest network at University.</li>
+              <li>Use message apps that provide end-to-end encryption, such as <strong>WhatsApp</strong> or <strong>Signal</strong>. The main difference is that the first one belongs to a big for-profit company, and the second one is supported by donations.</li>
+            </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h4 class="color-blue text-center">Come back later &hellip;</h4>
+            <h4 class="text-center">Tip #2: Use a password manager</h4>
+            <p>Passwords are very hard to use properly. You should:</p>
+            <ul>
+              <li>Use passwords that are hard to guess or to crack by testing every possible combination. This means that they should be long, they should not include any personal details, and they should not be words that can be found in a dictionary</li>
+              <li>Never reuse the same password twice: If a password is breached from a website or app, then the attackers will try to use it on other popular platforms.</li>
+              <li>&hellip;and of course, you should try to remember these passwords, which is very complicated given the criteria above, and the fact that some services will have very specific requirements on what characters you have to use in passwords.</li>
+            </ul>
+            <p>This is why it is extremely hard to manage your passwords well unless you use a password manager. Web browsers will manage your passwords, as well as Keychain on MacOS, but we recommend that you use a dedicated app, such as <a href="https://keepass.info/" target="_blank">KeePass</a>, <a href="https://www.lastpass.com/" target="_blank">Lastpass</a>, <a href="https://1password.com/" target="_blank">1Password</a> or <a href="https://www.dashlane.com/" target="_blank">Dashlane</a></p>
+            <p><strong>Bonus tip:</strong> Some services provide the option for Multiple-Factor Authentication (MFA) which add a layer of security since you&rsquo;re not relying only on passwords. MFA generally uses one-time authorization codes which can be sent by SMS, generated in dedicated apps (this includes some password managers) or printed on paper and stored in a safe place.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-blue text-center">Tip #3: Back up your files</h4>
+            <p>Don&rsquo;t risk losing your files. Back them up on different supports</p>
+            <ul>
+              <li>Cloud services can synchronize your files automatically and without any effort. Cloud providers generally use more than one location to store your data for additional safety. With your University email address, you get 1TB for free on OneDrive. Competitors include iCloud, Dropbox and GoogleDrive.</li>
+              <li>External hard drives have some additional advantages in terms of longevity and safety: They&rsquo;re a one-time investment where you do not need to renew your subscription, and when they are turned off and stored in a drawer, they are not online and cannot be remotely hacked.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h4 class="text-center">Tip #4: Think of what you reveal about yourself</h4>
+            <p>Your online presence is an integral part of who you are. Whether you do it to apply for a job, keep your loved ones updated, or to meet new people, you will need at some point to publish personal details about yourself.</p>
+            <p>Be aware though, that some of these details can be used for malicious purposes. Think of the following examples:</p>
+            <ul>
+              <li>The background in a photo can be used to find out where it was taken.</li>
+              <li>An EU Covid Green Pass, a boarding pass or a train ticket in the QR code format all contain your name and date of birth.</li>
+              <li>Birthdates are commonly used as PIN codes, so they might be used to unlock your phone.</li>
+              <li>Some of your details might be available for sale due to data breaches. This happened to my bank account number after I bought event tickets from a website that was attacked.</li>
+              <li>Someone who knows enough details about you might try to call your bank or your phone provider and pretend to be you so they can reset your password and gain access to your accounts.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5">
+            <h4 class="color-blue text-center">What are cookies?</h4>
+            <p>Cookies are small pieces of data that your browser receives when visiting web servers. There role is to keep information about you when you return to the same website. Without cookies, you would have to log in again every single time you visit the same website again, and you would loose your shopping cart just by closing a tab or visiting another website.</p>
+            <p>But this useful technology is also abused for tracking purposes, thanks to what is called &ldquo;third-party cookies&rdquo;. Everytime you visit a web page that contains third-party content, which can be advertisements, analytic tools such as Google Analytics, or a like button from social media, then this content can also send your browser a cookie. This allows companies such as Google and Facebook to track your activity across multiple websites that you visit, and collect way more information about you than you might know.</p>
+            <p>You can also make delicious cookies by mixing 125g of butter, 180g of plain flour and 55g of sugar, and cooking for 15 minutes at 180&deg;C.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h4 class="text-center">Resources about Security and Privacy</h4>
+            <p>The following organizations provide information about these topics, as well as resources and tools to help you stay safe:</p>
+            <ul>
+              <li>
+                <a href="https://www.eff.org/" target="_blank">The Electronic Frontier Foundation (EFF)</a> is an intenational civil liberties organization. They provide the <a href="https://privacybadger.org/" target="_blank">Privacy Badger</a> extension which you can install on your browser to reduce your exposure to tracking technology.
+              </li>
+              <li>
+                <a href="https://www.bitsoffreedom.nl/" target="_blank">Bits of Freedom</a> is a similar organization operating within the Netherlands. In particular, they provide the <a href="https://www.fixjeprivacy.nl/" target="_blank">Fix je Privacy</a> toolkit.
+              </li>
+              <li>
+                Looking for an equivalent in another country? They might be <a href="https://edri.org/about-us/our-network/" target="_blank">members of the European Digital Rights network</a>.
+              </li>
+            </ul>
           </div>
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
-            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy&rdquo;</a>
           </div>
         </footer>
       </section>
@@ -516,11 +577,183 @@
             </div>
           </div>
 
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-blue text-center">Attributes</h4>
+            <p>In addition to the tag name (e.g. <strong>p</strong>), an opening tag can also contain attributes.</p>
+            <p>Each attribute starts with an attribute name, followed by the equal sign (=) and then, the value for the attribute.</p>
+            <p>In the first example, the name of the attribute is <strong class="text-success">id</strong> and the value is &ldquo;<strong class="text-danger">my-id</strong>&rdquo;</p>
+            <p>This example shows three common attributes:</p>
+            <ul>
+              <li><strong class="text-success">id</strong> identifies a unique element within a page. You cannot use the same value for an id more than once in the same page. ID has an additional benefit: If you add <strong>#my-id</strong> to the URL of this page (<a href="#my-id">You can click here to try</a>), it will scroll here directly. This is also how all internal links within the current page were made.</li>
+              <li><strong class="text-success">class</strong> is a way of identifying elements that share common characteristics. This will be very useful in Part 3, where we learn about.</li>
+              <li><strong class="text-success">style</strong> allows you to change the aspect of an element. This will also be covered extensively in Part 3.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
+            <div class="col-6">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                 &lt;p <span class="text-success">id</span>="<span class="text-danger">my-id</span>" <span class="text-success">class</span>="<span class="text-danger">my-class</span>" <span class="text-success">style</span>="<span class="text-danger">background:purple; color: yellow;</span>"&gt;<span class="text-secondary">Hello, world!</span>&lt;/p&gt;
+              </div>
+              <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              <div class="p-2 border bg-light">
+                 <p id="my-id" class="my-class" style="background:purple; color: yellow;">Hello, world!</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+              <svg class="d-block mx-auto" viewBox="0 0 320 170" style="width: min(100%, 320px);">
+                <path stroke="#000000" fill="none" d="M50,90v30M100,65h8M220,25H115q-8,0,-8,8V137q0,8,8,8H220M107,85H220" />
+                <g transform="translate(0,40)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;p&gt;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(element)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(115,0)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-success fw-bold">id</p>
+                    <p class="text-center m-0 p-0 fst-italic">(attribute)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(220,0)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-danger fw-bold">my-id</p>
+                    <p class="text-center m-0 p-0 fst-italic">(value)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(115,60)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-success fw-bold">class</p>
+                    <p class="text-center m-0 p-0 fst-italic">(attribute)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(220,60)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-danger fw-bold">my-class</p>
+                    <p class="text-center m-0 p-0 fst-italic">(value)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(115,120)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-success fw-bold">style</p>
+                    <p class="text-center m-0 p-0 fst-italic">(attribute)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(220,120)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-danger fw-bold">background&hellip;</p>
+                    <p class="text-center m-0 p-0 fst-italic">(value)</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(0,120)">
+                  <rect x="0" y="0" width="100" height="50" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="100" height="60">
+                    <p class="text-center m-0 p-0 text-secondary fw-bold">world!</p>
+                    <p class="text-center m-0 p-0 fst-italic">(text)</p>
+                  </foreignobject>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h4 class="color-buas text-center">Required elements</h4>
+            <p>A simple paragraph like the one we&rsquo;ve been showing so far is not sufficient to be considered a full, valid HTML page. The following elements are also required.</p>
+            <ul>
+              <li>A <strong>&lt;!doctype&gt;</strong> declaration (which is not considered an HTML element).</li>
+              <li>An <strong>&lt;html&gt;</strong> element which contains everything and is also called the <em>root</em> element.</li>
+              <li>A <strong>&lt;head&gt;</strong> element which contains metadata that will not be directly displayed in the browser frame. This in turn includes, among others:
+                <ul>
+                  <li>A <strong>&lt;meta&gt;</strong> tag which gives information about the characters used. If you ever see accented characters replaced by other characters (e.g. <em><strong>Ã¼</strong>berhaupt</em> instead of <em><strong>ü</strong>berhaupt</em>), the issue is probably located here.</li>
+                  <li>A <strong>&lt;title&gt;</strong> element which contains the title of the page, as shown at the top of the browser window (<em>PRJ4 | Part 1: Publishing your first page</em> in this case), and in search engine results.</li>
+                </ul>
+              </li>
+              <li>Immediately below the <strong>&lt;head&gt;</strong> comes a <strong>&lt;body&gt;</strong> element, which contains everything visible in the frame. There should be no other elements within <strong>&lt;html&gt;</strong></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
+            <div class="col-6">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                 <em>&lt;!doctype html&gt;</em><br>
+                 &lt;html&gt;<br>
+                 &nbsp;&nbsp;&lt;head&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span class="text-black">Page title</span>&lt;/title&gt;<br>
+                 &nbsp;&nbsp;&lt;/head&gt;<br>
+                 &nbsp;&nbsp;&lt;body&gt;<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br>                 
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-black">Hello,</span><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;strong&gt;<span class="text-black">world!</span>&lt;/strong&gt;<br>                 
+                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                 &nbsp;&nbsp;&lt;/body&gt;<br>
+                 &lt;/html&gt;<br>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+              <svg class="d-block mx-auto" viewBox="0 0 230 180" style="width: min(100%, 230px);">
+                <path stroke="#000000" fill="none" d="M35,100q0,-10,10,-10h60q10,0,10,10M75,90v-40q0,-10,10,-10h100q10,0,10,10v100M130,30v10" />
+                <g transform="translate(95,0)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;html&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(160,50)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;body&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(160,100)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;p&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(160,150)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;strong&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(40,50)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;head&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(0,100)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;meta&gt;</p>
+                  </foreignobject>
+                </g>
+                <g transform="translate(80,100)">
+                  <rect x="0" y="0" width="70" height="30" rx="10" fill="white" stroke="#000000"/>
+                  <foreignobject x="0" y="0" width="70" height="30">
+                    <p class="text-center m-0 p-0 text-primary fw-bold">&lt;title&gt;</p>
+                  </foreignobject>
+                </g>
+              </svg>
+            </div>
+            
+          </div>
+
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
-            <a class="btn btn-outline-secondary m-1" href="#cybersecurity">↑ Back to the top of &ldquo;Cybersecurity & Privacy?&rdquo;</a>
+            <a class="btn btn-outline-secondary m-1" href="#basic_html">↑ Back to the top of &ldquo;The basic structure of HTML&rdquo;</a>
           </div>
         </footer>
       </section>
