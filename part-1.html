@@ -1,31 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- Bootstrap Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
     <title>PRJ4 Guide | Part 1: Publishing your first page</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="80" tabindex="0" class="position-relative">
+  <body class="d-flex flex-column h-100">
 
-    <nav id="main-nav" class="bg-secondary sticky-top p-1 justify-content-start">
+    <nav id="main-nav" class="bg-secondary p-1 justify-content-start">
       <ul class="nav nav-pills align-items-center">
         <li class="nav-item fs-4">
           <a class="nav-link text-light" href="index.html">
             PRJ4
-            <span class="d-none d-sm-inline">Guide</span>
+            <span class="d-none d-md-inline">Guide</span>
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Part 1</a>
+          <a class="nav-link dropdown-toggle text-light active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Part 1
+          </a>
           <ul class="dropdown-menu">
             <li>
               <a class="dropdown-item" href="#part_1">Publishing your first page</a>
@@ -34,54 +38,82 @@
               <hr class="dropdown-divider">
             </li>
             <li>
-              <a class="dropdown-item" href="#overview_goals">Overview & goals</a>
+              <a class="dropdown-item" href="#overview_goals"><span class="badge rounded-pill bg-buas">1.1</span> Overview & goals</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#what_is_a_webpage">What is a web page?</a>
+              <a class="dropdown-item" href="#what_is_a_webpage"><span class="badge rounded-pill bg-buas">1.2</span> What is a web page?</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#cybersecurity">Cybersecurity and privacy</a>
+              <a class="dropdown-item" href="#cybersecurity"><span class="badge rounded-pill bg-buas">1.3</span> Cybersecurity and privacy</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Setting up your tools</a>
+              <a class="dropdown-item" href="#setting_up_tools"><span class="badge rounded-pill bg-buas">1.4</span> Setting up the tools</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#basic_html">The basic structure of HTML</a>
+              <a class="dropdown-item" href="#basic_html"><span class="badge rounded-pill bg-buas">1.5</span> The basic structure of HTML</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Editing and publishing</a>
+              <a class="dropdown-item" href="#editing_publishing"><span class="badge rounded-pill bg-buas">1.6</span> Editing and publishing</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Part 2</a>
+          <a class="nav-link text-light" href="#">
+            <span class="d-none d-sm-inline">Part</span>
+            2
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Part 3</a>
+          <a class="nav-link text-light" href="#">
+            <span class="d-none d-sm-inline">Part</span>
+            3
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Part 4</a>
+          <a class="nav-link text-light" href="#">
+            <span class="d-none d-sm-inline">Part</span>
+            4
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Checklists
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Individual Assignment</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Group Assignment</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
 
-    <main class="container-fluid">
+    <main class="container-fluid position-relative overflow-auto" tabindex="0">
 
       <section id="part_1" class="py-5 bg-hero row justify-content-center">
         <div class="col-12 col-lg-11 col-xxl-10">
           <h1 class="display-2 lh-1 fw-bold text-center m-5 text-light">Part 1: Publishing your first page</h1>
           <ul class="d-flex justify-content-evenly flex-wrap list-unstyled">
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#overview_goals">Overview & goals</a>
+              <a class="btn btn-danger fs-4 m-2" href="#overview_goals"><span class="badge text-danger rounded-pill bg-white">1.1</span> Overview & goals</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#what_is_a_webpage">What is a web page?</a>
+              <a class="btn btn-danger fs-4 m-2" href="#what_is_a_webpage"><span class="badge text-danger rounded-pill bg-white">1.2</span> What is a web page?</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#cybersecurity">Cybersecurity & privacy</a>
+              <a class="btn btn-danger fs-4 m-2" href="#cybersecurity"><span class="badge text-danger rounded-pill bg-white">1.3</span> Cybersecurity & privacy</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#basic_html">The basic structure of HTML</a>
+              <a class="btn btn-danger fs-4 m-2" href="#setting_up_tools"><span class="badge text-danger rounded-pill bg-white">1.4</span> Setting up the tools</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#basic_html"><span class="badge text-danger rounded-pill bg-white">1.5</span> The basic structure of HTML</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#editing_publishing"><span class="badge text-danger rounded-pill bg-white">1.6</span> Editing & Publishing</a>
             </li>
           </ul>
         </div>
@@ -89,17 +121,20 @@
 
       <section id="overview_goals">
         <header class="section-header row justify-content-center text-light bg-gradient py-5">
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.1</h2>
+          </div>
+          <div class="col-10 col-md-5">
             <h2 class="display-3 fw-bolder lh-1 mb-4">Overview & Goals</h2>
           </div>
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-md-6">
             <h5>
               <img class="me-1" src="images/common/trophy.svg" width="16" alt="trophy icon">
               At the end of this part, you will be able to:
             </h5>
             <ul>
-              <li>Know the basics of what HTML is and how it works.</li>
-              <li>Set up the tools you will use for the rest of the class.</li>
+              <li>Know the basics of HTML and how it works within the client-server model.</li>
+              <li>Set up the tools you will use for the rest of the course.</li>
               <li>Edit your first web page with Dreamweaver.</li>
               <li>Publish this web page with GitHub.</li>
             </ul>
@@ -107,15 +142,19 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">Contents of this part</h4>
+            <h3 class="color-buas text-center">Contents of this part</h3>
             <p>This first chapter brings you theoretical knowledge into how the web works.</p>
             <ul>
               <li>In &ldquo;<a href="#what_is_a_webpage">What is a web page?</a>&rdquo;, you will learn how the client-server model works on the web, what the difference between &ldquo;web&rdquo; and &ldquo;internet&rdquo; is, and what a programming language is.</li>
               <li>The section on <a href="#cybersecurity">Cybersecurity & Privacy</a> gives you tips to stay safe online and explains what cookies are.</li>
+              <li>Next, you learn how to <a href="#setting_up_tools">set up the software tools</a> you need and retrieve the template for your resumé.</li>
+              <li>This might be the first HTML file you are working on. <a href="#basic_html">Section 1.5</a> explains how the HTML language is structured.</li>
+              <li>Once you are more familiar with the language, the <a href="#editing_publishing">final section</a> is where you edit your resumé and publish it.</li>
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h4 class="color-blue text-center">Do the work, step by step</h4>
+            <h3 class="color-blue text-center">Do the work, step by step</h3>
+            <p>This is a very brief overview of the tasks you will have to do to complete the first workshop. Items 1 to 4 of the list below are explained in detail in <a href="#setting_up_tools">section 1.4</a> and items 5 to 7 in <a href="#editing_publishing">section 1.6</a>.</p>
             <ol>
               <li>Install the tools: GitHub Desktop and Dreamweaver.</li>
               <li>Create a GitHub account</li>
@@ -137,10 +176,13 @@
 
       <section id="what_is_a_webpage">
         <header class="section-header row justify-content-center text-light bg-gradient py-5">
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.2</h2>
+          </div>
+          <div class="col-10 col-md-5">
             <h2 class="display-3 fw-bolder lh-1 mb-4">What is a web page?</h2>
           </div>
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-md-6">
             <h5>
               <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
               <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
@@ -155,27 +197,27 @@
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
             <div class="mb-4">
-              <h4 class="color-buas text-center">The web is not the internet</h4>
+              <h3 class="color-buas text-center">The web is not the internet</h3>
               <p>The word &ldquo;<a href="https://en.wikipedia.org/wiki/Internet" target="_blank">internet</a>&rdquo; is used to describe the whole infrastructure connecting computers and other devices around the world. It is the direct descendant of academic and military networks developed in the United States in the 1960s and 1970s.</p>
               <p>Multiple <strong>services</strong> run on the internet, including <strong>email</strong> (which has existed since 1971). The web is another of these services.</p>
               <p>The World Wide Web has been created in 1990 by Tim-Berners Lee and his colleagues to share information within the European Organization for Nuclear Research (CERN) in Geneva.</p>
               <p>The web is based on a series of technologies: The Hyper-Text Transfer Protocol (HTTP) to retrieve pages from web server, HTML for describing pages (see below), etc.</p>
             </div>
             <div class="mb-4">
-              <h4 class="color-buas text-center">Servers and Clients</h4>
+              <h3 class="color-buas text-center">Servers and Clients</h3>
               <p>A server is a computer connected to the internet that will provide information upon request.</p>
               <p>For example, a <strong>Domain Name Server</strong> will provide the translation between host names (e.g. <strong>www.buas.nl</strong>) and IP addresses (e.g. <strong>83.96.243.158</strong>)</p>
               <p>A <strong>web server</strong> will be providing the content (HTML pages, images, videos, etc.) that you see when visiting a web page</p>
               <p>A computer asking information to a server is called a client</p>
             </div>
             <div class="mb-4">
-              <h4 class="color-buas text-center">Web browsers</h4>
+              <h3 class="color-buas text-center">Web browsers</h3>
               <p>You can open web pages, including this one, with a category of app called a Web Browser.</p>
               <p>The most common used browsers are Google Chrome and Apple Safari. You can check how common browsers are by visiting Statcounter.</p>
               <p>Since 55% of web visits in the Netherlands come from mobile phones, you must make sure that your website works on very small screen sizes.</p>
             </div>
             <div class="mb-4">
-              <h4 class="color-buas text-center">Programming languages</h4>
+              <h3 class="color-buas text-center">Programming languages</h3>
               <p>A programming language can be defined as a formal language comprising a set of <strong>instructions</strong> that produce various kinds of <strong>output</strong>.</p>
               <p>For example, in <strong>HTML</strong> (HyperText Markup Language), the code that you will write produces the visual aspect of a web page.</p>
               <p>Other languages used commonly on the web include:</p>
@@ -193,7 +235,7 @@
             </div>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h4 class="color-blue text-center">What happens when you ask for a web page?</h4>
+            <h3 class="color-blue text-center">What happens when you ask for a web page?</h3>
             <div class="d-flex justify-content-start">
               <img src="images/part-1/computer-user.svg" width="40" alt="Computer user">
               <div class="w-75 px-2 m-2 bg-white bg-gradient rounded-3 border border-primary">
@@ -313,10 +355,13 @@
 
       <section id="cybersecurity">
         <header class="section-header row justify-content-center text-light bg-gradient py-5">
-          <div class="col-md-6 col-xxl-5">
-            <h2 class="display-3 fw-bolder lh-1 mb-4">Cybersecurity & Privacy</h2>
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.3</h2>
           </div>
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Cyber<wbr>security & Privacy</h2>
+          </div>
+          <div class="col-md-6">
             <h5>
               <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
               <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
@@ -330,7 +375,7 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">Tip #1: Use secure connections</h4>
+            <h3 class="color-buas text-center">Tip #1: Use secure connections</h3>
             <p>A secure connection is a connection between services, computers and/or people where the contents can only be accessed by the legitimate participants in the connection. This is generally achieved through the use of encryption, whereby only the receiver of messages has the private key necessary to decrypt the content of the messages.</p>
             <ul>
               <li>When visiting a website, make sure that there is a <strong>lock sign</strong> in the address bar. This means you are using the secure version of HTTP (HTTPS). If you are using the unsecure version, never enter a password or a credit card number.</li>
@@ -339,7 +384,7 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h4 class="text-center">Tip #2: Use a password manager</h4>
+            <h3 class="text-center">Tip #2: Use a password manager</h3>
             <p>Passwords are very hard to use properly. You should:</p>
             <ul>
               <li>Use passwords that are hard to guess or to crack by testing every possible combination. This means that they should be long, they should not include any personal details, and they should not be words that can be found in a dictionary</li>
@@ -350,7 +395,7 @@
             <p><strong>Bonus tip:</strong> Some services provide the option for Multiple-Factor Authentication (MFA) which add a layer of security since you&rsquo;re not relying only on passwords. MFA generally uses one-time authorization codes which can be sent by SMS, generated in dedicated apps (this includes some password managers) or printed on paper and stored in a safe place.</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-blue text-center">Tip #3: Back up your files</h4>
+            <h3 class="color-blue text-center">Tip #3: Back up your files</h3>
             <p>Don&rsquo;t risk losing your files. Back them up on different supports</p>
             <ul>
               <li>Cloud services can synchronize your files automatically and without any effort. Cloud providers generally use more than one location to store your data for additional safety. With your University email address, you get 1TB for free on OneDrive. Competitors include iCloud, Dropbox and GoogleDrive.</li>
@@ -358,7 +403,7 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h4 class="text-center">Tip #4: Think of what you reveal about yourself</h4>
+            <h3 class="text-center">Tip #4: Think of what you reveal about yourself</h3>
             <p>Your online presence is an integral part of who you are. Whether you do it to apply for a job, keep your loved ones updated, or to meet new people, you will need at some point to publish personal details about yourself.</p>
             <p>Be aware though, that some of these details can be used for malicious purposes. Think of the following examples:</p>
             <ul>
@@ -370,13 +415,13 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5">
-            <h4 class="color-blue text-center">What are cookies?</h4>
+            <h3 class="color-blue text-center">What are cookies?</h3>
             <p>Cookies are small pieces of data that your browser receives when visiting web servers. There role is to keep information about you when you return to the same website. Without cookies, you would have to log in again every single time you visit the same website again, and you would loose your shopping cart just by closing a tab or visiting another website.</p>
             <p>But this useful technology is also abused for tracking purposes, thanks to what is called &ldquo;third-party cookies&rdquo;. Everytime you visit a web page that contains third-party content, which can be advertisements, analytic tools such as Google Analytics, or a like button from social media, then this content can also send your browser a cookie. This allows companies such as Google and Facebook to track your activity across multiple websites that you visit, and collect way more information about you than you might know.</p>
             <p>You can also make delicious cookies by mixing 125g of butter, 180g of plain flour and 55g of sugar, and cooking for 15 minutes at 180&deg;C.</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h4 class="text-center">Resources about Security and Privacy</h4>
+            <h3 class="text-center">Resources about Security and Privacy</h3>
             <p>The following organizations provide information about these topics, as well as resources and tools to help you stay safe:</p>
             <ul>
               <li>
@@ -399,13 +444,192 @@
         </footer>
       </section>
 
+      <section id="setting_up_tools">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.4</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Setting up the tools</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>Install a web editor such as Dreamweaver.</li>
+              <li>GitHub is a version control system. Create an account and download the desktop app.</li>
+              <li>Copy the template repository, then use GitHub Desktop and Dreamweaver to open on your desktop.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Editing text</h3>
+            <p>Whether it&rsquo;s HTML, CSS, JavaScript or other programming languages, creating code generally starts with typing the code using a text editor.</p>
+            <p>A <strong>basic text editor</strong>, like Notepad on Windows or TextEdit on MacOS, will only show you the source code, with no hint.</p>
+            <p><strong>Advanced text editors</strong>, such as <a href="https://www.sublimetext.com/">SublimeText</a> will help you visualize the structure of the code, by showing different parts of your text in different colours.</p>
+            <div class="row">
+              <figure class="col-6">
+                <div class="p-2 border border-dark bg-white font-monospace">
+                  &lt;p&gt;Hello, world!&lt;/p&gt;<br>
+                  &lt;img src="logo-buas.svg" alt="Our logo"&gt;
+                </div>
+                <figcaption class="fst-italic text-center">What your code looks like in a basic text editor (e.g. Notepad)</figcaption>
+              </figure>
+              <figure class="col-6">
+                <div class="p-2 border border-dark bg-white font-monospace">
+                  <span class="text-info">&lt;</span><span class="text-danger">p</span><span class="text-info">&gt;</span>Hello, world!<span class="text-info">&lt;/</span><span class="text-danger">p</span><span class="text-info">&gt;</span><br>
+                  <span class="text-info">&lt;</span><span class="text-danger">img</span> <span class="text-primary">src<span class="text-info">="</span><span class="text-success">logo-buas.svg</span><span class="text-info">"</span> <span class="text-primary">alt</span><span class="text-info">="</span><span class="text-success">Our logo</span><span class="text-info">"&gt;</span>
+                </div>
+                <figcaption class="fst-italic text-center">What your code looks like in an advanced text editor (e.g. SublimeText or Dreamweaver)</figcaption>
+              </figure>
+            </div>
+            <div class="d-flex flex-row align-items-start">
+              <img class="me-1" src="images/part-1/dreamweaver.svg" width="60" alt="Adobe Dreamweaver">
+              <p>An <strong>Integrated Development Environment (IDE)</strong> such as Adobe Dreamweaver, will go several steps further and offer the following helpful features:</p>
+            </div>
+            <ul>
+              <li>Showing the result of your code in real time.</li>
+              <li>Showing errors in your code.</li>
+              <li>Offering suggestions and autocompletion when you type code</li>
+            </ul>
+            <p>All the examples in the tutorials use Dreamweaver, which is part of the Adobe Creative Cloud suite. You can <a href="https://www.surfspot.nl/software/creatie-ontwerp/adobe-creative-cloud-category/adobe-creative-cloud-met-services-student.html" target="_blank">buy a discounted Adobe CC license from SurfSpot for 133€/year</a>. A free alternative is <a href="https://code.visualstudio.com/" target="_blank">Microsoft&rsquo;s Visual Studio Code</a>.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">What is version control?</h3>
+            <p>In this course, you will use version control system with GitHub. The role of version control is to keep track of all changes in your files. In practice, these are the benefits of using version control:</p>
+            <ul>
+              <li>You can go back and forth in time within a file&rsquo;s history and see what was changed at each point.</li>
+              <li>You can easily undo changes if you are unhappy with them, even after days or months: You no longer need to keep several copies (e.g. <em>work_final.html, work_final_v2.html</em>) since this is managed by GitHub.</li>
+              <li>You can synchronize and backup your work with the cloud or with another computer.</li>
+              <li>You can collaborate with your peers and see what changes they&rsquo;ve made.</li>
+            </ul>
+            <p>Office 365 and Google Docs offer all these features. The main difference with Git is that, while Office and Docs will synchronize your changes automatically as a background task.</p>
+            <figure class="row">
+              <div class="col-sm-6">
+                <table class="p-2 border border-dark bg-white font-monospace w-100">
+                  <thead class="bg-primary bg-opacity-10">
+                    <tr>
+                      <th colspan="3" class="text-center fst-italic">Version 1 by Alice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-secondary">1</th>
+                      <td>&lt;h1&gt;Heading&lt;/h1&gt;</td>
+                      <td></td>
+                    </tr>
+                    <tr class="bg-danger bg-opacity-10">
+                      <th class="text-secondary">2</th>
+                      <td>&lt;h2&gt;Sub-heading&lt;/h2&gt;</td>
+                      <td class="text-danger fw-bolder">&minus;</td>
+                    </tr>
+                    <tr>
+                      <th class="text-secondary">3</th>
+                      <td>&lt;p&gt;First paragraph&lt;/p&gt;</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-sm-6">
+                <table class="p-2 border border-dark bg-white font-monospace w-100">
+                  <thead class="bg-primary bg-opacity-10">
+                    <tr>
+                      <th colspan="3" class="text-center fst-italic">Version 2 by Bob</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-secondary">1</th>
+                      <td>&lt;h1&gt;Heading&lt;/h1&gt;</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th class="text-secondary">2</th>
+                      <td>&lt;p&gt;First paragraph&lt;/p&gt;</td>
+                      <td></td>
+                    </tr>
+                    <tr class="bg-success bg-opacity-10">
+                      <th class="text-secondary">3</th>
+                      <td>&lt;p&gt;Second paragraph&lt;/p&gt;</td>
+                      <td class="text-success fw-bolder">&plus;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </figure>
+            <figcaption class="fst-italic text-center">An example showing two versions and changes between versions, line per line.</figcaption>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">What is GitHub?</h3>
+            <p>GitHub, which has been acquired by Microsoft in 2018, is a platform built around version control. It is:</p>
+            <ul>
+              <li>A place where you can host your code and synchronize it with your laptop.</li>
+              <li>A place where you can host your website and let the rest of the world visit it (with GitHub pages).</li>
+              <li>The biggest library of computer code, with both publicly available (open source) code and private organization hosting projects on the platform.</li>
+              <li>A social and professional platform, with 40 million users, many of which use it to showcase their coding skills.</li>
+              <li>A toolkit, including a Desktop app that you will install on your laptop, and tutorials where you can learn how to synchronize your code.</li>
+            </ul>
+            <h5>Definitions</h5>
+            <p>A <strong>Repository</strong> is a folder that is being synchronized on GitHub. Generally, a repository will correspond to a project, for example a website. Each repository can be accessed by typing <strong class="text-primary">github.com</strong> followed by the name of a user or organization (e.g. <strong class="text-success">buas-media-interactive</strong>) and then the name of the repository (e.g. <strong class="text-danger">prj4-cv</strong>). The URL for the prj4-cv repository is therefore <a href="https://github.com/buas-media-interactive/prj4-cv" target="_blank">https://<strong class="text-primary">github.com</strong>/<strong class="text-success">buas-media-interactive</strong>/<strong class="text-danger">prj4-cv</strong></a></p>
+            <div class="d-flex flex-row align-items-start">
+              <img class="me-1" src="images/part-1/github-desktop.svg" width="60" alt="GitHub Desktop app">
+              <p><strong>GitHub Desktop</strong> is an app that you will install on your Desktop. You will use it to synchronize your work between your laptop and the GitHub platform. It lets you track your changes even when you work entirely offline.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Getting started</h3>
+            <p>Time to practice! Just follow these steps:</p>
+            <ol>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Go to <a href="https://github.com/signup" target="_blank">github.com</a> and create an account</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Download and install the GitHub Desktop app from <a href="https://desktop.github.com/" target="_blank">desktop.github.com</a></li>
+              <li class="my-2"><img class="me-1" src="images/part-1/creative-cloud.svg" width="30" alt="Dreamweaver">Install Adobe Dreamweaver or an equivalent tool (see above).</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Go to the PRJ4 CV repository and click on &ldquo;Use this template&rdquo;.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">This will generate a repository within your own account &mdash; this repository is a copy of the one used.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/github-desktop.svg" width="30" alt="GitHub Desktop app">Open GitHub Desktop on your computer. Find the &ldquo;clone repository&rdquo; option and clone your repository. This will create a new folder on your laptop. Take note of where it is.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/windows-explorer.svg" width="30" alt="File Explorer">Open the folder with Explorer (on Windows) or Finder (on MacOS). Have a look at the folder structure.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/dreamweaver.svg" width="30" alt="Dreamweaver">Open <strong>index.html</strong> with Dreamweaver.</li>
+            </ol>
+            <p>In the next section, we explain how the structure of this HTML document works. In the final section, you will be editing the file and publishing it.</p>
+            <p>
+              <span class="fw-bold text-danger">WARNING:</span>
+              The biggest difficulty is making sure that you're always working on the right files. You only need to keep one copy of the files on your laptop at a given time, and you need to make sure that Dreamweaver is pointing at these files.
+            </p>
+          </div>
+          <div class="col-xxl-10 py-3">
+            <h3 class="color-blue text-center">What you should get&hellip;</h3>
+            <div class="row">
+              <figure class="col-sm-4">
+                <img src="images/part-1/repository-explorer.png" alt="A view of the Windows File Explorer" class="d-block mx-auto img-fluid border border-secondary">
+                <figcaption class="fst-italic text-center">The <strong>prj4-cv</strong> repository as seen in the Windows File Explorer</figcaption>
+              </figure>
+              <figure class="col-sm-8">
+                <img src="images/part-1/repository-dw.png" alt="A view of Dreamweaver" class="d-block mx-auto img-fluid">
+                <figcaption class="fst-italic text-center">The <strong>index.html</strong> file as seen in Dreamweaver</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#setting_up_tools">↑ Back to the top of &ldquo;Setting up the tools&rdquo;</a>
+          </div>
+        </footer>
+      </section>
 
       <section id="basic_html">
         <header class="section-header row justify-content-center text-light bg-gradient py-5">
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.5</h2>
+          </div>
+          <div class="col-10 col-md-5">
             <h2 class="display-3 fw-bolder lh-1 mb-4">The basic structure of HTML</h2>
           </div>
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-md-6">
             <h5>
               <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
               <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
@@ -419,7 +643,7 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">A simple HTML element</h4>
+            <h3 class="color-buas text-center">A simple HTML element</h3>
             <p>This example shows a simple paragraph element, made of three parts:</p>
             <ul>
               <li>An opening (or start) tag, <span class="text-success font-monospace fw-bold">&lt;p&gt;</span></li>
@@ -429,7 +653,7 @@
             <p>The name of the element, <strong>P</strong> stands for &ldquo;paragraph&rdquo;</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace">
                  <span class="text-success">&lt;p&gt;</span><span class="text-primary">Hello, world!</span><span class="text-danger">&lt;/p&gt;</span>
@@ -439,8 +663,8 @@
                   <p>Hello, world!</p>
               </div>
             </div>
-            <div class="col-6">
-              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 100 140" style="width: min(100%, 100px);">
                 <path stroke="#000000" d="M50,50l0,30" />
                 <g transform="translate(0,0)">
@@ -458,17 +682,17 @@
                   </foreignobject>
                 </g>
               </svg>
-            </div>
+            </figure>
           </div>
 
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-blue text-center">Nested elements</h4>
+            <h3 class="color-blue text-center">Nested elements</h3>
             <p>In this second example, we create a new element inside the paragraph (<strong>p</strong> element).</p>
             <p>This element, <strong>strong</strong>, makes its content bold.</p>
             <p>The <strong>strong</strong> element is a <strong>child</strong> of the <strong>p</strong> element.</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;strong&gt;</span>
@@ -480,8 +704,8 @@
                   <p>Hello, <strong>world</strong>!</p>
               </div>
             </div>
-            <div class="col-6">
-              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 200" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M160,50l0,130M50,80q0,-15,15,-15l190,0q15,0,15,15" />
                 <g transform="translate(110,0)">
@@ -520,17 +744,17 @@
                   </foreignobject>
                 </g>
               </svg>
-            </div>
+            </figure>
           </div>
 
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">Self-closing elements</h4>
+            <h3 class="color-buas text-center">Self-closing elements</h3>
             <p>Some elements do not contain any text and therefore do not require any closing tags.</p>
             <p>This is the case for <strong>br</strong> (the line <strong>br</strong>eak element) and for <strong>img</strong> (the <strong>im</strong>a<strong>g</strong>e element).</p>
             <p>Sometimes, you will see these elements written with an additional slash: <strong>&lt;br&nbsp;/&gt;</strong></p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;br&gt;</span>
@@ -541,8 +765,8 @@
                   <p>Hello, <br>world!</p>
               </div>
             </div>
-            <div class="col-6">
-              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 130" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M160,50l0,30M50,80q0,-15,15,-15l190,0q15,0,15,15" />
                 <g transform="translate(110,0)">
@@ -574,11 +798,11 @@
                   </foreignobject>
                 </g>
               </svg>
-            </div>
+            </figure>
           </div>
 
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-blue text-center">Attributes</h4>
+            <h3 class="color-blue text-center">Attributes</h3>
             <p>In addition to the tag name (e.g. <strong>p</strong>), an opening tag can also contain attributes.</p>
             <p>Each attribute starts with an attribute name, followed by the equal sign (=) and then, the value for the attribute.</p>
             <p>In the first example, the name of the attribute is <strong class="text-success">id</strong> and the value is &ldquo;<strong class="text-danger">my-id</strong>&rdquo;</p>
@@ -590,7 +814,7 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  &lt;p <span class="text-success">id</span>="<span class="text-danger">my-id</span>" <span class="text-success">class</span>="<span class="text-danger">my-class</span>" <span class="text-success">style</span>="<span class="text-danger">background:purple; color: yellow;</span>"&gt;<span class="text-secondary">Hello, world!</span>&lt;/p&gt;
@@ -600,8 +824,8 @@
                  <p id="my-id" class="my-class" style="background:purple; color: yellow;">Hello, world!</p>
               </div>
             </div>
-            <div class="col-6">
-              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 170" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M50,90v30M100,65h8M220,25H115q-8,0,-8,8V137q0,8,8,8H220M107,85H220" />
                 <g transform="translate(0,40)">
@@ -661,11 +885,11 @@
                   </foreignobject>
                 </g>
               </svg>
-            </div>
+            </figure>
           </div>
 
           <div class="col-md-6 col-xxl-5 py-3">
-            <h4 class="color-buas text-center">Required elements</h4>
+            <h3 class="color-buas text-center">Required elements</h3>
             <p>A simple paragraph like the one we&rsquo;ve been showing so far is not sufficient to be considered a full, valid HTML page. The following elements are also required.</p>
             <ul>
               <li>A <strong>&lt;!doctype&gt;</strong> declaration (which is not considered an HTML element).</li>
@@ -680,8 +904,8 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <div class="col-6">
-              <h5 class="text-success mt-2 mb-0">Code:</h5>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-success mt-2 mb-0">Code:</figcaption>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <em>&lt;!doctype html&gt;</em><br>
                  &lt;html&gt;<br>
@@ -697,9 +921,9 @@
                  &nbsp;&nbsp;&lt;/body&gt;<br>
                  &lt;/html&gt;<br>
               </div>
-            </div>
-            <div class="col-6">
-              <h5 class="text-primary mt-2 mb-0">Structure:</h5>
+            </figure>
+            <figure class="col-lg-6">
+              <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 230 180" style="width: min(100%, 230px);">
                 <path stroke="#000000" fill="none" d="M35,100q0,-10,10,-10h60q10,0,10,10M75,90v-40q0,-10,10,-10h100q10,0,10,10v100M130,30v10" />
                 <g transform="translate(95,0)">
@@ -745,7 +969,7 @@
                   </foreignobject>
                 </g>
               </svg>
-            </div>
+            </figure>
             
           </div>
 
@@ -754,6 +978,87 @@
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
             <a class="btn btn-outline-secondary m-1" href="#basic_html">↑ Back to the top of &ldquo;The basic structure of HTML&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+
+      <section id="editing_publishing">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">1.6</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Editing & Publishing</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>We&rsquo;re at the end of part 1!</li>
+              <li>You now need to use Dreamweaver to edit your resumé</li>
+              <li>And then you publish it with GitHub</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Synchronizing GitHub</h3>
+            <p>As discussed in <a href="#setting_up_tools">section 1.4</a>, GitHub will let you track your changes and publish them. One important point to notice is that you are in control of the following:</p>
+            <ol class="list-alpha">
+              <li>Which changes you want to track (this is called <em>committing</em> in GitHub).</li>
+              <li>When, and in which direction you want to synchronize them (this is called <em>pushing</em> when going from your laptop to the cloud and <em>pulling</em> when going the other way round).</li>
+            </ol>
+            <p>Therefore, <em>commit</em>, <em>pull</em> and <em>push</em> are three different actions within the GitHub Desktop app that you need to do in sequence.</p>
+            <ul>
+              <li>Whenever you want to keep track of changes you have just made, you need to first <strong>save</strong> the file in Dreamweaver and then <strong>commit</strong> the file in GitHub Desktop. This only tracks changes on your laptop <u>without synchronizing them</u> and you can do this entirely offline.</li>
+              <li>When you want to put a new version of your work on GitHub, whether the goal is to publish it or to allow your team mates to collaborate, you need to click on <strong>push</strong> in GitHub Desktop.</li>
+              <li>When someone (someone else, or yourself, but on another device) has made changes to the repository, and you want to retrieve these to your laptop, click on <strong>pull</strong></li>
+            </ul>
+
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Publishing on GitHub Pages</h3>
+            <p>Publishing a website means making it visible to the rest of the world. Compare what you see at <a href="https://github.com/buas-media-interactive/prj4-cv/blob/main/index.html" target="_blank">github.com/<strong class="text-success">buas-media-interactive</strong>/<strong class="text-danger">prj4-cv</strong></a> with what you see at <a href="https://buas-media-interactive.github.io/prj4-cv/" target="_blank"><strong class="text-success">buas-media-interactive</strong>.github.io/<strong class="text-danger">prj4-cv</strong></a>. The first one shows you the source code and the other one the website.</p>
+            <p>You will notice that the URL for your published web page doesn&rsquo;t include the name of the HTML file (<em>index.html</em>). This is a <strong>naming convention</strong>: when you ask for a page without specifying URL, GitHub Pages will understand that you are looking for <em>index.html</em></p>
+            <p>If you use any other name, e.g. <em>cv.html</em>, you will be able to access it by adding this file name to the repository URL, i.e. by typing <u>https://buas-media-interactive.github.io/prj4-cv/cv.html</u>, but you won&rsquo;t see anything at <u>https://buas-media-interactive.github.io/prj4-cv/</u></p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">Instructions</h3>
+            <p>To follow the steps below, you must have completed the instructions in part 1.4 first.</p>
+            <ol>
+              <li class="my-2"><img class="me-1" src="images/part-1/dreamweaver.svg" width="30" alt="Dreamweaver">In Adobe Dreamweaver (or another HTML editor), change all references to &ldquo;Firstname Lastname&rdquo; by your own name</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/dreamweaver.svg" width="30" alt="Dreamweaver">Before going any further, save your files!</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/github-desktop.svg" width="30" alt="GitHub Desktop">In GitHub Desktop, <strong>commit</strong> your files by clicking on the &ldquo;Commmit to main&rdquo; button. You must provide a short description of your changes.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/github-desktop.svg" width="30" alt="GitHub Desktop">At this point, your changes are still only on your laptop. You now need to <strong>push</strong> your changes by clicking on the &ldquo;Sync&rdquo; button.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Clicking on &ldquo;View on GitHub&rdquo; opens a browser window and lets you see what is online. Check that all your changes have been uploaded to the cloud.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Now your resumé should be ready to publish. Go to the repository&rsquo;s <strong>Settings</strong>, then to the <strong>Pages</strong> subsection. Choose the main branch as the source, then click on Save.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">You should now see a green check mark (see below) and the URL for your website. Wait about 1 minute for the website to be fully published, then click on the link and visit your first published website!</li>
+            </ol>
+            <div class="alert alert-success my-3">
+              <svg height="16" viewBox="0 0 16 16" width="16">
+                <path fill="#008000" fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+              </svg>
+              Your site is published at <a href="https://buas-media-interactive.github.io/prj4-cv/" target="_blank">https://buas-media-interactive.github.io/prj4-cv/</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">What is next?</h3>
+            <p>In the next three parts, you will build up on the skills you&rsquo;ve just learned.</p>
+            <ol start="2">
+              <li>The next part will be all about editing the content of the page: You will learn the HTML language in more depth and you will learn how to manage your images for the web.</li>
+              <li>In part 3, you will change the aspect of your resumé by applying styles. You will learn an additional language named CSS.</li>
+              <li>The final part helps you go one step further for your group website and will give you tips on how to use Bootstrap.</li>
+            </ol>
+          </div>
+
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_1">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#editing_publishing">↑ Back to the top of &ldquo;Editing & Publishing&rdquo;</a>
           </div>
         </footer>
       </section>

@@ -32,6 +32,10 @@ main {
 	background-color: #fdf1e9;
 }
 
+.bg-buas {
+	background-color: #ee7622;
+}
+
 .section-header {
 	background-color:  #13426B;
 	border-top: 1.5em solid #ee7622;
@@ -41,4 +45,8 @@ main {
 	background-image: url(../images/common/hero-bg.jpg);
 	background-size: cover;
 	background-position: center;
+}
+
+.list-alpha {
+	list-style-type: lower-alpha;
 }
