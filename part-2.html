@@ -132,10 +132,10 @@
               <a class="btn btn-danger fs-4 m-2" href="#dev_tools"><span class="badge text-danger rounded-pill bg-white">2.3</span> Use developer tools</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#"><span class="badge text-danger rounded-pill bg-white">2.4</span> Avoid coding errors</a>
+              <a class="btn btn-danger fs-4 m-2" href="#avoid_errors"><span class="badge text-danger rounded-pill bg-white">2.4</span> Avoid coding errors</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#"><span class="badge text-danger rounded-pill bg-white">2.5</span> Link to images and pages</a>
+              <a class="btn btn-danger fs-4 m-2" href="#link"><span class="badge text-danger rounded-pill bg-white">2.5</span> Link to images and pages</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#"><span class="badge text-danger rounded-pill bg-white">2.6</span> Manage images</a>
@@ -273,15 +273,15 @@
             <div class="col-sm-7 col-md-12 col-lg-7">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
-                &lt;h3&gt;<span class="text-black">Heading 3</span>&lt;/h3&gt;
+                &lt;h3&gt;<span class="text-dark">Heading 3</span>&lt;/h3&gt;
                 <br>
-                &lt;h4&gt;<span class="text-black">Heading 4</span>&lt;/h4&gt;
+                &lt;h4&gt;<span class="text-dark">Heading 4</span>&lt;/h4&gt;
                 <br>
-                &lt;p&gt;<span class="text-black">This is a paragraph</span>&lt;/p&gt;
+                &lt;p&gt;<span class="text-dark">This is a paragraph</span>&lt;/p&gt;
                 <br>
                 &lt;div&gt;
                 <p class="my-0 ps-4">
-                  &lt;p&gt;<span class="text-black">Another paragraph inside a div</span>&lt;/p&gt;
+                  &lt;p&gt;<span class="text-dark">Another paragraph inside a div</span>&lt;/p&gt;
                 </p>
                 &lt;/div&gt;
                 <br>
@@ -289,13 +289,13 @@
                 <br>
                 &lt;ul&gt;
                 <p class="my-0 ps-4">
-                  &lt;li&gt;<span class="text-black">Item in an unordered list</span>&lt;/li&gt;
+                  &lt;li&gt;<span class="text-dark">Item in an unordered list</span>&lt;/li&gt;
                 </p>
                 &lt;/ul&gt;
                 <br>
                 &lt;ol&gt;
                 <p class="my-0 ps-4">
-                  &lt;li&gt;<span class="text-black">Item in an ordered list</span>&lt;/li&gt;
+                  &lt;li&gt;<span class="text-dark">Item in an ordered list</span>&lt;/li&gt;
                 </p>
                 &lt;/ol&gt;
               </div>
@@ -744,6 +744,210 @@
           </div>
         </footer>
       </section>
+
+      <section id="link">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">2.4</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Link to images and pages</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>Use &lt;a href=" or &lt;img src=" followed by the location of a page or image.</li>
+              <li>Use relative paths when needed, learn how to determine these paths.</li>
+              <li>Check that all images and links work for assignments.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="text-center color-buas">When do you need this?</h3>
+            <p>There are several cases when you need to create links between your page and other resources. In each of these cases, you need to put the address of the resource in the form of an <em class="text-danger">URL or path</em>.</p>
+            <ul>
+              <li>When creating a clickable hyperlink, to navigate from a page to another page. In that case, you use an <strong>a</strong> tag with the <strong>href</strong> attribute: <strong class="text-primary">&lt;a <span class="text-success">href="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;</strong></li>
+              <li>When displaying an image on a page, use an <strong>img</strong> tag with the <strong>src</strong> attribute: <strong class="text-primary">&lt;img <span class="text-success">src="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;</strong></li>
+              <li>This also works when embedding a video or an audio file (see example in part 2.1): <strong class="text-primary">&lt;audio <span class="text-success">src="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;&lt;/audio&gt;</strong>, <strong class="text-primary">&lt;video <span class="text-success">src="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;&lt;/video&gt;</strong></li>
+              <li>When you need to add CSS styles to your page (this is what you&rsquo;ll learn in part 3), you need to create a link between your page and the CSS file using <strong class="text-primary">&lt;link <span class="text-success">rel="<span class="text-danger">stylesheet</span>" href="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;</strong></li>
+              <li>In this course&rsquo;s templates, you will also find the <strong>script</strong> tag, used to load JavaScript files that add interactive behaviour: <strong class="text-primary">&lt;script <span class="text-success">src="<em class="text-danger fw-normal">URL or path</em>"</span>&gt;&lt;/script&gt;</strong></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Special Hyperlinks</h3>
+            <p>You can make hyperlinks with destinations that are not web resources.</p>
+            <h5>Call a phone number</h5>
+            <p class="p-2 border border-dark bg-white font-monospace">
+              <span class="text-primary">&lt;a <span class="text-success">href="<span class="text-danger">tel:<wbr>+31-76-5332203</span>"</span>&gt;</span><wbr>Call BUas<span class="text-primary">&lt;/a&gt;</span>
+            </p>
+            <p>Test it: <a href="tel:+31-76-5332203">Call BUas</a></p>
+            <h5>Send an email</h5>
+            <p class="p-2 border border-dark bg-white font-monospace">
+              <span class="text-primary">&lt;a <span class="text-success">href="<span class="text-danger">mailto:<wbr>servicedesk@buas.nl</span>"</span>&gt;</span><wbr>Email BUas<span class="text-primary">&lt;/a&gt;</span>
+            </p>
+            <p>Test it: <a href="mailto:servicedesk@buas.nl">Email BUas</a></p>
+            <h5>Open Maps App <em>(mobile only)</em></h5>
+            <p class="p-2 border border-dark bg-white font-monospace">
+              <span class="text-primary">&lt;a <span class="text-success">href="<span class="text-danger">geo:<wbr>51.58990,4.79520</span>"</span>&gt;</span><wbr>Visit BUas <span class="text-primary">&lt;/a&gt;</span>
+            </p>
+            <p>Test it: <a href="geo:51.58990,4.79520">Visit BUas</a></p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="text-center color-buas">Absolute URLs</h3>
+            <p>An absolute URL refers to the precise location of a resource online. It starts with <strong>http://</strong> or <strong>https://</strong> (known as the &ldquo;protocol&rdquo;) followed by the name of the web server (e.g. <strong>www.buas.nl</strong>).</p>
+            <div class="p-2 border border-dark bg-white font-monospace">
+              <p class="m-0">
+                <span class="text-primary">&lt;a <span class="text-success">href="<span class="text-danger">https://<wbr>www.buas.nl/</span>"</span>&gt;</span>A link to the BUas website<span class="text-primary">&lt;/a&gt;</span>
+              </p>
+              <p class="m-0">
+                <span class="text-primary">&lt;img <span class="text-success">src="<span class="text-danger">https://<wbr>www.buas.nl/<wbr>themes/<wbr>custom/<wbr>breda_<wbr>university/<wbr>apps/<wbr>drupal/<wbr>logo.svg</span>" alt="<span class="text-danger">The BUas logo on the BUas website</span>"</span>&gt;</span>
+              </p>
+            </div>
+            <h5 class="text-success">Pros of absolute URLs:</h5>
+            <ul class="text-success">
+              <li class="text-dark">They are the same regardless of which page they are used on. The links above will work just as well here or on your own website.</li>
+              <li class="text-dark">You can get them easily by copying URLs from your browser and pasting them in Dreamweaver.</li>
+            </ul>
+            <h5 class="text-danger">Cons of absolute URLs:</h5>
+            <ul class="text-danger">
+              <li class="text-dark">If you are not in control of the destination of your link, it may stop working someday.</li>
+              <li class="text-dark">Not suitable for internal links</li>
+            </ul>
+            <p><strong class="text-primary">Use absolute URLs when:</strong> linking to an external resource (page or file).</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Relative path</h4>
+            <p>A relative path is used when linking to a resource within the same web site. A relative link <u>does not include</u> the address of the web server.</p>
+            <p>The full URL of the resource will be calculated based on the address of the page from which it is called.</p>
+            <div class="p-2 border border-dark bg-white font-monospace">
+              <p class="m-0">
+                <span class="text-primary">&lt;a <span class="text-success">href="<span class="text-danger">part-1.html</span>"</span>&gt;</span>A link to Part 1 of the guide<span class="text-primary">&lt;/a&gt;</span>
+              </p>
+              <p class="m-0">
+                <span class="text-primary">&lt;img <span class="text-success">src="<span class="text-danger">images/<wbr>common/<wbr>logo-buas.svg</span>" alt="<span class="text-danger">The BUas logo on the BUas website</span>"</span>&gt;</span>
+              </p>
+            </div>
+            <p>The first link will point to <u class="text-primary">https://<wbr>buas-media-interactive.github.io/<wbr>prj4-guide/<wbr>part-1.html</u> and the second to <u class="text-primary">https://<wbr>buas-media-interactive.github.io/<wbr>prj4-guide/<wbr>images/<wbr>common/<wbr>logo-buas.svg</u>. Read the next sub-section to see how these are calculated.</p>
+            <h5 class="text-success">Pros of relative paths:</h5>
+            <ul class="text-success">
+              <li class="text-dark">They will work the same if you use them on your laptop, online, on a USB stick, etc.</li>
+              <li class="text-dark">This means you can easily work offline and/or move your content from one website to another.</li>
+            </ul>
+            <h5 class="text-danger">Cons of relative paths:</h5>
+            <ul class="text-danger">
+              <li class="text-dark">You need to be careful with your folder and file structure.</li>
+              <li class="text-dark">They cannot point to external resources.</li>
+            </ul>
+            <p><strong class="text-primary">Use relative paths when:</strong> pointing to resources (pages or files) within your own website.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="text-center color-buas">Determining relative paths</h3>
+            <p>A relative path is the path <u>from</u> the HTML page you are currently editing, also known as the <strong>source</strong>, <u>to</u> the resource you want to point to. If this is a link, the destination is another HTML page. It this is an image, the destination is the image file.</p>
+            <h4>Relative path rules</h4>
+            <p>The starting point of the path is always the folder containing the source file. Think of what you would have to do to navigate to the destination. Do you need to enter another folder? Do you need to go up one level?</p>
+            <ul>
+              <li>If the source and the destination are in the <strong>same folder at the same level</strong>, just write the name of the destination file, e.g. <u>destination.html</u></li>
+              <li>If the destination is in a <strong>subfolder</strong> in relation from source <strong>same folder at the same level</strong>, type in the name of the subfolder, followed by a slash (/), followed by the name of the destination file, e.g. <u>subfolder/destination.html</u></li>
+              <li>If the destination is in a <strong>folder at a level above</strong> the source, type two full stops (..) followed by a slash (/) to move up one level, e.g. <u>../destination.html</u></li>
+              <li>You can combine these rules, e.g. <u>../folder/subfolder/destination.html</u></li>
+            </ul>
+            <h4>Relative paths with Dreamweaver</h4>
+            <p>Dreamweaver has a browse option to let you pick an image file, or the destination of a hyperlink. When possible, Dreamweaver will determine the relative path for you.</p>
+            <p>This doesn&rsquo;t work if:</p>
+            <ul>
+              <li>You&rsquo;re working on an HTML file that has never been saved and shows as &ldquo;Untitled&rdquo; (because Dreamweaver doesn&rdquo;t know where the file is).</li>
+              <li>Your image files are too far away from your HTML file, e.g. if they are still in your Downloads folder. You need to keep everything within the same project/website folder.</li>
+            </ul>
+            <p><strong class="text-danger">IMPORTANT:</strong> If Dreamweaver creates a path that starts with <strong>file:///</strong>, it <u>will not</u> work when published online via GitHub pages. For example, <strong>file:///C:/Users/velt.r/Documents/HTML/prj4-guide/</strong> is where I keep this file on my laptop, and won&rsquo;t work from anywhere else.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Relative path examples</h3>
+            <div class="row">
+              <div class="col-5 col-lg-4">
+                <p>Based on this folder structure&hellip;</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                    <span class="text-primary">website</span>
+                    <ul class="list-unstyled border-start border-primary ms-2 ps-2">
+                      <li class="text-primary">
+                        <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="image file">
+                        index.html
+                      </li>
+                      <li class="text-primary">
+                        <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                        image-index.png
+                      </li>
+                      <li class="text-success">
+                        <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                        <span>folder-1</span>
+                        <ul class="list-unstyled border-start border-success ms-2 ps-2">
+                          <li>
+                            <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="image file">
+                            page-1.html
+                          </li>
+                          <li>
+                            <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                            image-1.jpg
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="text-danger">
+                        <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                        <span>folder-2</span>
+                        <ul class="list-unstyled border-start border-danger ms-2 ps-2">
+                          <li>
+                            <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="image file">
+                            page-2.html
+                          </li>
+                          <li>
+                            <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                            image-2.jpg
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-7 col-lg-8">
+                <p>These are the paths to use from each HTML page&hellip;</p>
+                <div class="px-1 py-0 border border-bottom-0 rounded-top border-dark bg-white font-monospace fw-bold w-75 text-primary">website/<wbr>index.html</div>
+                <div class="px-1 py-0 border border-dark bg-white font-monospace text-secondary mb-3">
+                  <p class="mb-0">&lt;img src="<wbr><strong class="text-primary">image-index.png</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;a href="<strong class="text-success">folder-1/<wbr>page-1.html</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;img src="<wbr><strong class="text-danger">folder-2/<wbr>image-2.jpg</strong><wbr>"&gt;</p>
+                </div>
+                <div class="px-1 py-0 border border-bottom-0 rounded-top border-dark bg-white font-monospace fw-bold w-75 text-primary">website/<wbr><span class="text-success">folder-1/<wbr>page-1.html</span></div>
+                <div class="px-1 py-0 border border-dark bg-white font-monospace text-secondary mb-3">
+                  <p class="mb-0">&lt;img src="<wbr><strong class="text-primary">../<wbr>image-index.png</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;a href="<strong class="text-success"><wbr>page-1.html</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;img src="<wbr><strong class="text-primary">../<wbr></strong><strong class="text-danger">folder-2/<wbr>image-2.jpg</strong><wbr>"&gt;</p>
+                </div>
+                <div class="px-1 py-0 border border-bottom-0 rounded-top border-dark bg-white font-monospace fw-bold w-75 text-primary">website/<wbr><span class="text-danger">folder-2/<wbr>page-1.html</span></div>
+                <div class="px-1 py-0 border border-dark bg-white font-monospace text-secondary mb-3">
+                  <p class="mb-0">&lt;img src="<wbr><strong class="text-primary">../<wbr>image-index.png</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;a href="<wbr><strong class="text-primary">../<wbr></strong><strong class="text-success">page-2.html</strong><wbr>"&gt;</p>
+                  <p class="mb-0">&lt;img src="<strong class="text-danger"><wbr>image-2.jpg</strong><wbr>"&gt;</p>
+                </div>
+                <p>All of the examples above link to the <strong>same</strong> images and HTML files, but the <strong>relative path</strong> is different because the <strong>origin</strong> of the path is different.
+              </div>
+            </div>
+          </div>
+
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_2">↑ Back to the top of Part 2</a>
+            <a class="btn btn-outline-secondary m-1" href="#link">↑ Back to the top of &ldquo;Link to images and pages&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
 
     </main>
     <script>
