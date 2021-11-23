@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <title>PRJ4 Guide | Part 3: Add style to your page</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+
+    <nav id="main-nav" class="bg-secondary bg-gradient p-1 justify-content-start">
+      <ul class="nav nav-pills align-items-center">
+        <li class="nav-item fs-4">
+          <a class="nav-link text-light p-1 p-sm-2" href="index.html">
+            PRJ4
+            <span class="d-none d-md-inline">Guide</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light d-flex align-items-center px-2 px-md-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Part 1
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#part_1">Publish your first page</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#overview_goals"><span class="badge rounded-pill bg-buas">1.1</span> Overview & goals</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#what_is_a_webpage"><span class="badge rounded-pill bg-buas">1.2</span> What is a web page?</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#cybersecurity"><span class="badge rounded-pill bg-buas">1.3</span> Cybersecurity and privacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#setting_up_tools"><span class="badge rounded-pill bg-buas">1.4</span> Set up the tools</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#basic_html"><span class="badge rounded-pill bg-buas">1.5</span> The basic structure of HTML</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#editing_publishing"><span class="badge rounded-pill bg-buas">1.6</span> Edit and publish</a>
+            </li>		  
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle text-light d-flex align-items-center px-2 px-md-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Part 2
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Edit the content of your page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle text-light d-flex align-items-center px-2 px-md-3 active bg-gradient" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Part 3
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Add style to your page</a>
+            </li>
+			 <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#overview_goals"><span class="badge rounded-pill bg-buas">3.1</span> Overview & goals</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#what_is_css"><span class="badge rounded-pill bg-buas">3.2</span> What is CSS?</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#practice_editing_styles"><span class="badge rounded-pill bg-buas">3.3</span> In practice: editing styles.css</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#what_is_bootstrap"><span class="badge rounded-pill bg-buas">3.4</span> What is Bootstrap?</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#practice_using_bootstrap"><span class="badge rounded-pill bg-buas">3.5</span> In practice: using Boostrap</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#using_fonts"><span class="badge rounded-pill bg-buas">3.6</span> Using Fonts</a>
+            </li>  
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle text-light d-flex align-items-center px-2 px-md-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            Part 4
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Towards your group website</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light d-flex align-items-center px-2 px-md-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            <img class="me-1" src="images/common/clipboard-check.svg" width="15" alt="Checklists">
+            <span class="d-none d-md-inline">Checklists</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Individual Assignment</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Group Assignment</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light d-flex align-items-center px-2 px-md-3" href="https://web.microsoftstream.com/channel/987d2668-18d7-4d84-9342-4774e7d0ba94" target="_blank">
+            <img class="me-1" src="images/common/film.svg" width="15" alt="Videos">
+            <span class="d-none d-md-inline">Videos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container-fluid position-relative overflow-auto" tabindex="0">
+
+      <section id="part_3" class="py-5 bg-hero row justify-content-center">
+        <div class="col-12 col-lg-11 col-xxl-10">
+          <h1 class="display-1 lh-1 text-center m-5 text-light">Part 3: Add style to your page</h1>
+          <ul class="d-flex justify-content-evenly flex-wrap list-unstyled">
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#overview_goals"><span class="badge text-danger rounded-pill bg-white">3.1</span> Overview & goals</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#what_is_css"><span class="badge text-danger rounded-pill bg-white">3.2</span> What is CSS?</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#practice_editing_styles"><span class="badge text-danger rounded-pill bg-white">3.3</span> In practice: editing styles.css</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#what_is_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.4</span> What is Bootstrap?</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#practice_using_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.5</span> In practice: using Bootstrap</a>
+            </li>
+            <li>
+              <a class="btn btn-danger fs-4 m-2" href="#using_fonts"><span class="badge text-danger rounded-pill bg-white">3.6</span> Using Fonts</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="overview_goals">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.1</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Overview & Goals</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/trophy.svg" width="16" alt="trophy icon">
+              At the end of this part, you will be able to:
+            </h5>
+            <ul>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Contents of this part</h3>
+            <p>This third chapter xxxxx.</p>
+            <ul>
+              <li>In &ldquo;<a href="#what_is_css">What is CSS?</a>&rdquo;, you will learn xxxx.</li>
+              <li>The section &ldquo;<a href="#practice_editing_styles">In practice: editing styles.css</a>&rdquo; gives you XXXX.</li>
+              <li>Next, you learn &ldquo;<a href="#what_is_bootstrap">What is Boostrap</a>&rdquo; XXXX.</li>
+              <li>Put in practice &ldquo;<a href="#practice_using_bootstrap">Bootstrap</a>&ldquo; XXXX.</li>
+              <li>Finally &ldquo;<a href="#using_fonts">use fonts</a>&ldquo; to XXX.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="color-blue text-center">Do the work, step by step</h3>
+            <p>This is a very brief overview of the tasks you will have to do to complete the XXX workshop. Items 1 to 4 of the list below are explained in detail in <a href="#setting_up_tools">section 1.4</a> and items 5 to 7 in <a href="#editing_publishing">section 1.6</a>.</p>
+            <ol>
+              <li>XXXX.</li>
+              <li>XXXX</li>
+              <li>XXXX.</li>
+            </ol>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
+            <a class="btn btn-outline-secondary m-1" href="#overview_goals">↑ Back to the top of &ldquo;Overview & Goals&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="what_is_css">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.2</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">What is css?</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/video/fe13c344-6cb0-4704-bc07-3d4da8d2a3d2" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+		  <!---left column starts -->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <div class="mb-4">
+              <h3 class="color-buas text-center">Left Heading</h3>
+              <p>xxxxxx.</p>
+            </div>
+            <div class="mb-4">
+              <h3 class="color-buas text-center">Left Heading</h3>
+              <p>xxxxxx.</p>
+            </div>
+          </div>
+		  <!---left column ends -->
+		  <!---right column starts-->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue"> 
+            <h3 class="color-blue text-center">Right Heading</h3>
+          </div>
+		  <!---right column ends-->
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
+            <a class="btn btn-outline-secondary m-1" href="#what_is_css">↑ Back to the top of &ldquo;What is css?&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="practice_editing_styles">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.3</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">In practice: editing styles.css</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+		  <!-- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!-- left column ends --->
+		  <!-- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!-- right column ends --->
+		  <!-- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3"> 
+            <h3 class="color-blue text-center">Left Heading</h3>
+            <p>xxxx. </p>
+          </div>
+		  <!-- left column ends --->
+		  <!-- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!-- right column ends --->
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
+            <a class="btn btn-outline-secondary m-1" href="#practice_editing_styles">↑ Back to the top of &ldquo;In practice: editing styles.css&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="what_is_bootstrap">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.4</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">What is Bootstrap?</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>XXXXX.</li>
+              <li>XXXXX.</li>
+              <li>XXXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->	
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->		
+          <div class="col-xxl-10 py-3">
+            <h3 class="color-blue text-center">Center Heading&hellip;</h3>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
+            <a class="btn btn-outline-secondary m-1" href="#what_is_bootstrap">↑ Back to the top of &ldquo;What is Bootstrap&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+	
+      <section id="practice_using_bootstrap">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.5</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">In practice: using Bootstrap</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/video/9120cc9f-71fa-4b37-976b-783c0bef6888" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->	
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->		
+          <div class="col-xxl-10 py-3">
+            <h3 class="color-blue text-center">Center Heading&hellip;</h3>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
+            <a class="btn btn-outline-secondary m-1" href="#practice_using_bootstrap">↑ Back to the top of &ldquo;In practice: using Bootstrap&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+      <section id="using_fonts">
+        <header class="section-header row justify-content-center text-light bg-gradient py-5">
+          <div class="col-2 col-md-1 text-end">
+            <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.6</h2>
+          </div>
+          <div class="col-10 col-md-5">
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Using Fonts</h2>
+          </div>
+          <div class="col-md-6">
+            <h5>
+              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
+              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
+            </h5>
+            <ul>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+              <li>XXXX.</li>
+            </ul>
+          </div>
+        </header>
+        <article class="row justify-content-center">
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->	
+		  <!--- left column starts --->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">Left Heading</h3>
+            <p>xxxxx.</p>
+          </div>
+		  <!--- left column ends --->
+		  <!--- right column starts --->
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Right Heading</h3>
+            <p>xxxx.</p>
+          </div>
+		  <!--- right column ends --->		
+          <div class="col-xxl-10 py-3">
+            <h3 class="color-blue text-center">Center Heading&hellip;</h3>
+          </div>
+        </article>
+        <footer class="row bg-gray">
+          <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
+            <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 1</a>
+            <a class="btn btn-outline-secondary m-1" href="#using_fonts">↑ Back to the top of &ldquo;Using Fonts&rdquo;</a>
+          </div>
+        </footer>
+      </section>
+
+    </main>
+  </body>
+</html>
