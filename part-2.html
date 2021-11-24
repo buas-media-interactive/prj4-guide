@@ -132,7 +132,7 @@
               <a class="btn btn-danger fs-4 m-2" href="#dev_tools"><span class="badge text-danger rounded-pill bg-white">2.3</span> Use developer tools</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#avoid_errors"><span class="badge text-danger rounded-pill bg-white">2.4</span> Avoid coding errors</a>
+              <a class="btn btn-danger fs-4 m-2" href="#avoid_errors"><span class="badge text-danger rounded-pill bg-white">2.4</span> Avoid errors</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#link"><span class="badge text-danger rounded-pill bg-white">2.5</span> Link to images and pages</a>
@@ -169,10 +169,10 @@
             <h3 class="color-buas text-center">Contents of this part</h3>
             <p>This second chapter supports you as you edit your resumé.</p>
             <ul>
-              <li>You&rsquo;ll first learn about &ldquo;<a href="#">common HTML tags</a>&rdquo; so you understand what the function of each tag within the page is, and know what you can add or replace if you need other tags.</li>
-              <li>If you want to see how other pages use HTML tags, check out your browser&rsquo;s <a href="#">developer tools</a>.</li>
-              <li>We are all humans, and typos happen when writing HTML code. Learn how to <a href="#">recognize, find and fix them</a> by keeping a good HTML structure.</li>
-              <li>You then learn how to <a href="#">use hyperlinks</a> to direct your visitors to other sites or to show images.</li>
+              <li>You&rsquo;ll first learn about &ldquo;<a href="#html_tags">common HTML elements</a>&rdquo; so you understand what the function of each tag within the page is, and know what you can add or replace if you need other tags.</li>
+              <li>If you want to see how other pages use HTML tags, check out your browser&rsquo;s <a href="#dev_tools">developer tools</a>.</li>
+              <li>We are all humans, and typos happen when writing HTML code. Learn how to <a href="#avoid_errors">recognize, find and fix them</a> by keeping a good HTML structure and a good folder structure.</li>
+              <li>You then learn how to <a href="#link">use hyperlinks</a> to direct your visitors to other sites or to show images.</li>
               <li>These images will be hosted in your repository alongside your HTML code. <a href="#">The final section</a> teaches you the best practices for resizing and delivering images.</li>
             </ul>
           </div>
@@ -592,7 +592,7 @@
             <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">2.4</h2>
           </div>
           <div class="col-10 col-md-5">
-            <h2 class="display-3 fw-bolder lh-1 mb-4">Avoid HTML Errors</h2>
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Avoid Errors</h2>
           </div>
           <div class="col-md-6">
             <h5>
@@ -600,6 +600,7 @@
               <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
             </h5>
             <ul>
+              <li>Name the files and folders in your project correctly.</li>
               <li>Check what the most common HTML errors are.</li>
               <li>Many errors result in having an improper HTML structure.</li>
               <li>Use validation tools to identify these errors.</li>
@@ -608,8 +609,127 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="text-center color-buas">Common mistakes <u>everyone</u> makes</h3>
-            <p>We insist on the word &ldquo;everyone&rdquo;: even experienced web developers regularly make typos or mistakes. Being able to identify and correct mistakes is one of the hardest skills in HTML development.</p>
+            <h3 class="text-center color-blue">File and folder good practices</h3>
+            <p>In order to avoid issues, the first thing to do is to follow good practices when naming and structuring files and folders. There are multiple reasons to do so:</p>
+            <ul>
+              <li>If all workers in the same company, or all students in the same course follow the same <strong>naming conventions</strong>, it becomes easier to collaborate. In industry, companies may have their own conventions which might be different from the ones below.</li>
+              <li>Different operating systems <strong>letter case</strong> (i.e. capital vs. lowercase), <strong>accents and other special characters</strong> differently, so your files might not work identically on a Mac, on a PC or when you upload it to GitHub</li>
+              <li>One very common mistake is to <strong>work on the wrong file</strong>. This can be avoided in part by having a clear and sensible folder structure.</li>
+              <li>This will also be very convenient when, as described in the next section, you start adding images and making links to other pages within your folder.</li>
+            </ul>
+            <p>In this course, we <strong>require</strong> that you stick to the following conventions:</p>
+            <ul>
+              <li>Your landing page must be in the root folder of your website and named <strong>index.html</strong>.</li>
+              <li>All other HTML pages are in the same folder.</li>
+              <li>All CSS style files are within a folder named <strong>css</strong>.</li>
+              <li>All image files are within a folder named <strong>images</strong>.</li>
+              <li>All file names are <strong>lowercase</strong> only. This means that you might have to rename external images before adding them to your website.</li>
+              <li>No spaces, no accents. The only special characters you can use are <strong>hyphen</strong> (<strong>-</strong>) and <strong>underscore</strong> (<strong>_</strong>).</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Examples</h3>
+            <div class="row">
+              <div class="col-6 col-lg-5">
+                <h5 class="text-primary">Folder structure</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                    <span class="text-primary">website</span>
+                    <ul class="list-unstyled border-start border-primary ms-2 ps-2">
+                      <li class="text-primary">
+                        <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="file">
+                        index.html
+                      </li>
+                      <li class="text-primary">
+                        <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="file">
+                        page-1.html
+                      </li>
+                      <li class="text-primary">
+                        <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="file">
+                        page-2.html
+                      </li>
+                      <li class="text-success">
+                        <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                        <span>css</span>
+                        <ul class="list-unstyled border-start border-success ms-2 ps-2">
+                          <li>
+                            <img class="me-1" src="images/part-2/file-code.svg" height="20" alt="file">
+                            styles.css
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="text-danger">
+                        <img class="me-1" src="images/part-2/folder-open.svg" width="20" alt="folder">
+                        <span>images</span>
+                        <ul class="list-unstyled border-start border-danger ms-2 ps-2">
+                          <li>
+                            <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                            image-1.jpg
+                          </li>
+                          <li>
+                            <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                            image-2.png
+                          </li>
+                          <li>
+                            <img class="me-1" src="images/part-2/file-image.svg" height="20" alt="image file">
+                            image-3.svg
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-7">
+                <h5 class="text-success">File names</h5>
+                <ul>
+                  <li>
+                    All lowercase:
+                    <ul class="list-unstyled">
+                      <li class="text-danger">
+                        <img src="images/common/cross.svg" alt="wrong">
+                        Welcome.html
+                      </li>
+                      <li class="text-success">
+                        <img src="images/common/check.svg" alt="right">
+                        welcome.html
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    No spaces, use hyphens instead:
+                    <ul class="list-unstyled">
+                      <li class="text-danger">
+                        <img src="images/common/cross.svg" alt="wrong">
+                        BUas logo.png
+                      </li>
+                      <li class="text-success">
+                        <img src="images/common/check.svg" alt="right">
+                        buas-logo.png
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    No accents or special characters:
+                    <ul class="list-unstyled">
+                      <li class="text-danger">
+                        <img src="images/common/cross.svg" alt="wrong">
+                        From Liège to Köln.jpeg
+                      </li>
+                      <li class="text-success">
+                        <img src="images/common/check.svg" alt="right">
+                        from-liege-to-koeln.jpeg
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="text-center color-buas">Common HTML mistakes</h3>
+            <p>These are errors that <u>everyone</u> makes, including experienced web developers. Being able to identify and correct mistakes is one of the hardest skills in HTML development.</p>
             <ul>
               <li><u>Missing closing tags</u>. For example, you start a link with <a href="#"><strong>&lt;a href="&hellip;"&gt;</strong> but then you forget to close it and the rest of your page becomes one giant link.</a></li>
               <li><u>Mismatch between an opening tag and a closing tag</u>: For example, you start with <strong>&lt;h1&gt;</strong> and you finish with <strong>&lt;/h2&gt;</strong>. This often happens when you try to substitute an element for another but you don&rsquo;t do it completely.</li>
@@ -934,7 +1054,7 @@
                   <p class="mb-0">&lt;a href="<wbr><strong class="text-primary">../<wbr></strong><strong class="text-success">page-2.html</strong><wbr>"&gt;</p>
                   <p class="mb-0">&lt;img src="<strong class="text-danger"><wbr>image-2.jpg</strong><wbr>"&gt;</p>
                 </div>
-                <p>All of the examples above link to the <strong>same</strong> images and HTML files, but the <strong>relative path</strong> is different because the <strong>origin</strong> of the path is different.
+                <p>All of the examples above link to the <strong>same</strong> images and HTML files, but the <strong>relative path</strong> is different because the <strong>origin</strong> of the path is different.</p>
               </div>
             </div>
           </div>
