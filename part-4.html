@@ -248,13 +248,13 @@
                   <li>The testing methods, i.e.
                     <ul>
                       <li>Information about test participants (number, match with target audience, etc.)</li>
-                      <li> Information about the setting (which material is used, is it done remotely, on campus, at home, etc.)</li>
-                      <li> Information about how the test is conducted (what instructions are given, how it is recorded, etc.)</li>
+                      <li>Information about the setting (which material is used, is it done remotely, on campus, at home, etc.)</li>
+                      <li>Information about how the test is conducted (what instructions are given, how it is recorded, etc.)</li>
                     </ul>
                   </li>
                   <li>Testing <strong>results</strong></li>
                   <li><strong>Issues and positive points</strong> that have been identified, ranked by importance.</li>
-                  <li><strong>Improvements</strong>that have been conducted on the final website.</li>
+                  <li><strong>Improvements</strong> that have been conducted on the final website.</li>
                 </ul>
               </li>
             </ul>
@@ -301,11 +301,11 @@
             <p>Write down all pages as small box and draw arrows to show how they are connected through links and what sequence users should follow. If you have a “main menu” that is on all pages and links to many other, create a box for it to avoid having arrows everywhere.</p>
             <p>Now our restaurant website could look like this:</p>
             <figure class="row">
-              <a href="images/part-4/restaurant-page-1.jpg" target="_blank">
-                <img src="images/part-4/restaurant-page-1.jpg" class="col-md-6" alt="Scan of a paper prototype">
+              <a class="col-md-6" href="images/part-4/restaurant-page-1.jpg" target="_blank">
+                <img class="img-fluid d-block mx-auto my-1" src="images/part-4/restaurant-page-1.jpg" alt="Scan of a paper prototype">
               </a>
-              <a href="images/part-4/restaurant-page-2.jpg" target="_blank">
-                <img src="images/part-4/restaurant-page-2.jpg" class="col-md-6" alt="Scan of a paper prototype">
+              <a class="col-md-6" href="images/part-4/restaurant-page-2.jpg" target="_blank">
+                <img class="img-fluid d-block mx-auto my-1" src="images/part-4/restaurant-page-2.jpg" alt="Scan of a paper prototype">
               </a>
               <figcaption class="text-center fst-italic">Two pages in a paper prototype.</figcaption>
             </figure>
@@ -338,7 +338,7 @@
             <p>In paper prototyping, you can use post-its creatively to simulate how a page works. Check below for an example.</p>
             <figure>
               <a href="images/part-4/restaurant-page-2-postits.jpg" target="_blank">
-                <img src="images/part-4/restaurant-page-2-postits.jpg" alt="Scan of a paper prototype with added post-its">
+                <img class="img-fluid d-block mx-auto my-1" src="images/part-4/restaurant-page-2-postits.jpg" alt="Scan of a paper prototype with added post-its">
               </a>
             </figure>
             <figcaption class="fst-italic text-center">This is the same paper prototype as above, but with information added via post-its</figcaption>
@@ -373,23 +373,85 @@
             <h2 class="display-3 fw-bolder lh-1 mb-4">A tour of our templates</h2>
           </div>
           <div class="col-md-6">
-            <h5>
-              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
-              <a class="link-light" href="https://web.microsoftstream.com/" target="_blank">Watch on Microsoft Stream</a>
-            </h5>
+            <h5>Summary:</h5>
             <ul>
-              <li>Lorem Ipsum.</li>
+              <li>You can use the <u>prj4-group-template</u> repository to get started.</li>
+              <li>It includes the UX patterns described in the next section.</li>
+              <li>The <u>buas-media-interactive</u> profile contains more examples.</li>
             </ul>
           </div>
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-buas text-center">Heading</h3>
-            <p>Paragraph</p>
+            <h3 class="color-buas text-center">The group template</h3>
+            <p>The easiest way to get started with group work is to use the <u>prj4-group-template</u> repository. This is not mandatory (see below for alternatives).</p>
+            <ul>
+              <li>Read the source code for the group template at <a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">github.com/<wbr>buas-media-interactive/<wbr>prj4-group-template</a></li>
+              <li>Copy the template to your own repository directly from <a href="https://github.com/buas-media-interactive/prj4-group-template/generate" target="_blank">github.com/<wbr>buas-media-interactive/<wbr>prj4-group-template/<wbr>generate</a></li>
+              <li>See what the template looks like when published at <a href="https://buas-media-interactive.github.io/prj4-group-template/" target="_blank">buas-media-interactive.github.io/<wbr>prj4-group-template</a></li>
+            </ul>
+            <a href="https://buas-media-interactive.github.io/prj4-group-template/" target="_blank">
+              <img class="img-fluid d-block mx-auto" alt="A screenshot of the group template" src="images/part-4/template-screenshot.png">
+            </a>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h3 class="text-center">Heading</h3>
-            <p>Paragraph</p>
+            <h3 class="text-center">Files in the group template</h3>
+            <p>The files in the group template follow the conventions introduced in part 2</p>
+            <ul>
+              <li>In the <em>root</em> folder:
+                <ul>
+                  <li>The <strong>index.html</strong> page, which is the landing page that you get if you <u>do not</u> type any HTML file name.</li>
+                  <li>All other HTML files. So far, this is only the <strong>corporate.html</strong> file that you can edit to create a &ldquo;corporate&rdquo; section which will be used to grade some elements of the Content, Marketing and Management units.</li>
+                  <li>If you decide to divide your content in multiple pages, you will create additional HTML files here. You can duplicate the <strong>index.html</strong> file to do so (this is how the corporate page was create).</li>
+                  <li>You will notice a file named <strong>README.md</strong>. It is not part of the website itself but it provides useful information that is displayed on the GitHub repository</li>
+                </ul>
+              </li>
+              <li>In the <strong>images</strong> folder:
+                <ul>
+                  <li>This contains all <strong>images</strong> used in the template. Please remove the ones you aren&rsquo;t using.</li>
+                  <li>Please notice that all files are smaller than a megabyte and only one is bigger than half a megabyte.</li>
+                  <li>File formats were chosen based on the content: SVGs for logos, JPEGs for photos, PNGs for content that includes gradients and text.</li>
+                  <li>Social media icons were obtained via the <a href="https://fontawesome.com/" target="_blank">Font Awesome icon library</a>.</li>
+                </ul>
+              </li>
+              <li>In the <strong>css</strong> folder:
+                <ul>
+                  <li>This contains a single <strong>CSS</strong> file, which is used to create all bespoke styles that couldn&rsquo;t be made using only Bootstrap.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-blue text-center">UX patterns in the group template</h3>
+            <p>Here is a list of patterns used in the <strong>index.html</strong> page.</p>
+            <ul>
+              <li>A navigation bar</li>
+              <li>A hero section with two buttons and a gradient background</li>
+              <li>A carousel with three images</li>
+              <li>A responsive grid with cards and placeholder images</li>
+              <li>A footer</li>
+              <li>Some CSS customization: the navigation bar, hero section and body have their own background color</li>
+              <li>Google Fonts, with the <a href="https://fonts.google.com/specimen/Raleway" target="_blank">Raleway</a> font</li>
+            </ul>
+            <p>More details about these patterns are provided in<a href="#ux_patterns">the next section</a>.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Additional templates and sources</h3>
+            <p>The <a href="https://github.com/buas-media-interactive/" target="_blank">buas-media-interactive</a> profile on GitHub contains multiple repositories that you can draw inspiration from:</p>
+            <ul>
+              <li>You can reuse elements from the <a href="https://github.com/buas-media-interactive/prj4-cv" target="_blank">individual website (<strong>prj4-cv</strong>)</a></li>
+              <li>The <a href="https://github.com/buas-media-interactive/prj4-cotravel" target="_blank">&ldquo;CoTravel&rdquo; website (<strong>prj4-cotravel</strong>)</a> is an advanced example that showcases additional patterns:
+                <ul>
+                  <li>A contact form which is hidden in an &ldquo;off-canvas&rdquo; panel</li>
+                  <li>An interactive map</li>
+                  <li>A tabbed navigation system (linked to the map)</li>
+                  <li>A calendar</li>
+                </ul>
+              </li>
+              <li>The <a href="https://github.com/buas-media-interactive/prj4-guide" target="_blank">present guide (<strong>prj4-guide</strong>)</a> is built with the exact technologies and skills you are learning here!</li>
+            </ul>
+            <p>Beyond our own examples, the Bootstrap documentation has <a href="https://getbootstrap.com/docs/5.1/examples/" target="_blank">a full list of examples</a>.</p>
+            <p>You can also draw inspiration from any website you like!</p>
           </div>
         </article>
         <footer class="row bg-gray">
@@ -492,8 +554,13 @@
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-buas text-center">Heading</h3>
-            <p>Paragraph</p>
+            <h3 class="color-buas text-center">Tips for setting up</h3>
+            <p>The easiest way to start is by copying the group template, but before you click on &ldquo;generate&rdquo;, think of the following questions:</p>
+            <p>Think of how you want to <strong>name</strong> your group repository!</p>
+            <ul>
+              <li>If you use an organization profile (<a href="https://github.com/account/organizations/new?plan=team_free" target="_blank" title="Create organization">click here to create one</a>), then the name of your repository doesn't need to include your profile name. This is the case for this guide.</li>
+              <li>If you call your repository <strong><em>[organization&nbsp;or&nbsp;user&nbsp;name]</em>.<wbr>github.io</strong>, then this will be also your URL. For example, the repository at <a href="https://github.com/buas-media-interactive/buas-media-interactive.github.io" target="_blank">github.com/<wbr>buas-media-interactive/<wbr>buas-media-interactive.github.io</a> can be visited at <a href="https://buas-media-interactive.github.io/" target="_blank">buas-media-interactive.github.io</a></li>
+            </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
             <h3 class="text-center">Heading</h3>
