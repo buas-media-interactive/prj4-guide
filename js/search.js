@@ -1,4 +1,5 @@
 const resDiv = document.getElementById('searchResults');
+let offcanvas = new bootstrap.Offcanvas(document.getElementById('searchOffcanvas'));
 
 function indexCurrentPage() {
 	return JSON.stringify({
@@ -21,6 +22,12 @@ index.forEach(function(page) {
 		section.lines_lower = section.lines.map(l => l.toLowerCase());
 	});
 });
+
+function closeOffCanvas() {
+	window.setTimeout(function() {
+		offcanvas.hide();
+	}, 500);
+}
 
 function search(q) {
 	let results = [], q_lower = q.toLowerCase(), q_length = q.length;
@@ -76,6 +83,7 @@ function search(q) {
 		div.className = 'my-2 p-2 bg-light border';
 		let a = document.createElement('a');
 		a.setAttribute('href', result.url);
+		a.addEventListener('click', closeOffCanvas);
 		let title = document.createElement('h5');
 		title.textContent = result.title;
 		a.appendChild(title);
