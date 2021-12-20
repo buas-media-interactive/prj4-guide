@@ -128,8 +128,30 @@
             <span class="d-none d-md-inline">Videos</span>
           </a>
         </li>
+        <li class="nav-item ms-auto">
+          <a class="nav-link text-light d-flex align-items-center px-2 px-md-3 bg-success" data-bs-toggle="offcanvas" href="#searchOffcanvas" role="button" aria-controls="searchOffcanvas">
+            <img class="me-1" src="images/common/search.svg" width="15" alt="Videos">
+            <span class="d-none d-md-inline">Search</span>
+          </a>
+        </li>
       </ul>
     </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="searchOffcanvas" aria-labelledby="searchOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="searchOffcanvasLabel">Search the guide</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form id="searchForm" class="d-flex">
+          <input class="form-control me-2" id="searchField" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">
+            <img class="" src="images/common/search.svg" width="15" alt="Videos">
+          </button>
+        </form>
+        <div id="searchResults"></div>
+      </div>
+    </div>
 
     <main class="container-fluid position-relative overflow-auto" tabindex="0">
 
@@ -1344,5 +1366,6 @@
       updatePxContainers();
       window.addEventListener('resize', updatePxContainers);
     </script>
+    <script type="text/javascript" src="js/search.js"></script>
   </body>
 </html>

@@ -106,6 +106,27 @@
             <li>
               <a class="dropdown-item" href="#">Towards your group website</a>
             </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#overview_goals"><span class="badge rounded-pill bg-buas">4.1</span> Overview & goals</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#web_design"><span class="badge rounded-pill bg-buas">4.2</span> Your design process</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#templates"><span class="badge rounded-pill bg-buas">4.3</span> A tour of our templates</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#ux_patterns"><span class="badge rounded-pill bg-buas">4.4</span> UX Patterns for the web</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#bootstrap_grid"><span class="badge rounded-pill bg-buas">4.5</span> The Bootstrap Grid</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#collaboration"><span class="badge rounded-pill bg-buas">4.6</span> Tips for collaboration</a>
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -128,8 +149,30 @@
             <span class="d-none d-md-inline">Videos</span>
           </a>
         </li>
+        <li class="nav-item ms-auto">
+          <a class="nav-link text-light d-flex align-items-center px-2 px-md-3 bg-success" data-bs-toggle="offcanvas" href="#searchOffcanvas" role="button" aria-controls="searchOffcanvas">
+            <img class="me-1" src="images/common/search.svg" width="15" alt="Videos">
+            <span class="d-none d-md-inline">Search</span>
+          </a>
+        </li>
       </ul>
     </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="searchOffcanvas" aria-labelledby="searchOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="searchOffcanvasLabel">Search the guide</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form id="searchForm" class="d-flex">
+          <input class="form-control me-2" id="searchField" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">
+            <img class="" src="images/common/search.svg" width="15" alt="Videos">
+          </button>
+        </form>
+        <div id="searchResults"></div>
+      </div>
+    </div>
 
     <main class="container-fluid position-relative overflow-auto" tabindex="0">
 
@@ -141,7 +184,7 @@
               <a class="btn btn-danger fs-4 m-2" href="#overview_goals"><span class="badge text-danger rounded-pill bg-white">4.1</span> Overview & goals</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#templates"><span class="badge text-danger rounded-pill bg-white">4.2</span> Your design process</a>
+              <a class="btn btn-danger fs-4 m-2" href="#web_design"><span class="badge text-danger rounded-pill bg-white">4.2</span> Your design process</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#templates"><span class="badge text-danger rounded-pill bg-white">4.3</span> A tour of our templates</a>
@@ -1113,5 +1156,6 @@
         navigator.clipboard.writeText(document.getElementById('to_be_copied').textContent.trim());
       });
     </script>
+    <script type="text/javascript" src="js/search.js"></script>
   </body>
 </html>
