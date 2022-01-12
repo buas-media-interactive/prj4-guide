@@ -18,7 +18,7 @@
   </head>
   <body class="d-flex flex-column h-100">
 
-    <nav id="main-nav" class="bg-secondary bg-gradient p-1 justify-content-start">
+    <nav id="main-nav" class="bg-secondary bg-gradient p-1 justify-content-start d-print-none">
       <ul class="nav nav-pills align-items-center">
         <li class="nav-item fs-4">
           <a class="nav-link text-light p-1 p-sm-2" href="index.html">
@@ -187,25 +187,25 @@
       </section>
 
       <section class="row justify-content-center">
-        <div class="col-sm-6 col-md-4 col-xxl-3 py-3">
+        <div class="col-sm-6 col-md-4 col-xxl-3 py-3 d-print-none">
           <h3 class="color-buas text-center">Deliverable description</h3>
           <p>Create your own CV/resumé based on the template at <a href="https://github.com/buas-media-interactive/prj4-cv/" target="_blank">https://github.com/buas-media-interactive/prj4-cv/</a></p>
         </div>
-        <div class="col-sm-6 col-md-4 col-xxl-3 py-3 bg-lightblue">
+        <div class="col-sm-6 col-md-4 col-xxl-3 py-3 bg-lightblue d-print-none">
           <h3 class="text-center">Deadlines</h3>
           <ol>
             <li><strong>First opportunity:</strong> Friday 18 March 2022 before 23:59</li>
             <li><strong>Retake opportunity:</strong> Friday 10 June 2022 before 23:59</li>
           </ol>
         </div>
-        <div class="col-md-4 col-xxl-3 py-3">
+        <div class="col-md-4 col-xxl-3 py-3 d-print-none">
           <h3 class="color-blue text-center">Mode of delivery</h3>
           <ul>
             <li>Deliver the actual website by using GitHub pages (see details in Part 1 of the guide).</li>
-            <li>To provide the link to your website, fill in a template (TBD) and upload to Teams Assignment.</li>
+            <li>To provide the link to your website, <a href="#print-form">fill in the form below</a> and upload to Teams Assignment.</li>
           </ul>
         </div>
-        <div class="col-lg-11 col-xxl-10 py-3 bg-lightorange">
+        <div class="col-lg-11 col-xxl-10 py-3 bg-lightorange d-print-none">
           <h3 class="text-center">Assessment criteria</h3>
           <table class="table table-striped w-100">
             <thead>
@@ -254,9 +254,108 @@
             </tbody>
           </table>
         </div>
+        <div class="col-lg-11 col-xxl-10 py-3">
+          <h3 class="text-center color-blue">Form to fill in and print as PDF</h3>
+          <form class="needs-validation" id="print-form">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="namefield" placeholder="Firstname Lastname" required>
+                  <label for="namefield" class="form-label">Your name</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="idfield" placeholder="123456" required>
+                  <label for="idfield" class="form-label">Your student ID</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="ghuserfield" placeholder="username" required>
+                  <label for="ghuserfield" class="form-label">Your GitHub Username</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="ghrepofield" placeholder="my-cv" required>
+                  <label for="ghrepofield" class="form-label">The name of your GitHub repository</label>
+                </div>
+              </div>
+            </div>
+            <h5 class="mt-4">Please check that the following URLs are correctly working:</h5>
+            <ol>
+              <li>Your code (GitHub repository) can be reached at: <a id="repourl" href="" target="_blank"></a></li>
+              <li>Your web page&rsquo;s URL is: <a id="weburl" href="" target="_blank"></a></li>
+              <li>You can check the validity of your code at <a id="w3vurl" href="#" target="_blank"></a></li>
+            </ol>
+            <div class="form-check form-switch mb-3">
+              <input type="checkbox" class="form-check-input" id="checkfield" required>
+              <label class="form-check-label" for="checkfield">I have checked the three URLs above and they all work!</label>
+            </div>
+            <button type="submit" class="btn btn-lg btn-danger w-100 mb-3 d-print-none">Click here then choose &ldquo;Save as PDF&rdquo; to generate your hand-in document</button>
+            <p>Please follow the naming conventions: the PDF must be named <strong><span id="file-fullname">PRJ4_2122_<span id="file-studentid"></span>_individualwebsite</span>.pdf</strong></p> 
+            <p>Please upload to Teams Assignment [LINK TO BE ADDED]</p>
+          </form>
+        </div>
       </section>
 
-    <script type="text/javascript" src="js/search.js"></script>
     </main>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript">
+      const ghuserf = document.getElementById('ghuserfield'),
+            ghrepof = document.getElementById('ghrepofield'),
+            idf = document.getElementById('idfield'),
+            repourla = document.getElementById('repourl'),
+            weburla = document.getElementById('weburl'),
+            w3vurla = document.getElementById('w3vurl'),
+            ids = document.getElementById('file-studentid'),
+            placeholdertext = '(please fill in username and repository)',
+            placeholderurl = 'about:blank';
+      function onGhFieldChange() {
+        let ghrepo = ghrepof.value, ghuser = ghuserf.value;
+        if (ghrepo && ghuser) {
+          let repourl = `https://github.com/${ghuser}/${ghrepo}`,
+              weburl = `https://${ghuser}.github.io/${ghrepo}`,
+              w3vurl = `https://validator.w3.org/nu/?doc=${encodeURIComponent(weburl)}`;
+          repourla.textContent = repourl;
+          repourla.setAttribute('href', repourl);
+          weburla.textContent = weburl;
+          weburla.setAttribute('href', weburl);
+          w3vurla.textContent = 'https://validator.w3.org/';
+          w3vurla.setAttribute('href', w3vurl);
+        } else {
+          repourla.textContent = placeholdertext;
+          repourla.setAttribute('href', placeholderurl);
+          weburla.textContent = placeholdertext;
+          weburla.setAttribute('href', placeholderurl);
+          w3vurla.textContent = placeholdertext;
+          w3vurla.setAttribute('href', placeholderurl);
+        }
+      }
+      function onIdFieldChange() {
+        let sid = idf.value;
+        if (sid) {
+          ids.textContent = sid;
+          ids.className = '';
+        } else {
+          ids.textContent = '(student-ID)';
+          ids.className = 'fst-italic';
+        }
+      }
+      ghuserf.addEventListener('change', onGhFieldChange);
+      ghrepof.addEventListener('change', onGhFieldChange);
+      ghuserf.addEventListener('keyup', onGhFieldChange);
+      ghrepof.addEventListener('keyup', onGhFieldChange);
+      idf.addEventListener('change', onIdFieldChange);
+      idf.addEventListener('keyup', onIdFieldChange);
+      document.getElementById('print-form').addEventListener('submit', function(evt) {
+        evt.preventDefault();
+        document.title = document.getElementById('file-fullname').textContent;
+        window.print();
+      });
+      onGhFieldChange();
+      onIdFieldChange();
+    </script>
   </body>
 </html>
