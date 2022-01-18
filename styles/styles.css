@@ -4,7 +4,9 @@ body {
 	font-family: 'Plein', sans-serif;
 }
 
-h1, h2, h3, h4, h5, .fs-1, .fs-2, .fs-3, .fs-4 {
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4,
+.nav-item.fs-4 {
 	font-family: 'Chillax';
 }
 
