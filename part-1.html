@@ -228,7 +228,7 @@
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-buas text-center">Contents of this part</h3>
             <p>This first chapter brings you theoretical knowledge into how the web works.</p>
             <ul>
@@ -239,7 +239,7 @@
               <li>Once you are more familiar with the language, the <a href="#editing_publishing">final section</a> is where you edit your resumé and publish it.</li>
             </ul>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="color-blue text-center">Do the work, step by step</h3>
             <p>This is a very brief overview of the tasks you will have to do to complete the first workshop. Items 1 to 4 of the list below are explained in detail in <a href="#setting_up_tools">section 1.4</a> and items 5 to 7 in <a href="#editing_publishing">section 1.6</a>.</p>
             <ol>
@@ -282,13 +282,13 @@
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <div class="mb-4">
               <h3 class="color-buas text-center">The web is not the internet</h3>
               <p>The word &ldquo;<a href="https://en.wikipedia.org/wiki/Internet" target="_blank">internet</a>&rdquo; is used to describe the whole infrastructure connecting computers and other devices around the world. It is the direct descendant of academic and military networks developed in the United States in the 1960s and 1970s.</p>
-              <p>Multiple <strong>services</strong> run on the internet, including <strong>email</strong> (which has existed since 1971). The web is another of these services.</p>
+              <p>Multiple <strong>services</strong> run on the internet, including <strong>email</strong> (which has existed since 1971). The <strong>web</strong> (short for &ldquo;World Wide Web&rdquo; or WWW) is another of these services.</p>
               <p>The World Wide Web has been created in 1990 by Tim-Berners Lee and his colleagues to share information within the European Organization for Nuclear Research (CERN) in Geneva.</p>
-              <p>The web is based on a series of technologies: The Hyper-Text Transfer Protocol (HTTP) to retrieve pages from web server, HTML for describing pages (see below), etc.</p>
+              <p>The web is based on a series of technologies: The Hyper-Text Transfer Protocol (<strong>HTTP</strong>) to retrieve pages from web server, the Hyper-Text Markup Language (<strong>HTML</strong>) for describing pages (see below), etc.</p>
             </div>
             <div class="mb-4">
               <h3 class="color-buas text-center">Servers and Clients</h3>
@@ -299,8 +299,8 @@
             </div>
             <div class="mb-4">
               <h3 class="color-buas text-center">Web browsers</h3>
-              <p>You can open web pages, including this one, with a category of app called a Web Browser.</p>
-              <p>The most common used browsers are Google Chrome and Apple Safari. You can check how common browsers are by visiting Statcounter.</p>
+              <p>You can open web pages, including this one, with a category of app called a web <strong>browser</strong>.</p>
+              <p>The most commonly used browsers are Google <strong>Chrome</strong> and Apple <strong>Safari</strong>. You can check how common browsers are on <a href="https://gs.statcounter.com/" target="_blank">Statcounter GlobalStats</a>.</p>
               <p>Since 55% of web visits in the Netherlands come from mobile phones, you must make sure that your website works on very small screen sizes.</p>
             </div>
             <div class="mb-4">
@@ -321,7 +321,7 @@
               <p>Based on other definitions, you might read elsewhere that HTML isn&rsquo;t a programming language, since it lacks some features (e.g. writing algorithms).</p>
             </div>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="color-blue text-center">What happens when you ask for a web page?</h3>
             <div class="d-flex justify-content-start">
               <img src="images/part-1/computer-user.svg" width="40" alt="Computer user">
@@ -458,58 +458,61 @@
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-buas text-center">Tip #1: Use secure connections</h3>
-            <p>A secure connection is a connection between services, computers and/or people where the contents can only be accessed by the legitimate participants in the connection. This is generally achieved through the use of encryption, whereby only the receiver of messages has the private key necessary to decrypt the content of the messages.</p>
+            <p>A secure connection is a connection between services, computers and/or people where the contents can only be accessed by the legitimate participants in the connection. This is generally achieved through the use of encryption, where only the receiver of messages has a &ldquo;private key&rdquo; and can decrypt or decode the content of the messages.</p>
+            <p>This is an example of a coded message using the &lsquo;Caesar Cipher&rsquo;:</p> <p id="coded-message" class="fw-bold text-center font-monospace py-2 px-1 border border-secondary rounded">V ybir UGZY naq gur Jbeyq Jvqr Jro. Pbqvat vf sha.</p>
+            <button id="decode-button" class="btn btn-danger d-block mx-auto mb-3">Decode the message</button>
             <ul>
               <li>When visiting a website, make sure that there is a <strong>lock sign</strong> in the address bar. This means you are using the secure version of HTTP (HTTPS). If you are using the unsecure version, never enter a password or a credit card number.</li>
-              <li><strong>WiFi connections</strong> that do not have a lock sign and/or do not require a password are not secure, therefore computers located on the same WiFi access point can read what goes into and comes out of your computer. This includes the Guest network at University.</li>
+              <li><strong>WiFi connections</strong> that do not have a lock sign and/or do not require a password are not secure, therefore computers located on the same WiFi access point can read what goes into and comes out of your computer. This means you should avoid the Guest network at University.</li>
               <li>Use message apps that provide end-to-end encryption, such as <strong>WhatsApp</strong> or <strong>Signal</strong>. The main difference is that the first one belongs to a big for-profit company, and the second one is supported by donations.</li>
             </ul>
+            <img class="img-fluid d-block mx-auto my-3" alt="A secure connection" src="images/part-1/https-lock.png">
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="text-center">Tip #2: Use a password manager</h3>
             <p>Passwords are very hard to use properly. You should:</p>
             <ul>
-              <li>Use passwords that are hard to guess or to crack by testing every possible combination. This means that they should be long, they should not include any personal details, and they should not be words that can be found in a dictionary</li>
-              <li>Never reuse the same password twice: If a password is breached from a website or app, then the attackers will try to use it on other popular platforms.</li>
-              <li>&hellip;and of course, you should try to remember these passwords, which is very complicated given the criteria above, and the fact that some services will have very specific requirements on what characters you have to use in passwords.</li>
+              <li>Use passwords that are <strong>hard to guess or to crack</strong>. Hard to guess meanst hey should not include any personal details or be words that can be found in a dictionary. Hard to crack means that they should be long, so testing all combinations is too long for a computer to do in a reasonable time.</li>
+              <li><strong>Never reuse</strong> the same password twice: If a password is breached from a website or app, then the attackers will try to use it on other popular platforms.</li>
+              <li>&hellip;and of course, you should try to <strong>remember</strong> these passwords, which is very complicated given the criteria above, and the very peculiar requirements that some services have (e.g. there should be at least one capital letter and 2 special characters from a specific list).</li>
             </ul>
-            <p>This is why it is extremely hard to manage your passwords well unless you use a password manager. Web browsers will manage your passwords, as well as Keychain on MacOS, but we recommend that you use a dedicated app, such as <a href="https://keepass.info/" target="_blank">KeePass</a>, <a href="https://www.lastpass.com/" target="_blank">Lastpass</a>, <a href="https://1password.com/" target="_blank">1Password</a> or <a href="https://www.dashlane.com/" target="_blank">Dashlane</a></p>
+            <p>This is why it is extremely hard to manage your passwords well unless you use a <strong>password manager</strong>. Web browsers will manage your passwords, as well as Keychain on MacOS, but we recommend that you use a dedicated app, such as <a href="https://keepass.info/" target="_blank">KeePass</a>, <a href="https://www.lastpass.com/" target="_blank">Lastpass</a>, <a href="https://1password.com/" target="_blank">1Password</a> or <a href="https://www.dashlane.com/" target="_blank">Dashlane</a></p>
             <p><strong>Bonus tip:</strong> Some services provide the option for Multiple-Factor Authentication (MFA) which add a layer of security since you&rsquo;re not relying only on passwords. MFA generally uses one-time authorization codes which can be sent by SMS, generated in dedicated apps (this includes some password managers) or printed on paper and stored in a safe place.</p>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-blue text-center">Tip #3: Back up your files</h3>
-            <p>Don&rsquo;t risk losing your files. Back them up on different supports</p>
+            <p>Don&rsquo;t risk losing your files. Back them up in more than one place</p>
             <ul>
-              <li>Cloud services can synchronize your files automatically and without any effort. Cloud providers generally use more than one location to store your data for additional safety. With your University email address, you get 1TB for free on OneDrive. Competitors include iCloud, Dropbox and GoogleDrive.</li>
-              <li>External hard drives have some additional advantages in terms of longevity and safety: They&rsquo;re a one-time investment where you do not need to renew your subscription, and when they are turned off and stored in a drawer, they are not online and cannot be remotely hacked.</li>
+              <li><strong>Cloud services</strong> can synchronize your files automatically and without any effort. Cloud providers generally use more than one location to store your data for additional safety. With your University email address, you get 1TB <u>for free</u> on Microsoft&rsquo;s <em>OneDrive</em>. Competitors include Apple&rsquo;s <em>iCloud</em>, <em>Dropbox</em> and <em>Google Drive</em>.</li>
+              <li>External <strong>hard drives</strong> have some additional advantages in terms of longevity and safety: They&rsquo;re a one-time investment where you do not need to renew your subscription. Also, if you unplug them and store them in a drawer, they cannot be remotely hacked.</li>
             </ul>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightorange">
             <h3 class="text-center">Tip #4: Think of what you reveal about yourself</h3>
             <p>Your online presence is an integral part of who you are. Whether you do it to apply for a job, keep your loved ones updated, or to meet new people, you will need at some point to publish personal details about yourself.</p>
             <p>Be aware though, that some of these details can be used for malicious purposes. Think of the following examples:</p>
             <ul>
               <li>The background in a photo can be used to find out where it was taken.</li>
-              <li>An EU Covid Green Pass, a boarding pass or a train ticket in the QR code format all contain your name and date of birth.</li>
-              <li>Birthdates are commonly used as PIN codes, so they might be used to unlock your phone.</li>
+              <li>An EU Covid Green Pass, a boarding pass or a train ticket in the QR code format may contain your name and date of birth.</li>
+              <li>Birthdates are commonly used as PIN codes, so someone who knows your birthday may try to unlock your phone.</li>
               <li>Some of your details might be available for sale due to data breaches. This happened to my bank account number after I bought event tickets from a website that was attacked.</li>
               <li>Someone who knows enough details about you might try to call your bank or your phone provider and pretend to be you so they can reset your password and gain access to your accounts.</li>
             </ul>
           </div>
-          <div class="col-md-6 col-xxl-5">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 ">
             <h3 class="color-blue text-center">What are cookies?</h3>
             <p>Cookies are small pieces of data that your browser receives when visiting web servers. There role is to keep information about you when you return to the same website. Without cookies, you would have to log in again every single time you visit the same website again, and you would loose your shopping cart just by closing a tab or visiting another website.</p>
             <p>But this useful technology is also abused for tracking purposes, thanks to what is called &ldquo;third-party cookies&rdquo;. Everytime you visit a web page that contains third-party content, which can be advertisements, analytic tools such as Google Analytics, or a like button from social media, then this content can also send your browser a cookie. This allows companies such as Google and Facebook to track your activity across multiple websites that you visit, and collect way more information about you than you might know.</p>
             <p>You can also make delicious cookies by mixing 125g of butter, 180g of plain flour and 55g of sugar, and cooking for 15 minutes at 180&deg;C.</p>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="text-center">Resources about Security and Privacy</h3>
             <p>The following organizations provide information about these topics, as well as resources and tools to help you stay safe:</p>
             <ul>
               <li>
-                <a href="https://www.eff.org/" target="_blank">The Electronic Frontier Foundation (EFF)</a> is an intenational civil liberties organization. They provide the <a href="https://privacybadger.org/" target="_blank">Privacy Badger</a> extension which you can install on your browser to reduce your exposure to tracking technology.
+                <a href="https://www.eff.org/" target="_blank">The Electronic Frontier Foundation (EFF)</a> is an international civil liberties organization. They provide the <a href="https://privacybadger.org/" target="_blank">Privacy Badger</a> extension which you can install on your browser to reduce your exposure to tracking technology.
               </li>
               <li>
                 <a href="https://www.bitsoffreedom.nl/" target="_blank">Bits of Freedom</a> is a similar organization operating within the Netherlands. In particular, they provide the <a href="https://www.fixjeprivacy.nl/" target="_blank">Fix je Privacy</a> toolkit.
@@ -544,16 +547,20 @@
             <ul>
               <li>Install a web editor such as Dreamweaver.</li>
               <li>GitHub is a version control system. Create an account and download the desktop app.</li>
-              <li>Copy the template repository, then use GitHub Desktop and Dreamweaver to open on your desktop.</li>
+              <li>Copy the template repository, then use GitHub Desktop and Dreamweaver to open it on your desktop.</li>
             </ul>
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-buas text-center">Editing text</h3>
             <p>Whether it&rsquo;s HTML, CSS, JavaScript or other programming languages, creating code generally starts with typing the code using a text editor.</p>
             <p>A <strong>basic text editor</strong>, like Notepad on Windows or TextEdit on MacOS, will only show you the source code, with no hint.</p>
-            <p><strong>Advanced text editors</strong>, such as <a href="https://www.sublimetext.com/">SublimeText</a> will help you visualize the structure of the code, by showing different parts of your text in different colours.</p>
+            <div class="d-flex flex-row align-items-start">
+              <img class="me-1" src="images/part-1/sublime-text.svg" width="50" alt="Sublime Text">
+              <p>
+              <strong>Advanced text editors</strong>, such as <a href="https://www.sublimetext.com/">Sublime Text</a> will help you visualize the structure of the code, by showing different parts of your text in different colours.</p>
+            </div>
             <div class="row">
               <figure class="col-6">
                 <div class="p-2 border border-dark bg-white font-monospace">
@@ -571,7 +578,7 @@
               </figure>
             </div>
             <div class="d-flex flex-row align-items-start">
-              <img class="me-1" src="images/part-1/dreamweaver.svg" width="60" alt="Adobe Dreamweaver">
+              <img class="me-1" src="images/part-1/dreamweaver.svg" width="50" alt="Adobe Dreamweaver">
               <p>An <strong>Integrated Development Environment (IDE)</strong> such as Adobe Dreamweaver, will go several steps further and offer the following helpful features:</p>
             </div>
             <ul>
@@ -581,16 +588,16 @@
             </ul>
             <p>All the examples in the tutorials use Dreamweaver, which is part of the Adobe Creative Cloud suite. You can <a href="https://www.surfspot.nl/software/creatie-ontwerp/adobe-creative-cloud-category/adobe-creative-cloud-met-services-student.html" target="_blank">buy a discounted Adobe CC license from SurfSpot for 133€/year</a>. A free alternative is <a href="https://code.visualstudio.com/" target="_blank">Microsoft&rsquo;s Visual Studio Code</a>.</p>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="text-center">What is version control?</h3>
-            <p>In this course, you will use version control system with GitHub. The role of version control is to keep track of all changes in your files. In practice, these are the benefits of using version control:</p>
+            <p>In this course, you will use a <strong>version control</strong> system named GitHub. The role of version control is to keep track of all changes in your files. In practice, these are the benefits of using version control:</p>
             <ul>
-              <li>You can go back and forth in time within a file&rsquo;s history and see what was changed at each point.</li>
-              <li>You can easily undo changes if you are unhappy with them, even after days or months: You no longer need to keep several copies (e.g. <em>work_final.html, work_final_v2.html</em>) since this is managed by GitHub.</li>
-              <li>You can synchronize and backup your work with the cloud or with another computer.</li>
-              <li>You can collaborate with your peers and see what changes they&rsquo;ve made.</li>
+              <li>You can <strong>go back and forth in time</strong> within a file&rsquo;s history and see what was changed at each point.</li>
+              <li>You can easily <strong>undo changes</strong> if you are unhappy with them, even after days or months: You no longer need to keep several copies (e.g. <em>work_final.html, work_final_v2.html</em>) since this is all managed by GitHub.</li>
+              <li>You can <strong>synchronize and backup</strong> your work with the cloud or with another computer.</li>
+              <li>You can <strong>collaborate</strong> with your peers and see what changes they&rsquo;ve made.</li>
             </ul>
-            <p>Office 365 and Google Docs offer all these features. The main difference with Git is that, while Office and Docs will synchronize your changes automatically as a background task.</p>
+            <p>Does this sound familiar? Office 365 and Google Docs offer all these features. The main difference with Git is that, while Office and Docs will synchronize your changes automatically as a background task.</p>
             <figure class="row">
               <div class="col-sm-6">
                 <table class="p-2 border border-dark bg-white font-monospace w-100">
@@ -647,15 +654,15 @@
               <figcaption class="col-12 fst-italic text-center">An example showing two versions and changes between versions, line per line.</figcaption>
             </figure>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-blue text-center">What is GitHub?</h3>
-            <p>GitHub, which has been acquired by Microsoft in 2018, is a platform built around version control. It is:</p>
+            <p>GitHub, founded in 2008 and bought by Microsoft in 2018, is a platform built around version control. It is:</p>
             <ul>
               <li>A place where you can host your code and synchronize it with your laptop.</li>
               <li>A place where you can host your website and let the rest of the world visit it (with GitHub pages).</li>
               <li>The biggest library of computer code, with both publicly available (open source) code and private organization hosting projects on the platform.</li>
               <li>A social and professional platform, with 40 million users, many of which use it to showcase their coding skills.</li>
-              <li>A toolkit, including a Desktop app that you will install on your laptop, and tutorials where you can learn how to synchronize your code.</li>
+              <li>A toolkit, including a Desktop app that you will install on your laptop, and tutorials where you can learn about all features of GitHub.</li>
             </ul>
             <h5>Definitions</h5>
             <p>A <strong>Repository</strong> is a folder that is being synchronized on GitHub. Generally, a repository will correspond to a project, for example a website. Each repository can be accessed by typing <strong class="text-primary">github.com</strong> followed by the name of a user or organization (e.g. <strong class="text-success">buas-media-interactive</strong>) and then the name of the repository (e.g. <strong class="text-danger">prj4-cv</strong>). The URL for the prj4-cv repository is therefore <a href="https://github.com/buas-media-interactive/prj4-cv" target="_blank">https://<strong class="text-primary">github.com</strong>/<strong class="text-success">buas-media-interactive</strong>/<strong class="text-danger">prj4-cv</strong></a></p>
@@ -664,14 +671,14 @@
               <p><strong>GitHub Desktop</strong> is an app that you will install on your Desktop. You will use it to synchronize your work between your laptop and the GitHub platform. It lets you track your changes even when you work entirely offline.</p>
             </div>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightorange">
             <h3 class="text-center">Getting started</h3>
             <p>Time to practice! Just follow these steps:</p>
             <ol>
               <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Go to <a href="https://github.com/signup" target="_blank">github.com</a> and create an account</li>
               <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Download and install the GitHub Desktop app from <a href="https://desktop.github.com/" target="_blank">desktop.github.com</a></li>
               <li class="my-2"><img class="me-1" src="images/part-1/creative-cloud.svg" width="30" alt="Dreamweaver">Install Adobe Dreamweaver or an equivalent tool (see above).</li>
-              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Go to the PRJ4 CV repository and click on &ldquo;Use this template&rdquo;.</li>
+              <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">Go to the <a href="https://github.com/buas-media-interactive/prj4-cv" target="_blank">PRJ4 CV repository</a> and click on &ldquo;Use this template&rdquo;.</li>
               <li class="my-2"><img class="me-1" src="images/part-1/chrome.svg" width="30" alt="Browser">This will generate a repository within your own account &mdash; this repository is a copy of the one used.</li>
               <li class="my-2"><img class="me-1" src="images/part-1/github-desktop.svg" width="30" alt="GitHub Desktop app">Open GitHub Desktop on your computer. Find the &ldquo;clone repository&rdquo; option and clone your repository. This will create a new folder on your laptop. Take note of where it is.</li>
               <li class="my-2"><img class="me-1" src="images/part-1/windows-explorer.svg" width="30" alt="File Explorer">Open the folder with Explorer (on Windows) or Finder (on MacOS). Have a look at the folder structure.</li>
@@ -726,7 +733,7 @@
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-md-6 col-xxl-5 p-3 px-xxl-4">
             <h3 class="color-buas text-center">A simple HTML element</h3>
             <p>This example shows a simple paragraph element, made of three parts:</p>
             <ul>
@@ -737,7 +744,7 @@
             <p>The name of the element, <strong>P</strong> stands for &ldquo;paragraph&rdquo;</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace">
                  <span class="text-success">&lt;p&gt;</span><span class="text-primary">Hello, world!</span><span class="text-danger">&lt;/p&gt;</span>
@@ -747,7 +754,7 @@
                   <p>Hello, world!</p>
               </div>
             </div>
-            <figure class="col-lg-6">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 100 140" style="width: min(100%, 100px);">
                 <path stroke="#000000" d="M50,50l0,30" />
@@ -769,14 +776,14 @@
             </figure>
           </div>
 
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-md-6 col-xxl-5 p-3 px-xxl-4">
             <h3 class="color-blue text-center">Nested elements</h3>
             <p>In this second example, we create a new element inside the paragraph (<strong>p</strong> element).</p>
             <p>This element, <strong>strong</strong>, makes its content bold.</p>
             <p>The <strong>strong</strong> element is a <strong>child</strong> of the <strong>p</strong> element.</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;strong&gt;</span>
@@ -788,7 +795,7 @@
                   <p>Hello, <strong>world</strong>!</p>
               </div>
             </div>
-            <figure class="col-lg-6">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 200" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M160,50l0,130M50,80q0,-15,15,-15l190,0q15,0,15,15" />
@@ -831,14 +838,14 @@
             </figure>
           </div>
 
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-md-6 col-xxl-5 p-3 px-xxl-4">
             <h3 class="color-buas text-center">Self-closing elements</h3>
             <p>Some elements do not contain any text and therefore do not require any closing tags.</p>
             <p>This is the case for <strong>br</strong> (the line <strong>br</strong>eak element) and for <strong>img</strong> (the <strong>im</strong>a<strong>g</strong>e element).</p>
             <p>Sometimes, you will see these elements written with an additional slash: <strong>&lt;br&nbsp;/&gt;</strong></p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <span class="text-success">&lt;p&gt;</span>Hello, <span class="text-danger">&lt;br&gt;</span>
@@ -849,7 +856,7 @@
                   <p>Hello, <br>world!</p>
               </div>
             </div>
-            <figure class="col-lg-6">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 130" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M160,50l0,30M50,80q0,-15,15,-15l190,0q15,0,15,15" />
@@ -885,7 +892,7 @@
             </figure>
           </div>
 
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-md-6 col-xxl-5 p-3 px-xxl-4">
             <h3 class="color-blue text-center">Attributes</h3>
             <p>In addition to the tag name (e.g. <strong>p</strong>), an opening tag can also contain attributes.</p>
             <p>Each attribute starts with an attribute name, followed by the equal sign (=) and then, the value for the attribute.</p>
@@ -898,7 +905,7 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
               <h5 class="text-success mt-2 mb-0">Code:</h5>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  &lt;p <span class="text-success">id</span>="<span class="text-danger">my-id</span>" <span class="text-success">class</span>="<span class="text-danger">my-class</span>" <span class="text-success">style</span>="<span class="text-danger">background:purple; color: yellow;</span>"&gt;<span class="text-secondary">Hello, world!</span>&lt;/p&gt;
@@ -908,7 +915,7 @@
                  <p id="my-id" class="my-class" style="background:purple; color: yellow;">Hello, world!</p>
               </div>
             </div>
-            <figure class="col-lg-6">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 320 170" style="width: min(100%, 320px);">
                 <path stroke="#000000" fill="none" d="M50,90v30M100,65h8M220,25H115q-8,0,-8,8V137q0,8,8,8H220M107,85H220" />
@@ -972,7 +979,7 @@
             </figure>
           </div>
 
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-buas text-center">Required elements</h3>
             <p>A simple paragraph like the one we&rsquo;ve been showing so far is not sufficient to be considered a full, valid HTML page. The following elements are also required.</p>
             <ul>
@@ -987,8 +994,8 @@
               <li>Immediately below the <strong>&lt;head&gt;</strong> comes a <strong>&lt;body&gt;</strong> element, which contains everything visible in the frame. There should be no other elements within <strong>&lt;html&gt;</strong></li>
             </ul>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue row">
-            <figure class="col-lg-6">
+          <div class="col-lg-6 col-xxl-5 py-3 bg-lightblue row">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-success mt-2 mb-0">Code:</figcaption>
               <div class="p-2 border border-dark bg-white font-monospace text-primary">
                  <em>&lt;!doctype html&gt;</em><br>
@@ -1006,7 +1013,7 @@
                  &lt;/html&gt;<br>
               </div>
             </figure>
-            <figure class="col-lg-6">
+            <figure class="col-xl-6">
               <figcaption class="h5 text-primary mt-2 mb-0">Structure:</figcaption>
               <svg class="d-block mx-auto" viewBox="0 0 230 180" style="width: min(100%, 230px);">
                 <path stroke="#000000" fill="none" d="M35,100q0,-10,10,-10h60q10,0,10,10M75,90v-40q0,-10,10,-10h100q10,0,10,10v100M130,30v10" />
@@ -1088,7 +1095,7 @@
           </div>
         </header>
         <article class="row justify-content-center">
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-buas text-center">Synchronizing GitHub</h3>
             <p>As discussed in <a href="#setting_up_tools">section 1.4</a>, GitHub will let you track your changes and publish them. One important point to notice is that you are in control of the following:</p>
             <ol class="list-alpha">
@@ -1103,13 +1110,13 @@
             </ul>
 
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightblue">
             <h3 class="text-center">Publishing on GitHub Pages</h3>
             <p>Publishing a website means making it visible to the rest of the world. Compare what you see at <a href="https://github.com/buas-media-interactive/prj4-cv/blob/main/index.html" target="_blank">github.com/<strong class="text-success">buas-media-interactive</strong>/<strong class="text-danger">prj4-cv</strong></a> with what you see at <a href="https://buas-media-interactive.github.io/prj4-cv/" target="_blank"><strong class="text-success">buas-media-interactive</strong>.github.io/<strong class="text-danger">prj4-cv</strong></a>. The first one shows you the source code and the other one the website.</p>
             <p>You will notice that the URL for your published web page doesn&rsquo;t include the name of the HTML file (<em>index.html</em>). This is a <strong>naming convention</strong>: when you ask for a page without specifying URL, GitHub Pages will understand that you are looking for <em>index.html</em></p>
             <p>If you use any other name, e.g. <em>cv.html</em>, you will be able to access it by adding this file name to the repository URL, i.e. by typing <u>https://buas-media-interactive.github.io/prj4-cv/cv.html</u>, but you won&rsquo;t see anything at <u>https://buas-media-interactive.github.io/prj4-cv/</u></p>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4">
             <h3 class="color-blue text-center">Instructions</h3>
             <p>To follow the steps below, you must have completed the instructions in part 1.4 first.</p>
             <ol>
@@ -1126,7 +1133,7 @@
               Your site is published at <a href="https://buas-media-interactive.github.io/prj4-cv/" target="_blank">https://buas-media-interactive.github.io/prj4-cv/</a>
             </div>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+          <div class="col-lg-6 col-xxl-5 p-3 px-md-5 px-lg-3 px-xxl-4 bg-lightorange">
             <h3 class="text-center">What is next?</h3>
             <p>In the next three parts, you will build up on the skills you&rsquo;ve just learned.</p>
             <ol start="2">
@@ -1147,5 +1154,24 @@
 
     </main>
     <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript">
+      function shiftLetters() {
+        let span = document.getElementById('coded-message');
+        span.textContent = span.textContent.replace(/[A-Za-z]/g, function(l) {
+          let v = l.charCodeAt(0),
+          b = 32*Math.floor(v/32);
+          return String.fromCharCode(((v-b) % 26) + 1 + b);
+        });
+      }
+      document.getElementById('decode-button').addEventListener('click', function(e) {
+        let i = 0, interval = window.setInterval(function() {
+          i++;
+          shiftLetters();
+          if (i >= 13) {
+            window.clearInterval(interval);
+          }
+        },100);
+      });
+    </script>
   </body>
 </html>
