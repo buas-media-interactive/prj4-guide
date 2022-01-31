@@ -194,28 +194,28 @@
               At the end of this part, you will be able to:
             </h5>
             <ul>
-              <li>XXXX.</li>
-              <li>XXXX.</li>
-              <li>XXXX.</li>
-              <li>XXXX.</li>
+              <li>Understand what is CSS and it's relationship with HTML.</li>
+              <li>Use basic CSS to modify the style and layout of your website.</li>
+              <li>Have a basic knowledge of what Bootstrap is and how to install it.</li>
+              <li>Use Bootstrap's "library" of components to style and customize responsive mobile-first websites.</li>
             </ul>
           </div>
         </header>
         <article class="row justify-content-center">
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Contents of this part</h3>
-            <p>This third chapter xxxxx.</p>
+            <p>This third chapter you'l learn how to style your website using CSS. You'l also be introduced to Bootstrap which is a "library" of CSS components that you can freely use.</p>
             <ul>
-              <li>In &ldquo;<a href="#what_is_css">What is CSS?</a>&rdquo;, you will learn xxxx.</li>
-              <li>The section &ldquo;<a href="#practice_editing_styles">In practice: editing styles.css</a>&rdquo; gives you XXXX.</li>
-              <li>Next, you learn &ldquo;<a href="#what_is_bootstrap">What is Boostrap</a>&rdquo; XXXX.</li>
-              <li>Put in practice &ldquo;<a href="#practice_using_bootstrap">Bootstrap</a>&ldquo; XXXX.</li>
-              <li>Finally &ldquo;<a href="#using_fonts">use fonts</a>&ldquo; to XXX.</li>
+              <li>In &ldquo;<a href="#what_is_css">What is CSS?</a>&rdquo;, you will learn it's syntax and it's realtionship to HTML.</li>
+              <li>The section &ldquo;<a href="#practice_editing_styles">In practice: editing styles.css</a>&rdquo; gives you instructions to write CSS code to modify the style of your website.</li>
+              <li>Next, you learn &ldquo;<a href="#what_is_bootstrap">What is Boostrap</a>&rdquo; a very popular libray of CSS components that allows you to build responsive mobile-first sites.</li>
+              <li>Put in practice &ldquo;<a href="#practice_using_bootstrap">Bootstrap</a>&ldquo; by installing the framework, trying out some components and using it's grid layout structure to create a resposive layout.</li>
+              <li>Finally in &ldquo;<a href="#using_fonts">use fonts</a>&ldquo; you will learn how to install different fonts to customize your webesite.</li>
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
             <h3 class="color-blue text-center">Do the work, step by step</h3>
-            <p>This is a very brief overview of the tasks you will have to do to complete the XXX workshop. Items 1 to 4 of the list below are explained in detail in <a href="#setting_up_tools">section 1.4</a> and items 5 to 7 in <a href="#editing_publishing">section 1.6</a>.</p>
+            <p>This is a very brief overview of the tasks you will have to do to complete the XXX workshop. Items 1 to 4 of the list below are explained in detail in <a href="#setting_up_tools">section 3.X</a> and items 5 to 7 in <a href="#editing_publishing">section 3.X</a>.</p>
             <ol>
               <li>XXXX.</li>
               <li>XXXX</li>
@@ -255,18 +255,49 @@
 		  <!---left column starts -->
           <div class="col-md-6 col-xxl-5 py-3">
             <div class="mb-4">
-              <h3 class="color-buas text-center">Left Heading</h3>
-              <p>xxxxxx.</p>
+              <h3 class="color-buas text-center">HTML and CSS: Separating content and style</h3>
+              <p>Cascading Style Sheets (CSS) are a powerful way of modifying the look and feel of a website. Although it is tightly integrated with HTML, it uses its own computing language and syntax. This supports a very powerful pattern whereby the content and its logical structure (e.g. which item is a heading, and which one is a paragraph) is separated from its visual aspect (e.g. how big is that heading, how it is aligned, what colour is it?)</p>
             </div>
-            <div class="mb-4">
-              <h3 class="color-buas text-center">Left Heading</h3>
-              <p>xxxxxx.</p>
+            <div class="mb-4 py-3">
+              <h3 class="color-blue text-center">CSS Syntax</h3>
+              <h4 class="text-center">A CSS rule:</h4>
+			  <img class="img-fluid" src="images/part-3/css-syntax.png" alt="css syntax">
+            </div>
+			<div class="mb-4">
+              <h3 class="color-buas text-center">Teaching CSS yourself</h3>
+			  <p>Should we ask the students to do some tutorials!?</p>
             </div>
           </div>
 		  <!---left column ends -->
 		  <!---right column starts-->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue"> 
-            <h3 class="color-blue text-center">Right Heading</h3>
+            <h3 class="color-blue text-center">An example: The CSS Zen Garden</h3>
+			  <p>You can see a striking example of the benefits of separating content and style by visiting the CSS Zen Garden at <a href="http://www.mezzoblue.com/zengarden/alldesigns/" target="_blank"> http://www.mezzoblue.com/zengarden/alldesigns/</a> where you can see 218 variations on a single web page. All these variations use the exact <strong>same HTML code</strong> (i.e. the same content and the same structure of content), but they all have <strong> different CSS Stylesheets</strong>.</p>
+			<!-- mini grid starts -->
+			<div class="row">
+				<div class="col-6">
+					<img class="img-fluid" src="images/part-3/zen-garden-214.png" alt="screenshoot zen garden 214">
+					<p class="text-center">CSS Zen Garden with the <a href="http://www.csszengarden.com/214/" target="_blank"> “Verde Moderna”</a> Style</p>
+				</div>
+				<div class="col-6">
+					 <img class="img-fluid" src="images/part-3/zen-garden-219.png" alt="screenshoot zen garden 219">
+					 <p class="text-center">CSS Zen Garden with the <a href="http://www.csszengarden.com/219/" target="_blank"> “Steel”</a> Style</p>
+				  </div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					 <img class="img-fluid" src="images/part-3/zen-garden-220.png" alt="screenshoot zen garden 220">
+					 <p class="text-center">CSS Zen Garden with the <a href="http://www.csszengarden.com/220/" target="_blank"> “Garments”</a> Style</p>
+				</div>
+				<div class="col-6">
+					   <img class="img-fluid" src="images/part-3/zen-garden-none.png" alt="screenshoot zen garden unstyled">
+					  <p class="text-center">CSS Zen Garden <a href="http://www.csszengarden.com/?css=none/" target="_blank"> unstyled</a></p>
+				</div>
+			</div>
+			<!-- mini grid ends -->
+			<p>If you want to draw inspiration from these pages, don’t hesitate to have a look at the source code. To do so, open a page in Chrome, right click anywhere and then click on “View Page Source” (Ctrl+U on Windows).
+			You can also “Inspect” the page instead (as you learned in section <a href="part-2.html#dev_tools">2.3 Use Developer Tools</a>), you also get an interactive view where you can see which element on the page corresponds to which element in the HTML code and how the element is styled.
+			</p>  
           </div>
 		  <!---right column ends-->
         </article>
@@ -298,31 +329,228 @@
             </ul>
           </div>
         </header>
+		<article class="row py-3 justify-content-center bg-lightorange">
+			<div class="col-12">
+			<h3 class="color-buas text-center">Let's start with an example</h3>
+			<p>We’ll start with a simple example, where we give our “heading 2” <strong>&lt;h2&gt;</strong> title a green text colour, a light blue background, a dark blue border and we centre it horizontally. The result looks like this:</p>
+			<div class="p-3">
+				<h2 style= "color: green; background-color: lightblue; border: 5px solid darkblue; text-align: center; padding: 0.5em; font-family: Times New Roman;"> This is a centered level 2 heading.
+				</h2>
+			</div>
+			<p>We will be using four <strong>CSS properties</strong> for that:</p>
+			<ul>
+				<li>The <strong>color</strong> property (CSS uses American spelling), whose value will be “<strong>green</strong>"</li>
+				<li>The <strong>background-color</strong> property, whose value will be “<strong>lightblue</strong>”</li>
+				<li>The <strong>border</strong> property. This one needs not only a colour, but also a weight and a style (which can be solid, dotted, dashed, none, etc.) Here we’re using “<strong>5px solid darkblue</strong>”</li>
+				<li>The <strong>text-align</strong> property. We set it to “<strong>center</strong>”</li>
+				<li>In addition to that, we will add some <strong>padding</strong> to make sure the text isn’t too close to the border and set it to <strong>0.5em</strong>, with “em” being a unit linked to the font size. Please note that you have to use the English decimal sign (.) and not the continental one (,).</li>
+			</ul>
+			<h3 class="color-buas text-center py-3">So how would we do this?</h3>	
+			</div>
+		</article>
         <article class="row justify-content-center">
 		  <!-- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-buas text-center">Left Heading</h3>
-            <p>xxxxx.</p>
+            <h3 class="color-buas text-center">HTML and CSS working together</h3>
+            <p>There are different ways to style your HTML elements with CSS:</p>
+			<ol>
+				<li>Using the HTML <strong>“style” attribute</strong> (which is a bad practice that should be avoided).</li>
+				<li>Using the <strong>&lt;style&gt; tag</strong> in the head of the HTML file (which is a better practice but still not the best).</li>
+				<li>Referencing an <strong>external CSS file</strong> (this is &#11088;<strong>the best practice</strong>&#11088; and the only accepted one for the final assignment).</li>
+			</ol>
+			<p>We’ll take a more detailed look at the best practice further below...</p>
           </div>
 		  <!-- left column ends --->
 		  <!-- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+            <h3 class="text-center color-blue">Not the best practices <br>(please avoid!)</h3>
+			<!-- accodion starts -->
+			<div class="accordion py-3" id="accordionExample">
+  				<div class="accordion-item">
+    				<h2 class="accordion-header" id="headingOne">
+     					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       						1. Using the HTML "style" attribute
+      					</button>
+    				</h2>
+    				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    				  <div class="accordion-body">
+						 <div class="p-2 border border-dark font-monospace bg-dark text-white">
+							 index.html
+						 </div>
+						 <div class="p-2 border border-dark bg-white font-monospace text-primary">
+							 &lt;h2 <span class="text-success">style="</span><span class="text-danger">color: green; background-color: lightblue; border: 5px solid dark blue; text-align: center; padding: 0.5em;</span><span class="text-success">"</span>&gt;<span class="text-dark">This is a centred level 2 heading</span>&lt;/h2&gt;
+						 </div>
+      				  </div>
+    				</div>
+  				</div>
+  				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							2. Using the &lt;style&gt; tag in the head of the HTML file
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="p-2 border border-dark font-monospace bg-dark text-white">
+							 index.html
+						 </div>
+						 <div class="p-2 border border-dark bg-white font-monospace text-primary">
+							 &lt;!doctype html&gt;
+							 <br>
+							 &lt;head&gt;
+							 <br>
+							 &lt;title&gt;<span class="text-dark">This is the page's title</span>&lt;/title&gt;
+							 <br>
+							 &lt;style&gt; <span class="text-success">.myclass {</span>
+							 <br>
+							 <span class="text-danger">color: green;</span>
+							 <br>
+							 <span class="text-danger">background-color: lightblue;</span>
+							 <br>
+							 <span class="text-danger">border: 5px solid darkblue;</span>
+							 <br>
+							 <span class="text-danger">text-align: center;</span>
+							 <br>
+							 <span class="text-danger">padding: 0.5em;</span>
+							 <br>
+							 <span class="text-success">}</span>
+							 &lt;/style&gt;
+							 <br>
+							 &lt;/head&gt;
+							 <br>
+							 &lt;body&gt;
+							 <br>
+							 &lt;h2 <span class="text-success">class="</span><span class="text-danger">myclass</span><span class="text-success">"</span>&gt; <span class="text-dark">This is a centred level 2 heading</span>&lt;/h2&gt;
+							 <br>
+							 &lt;/body&gt;
+							 <br>
+							 &lt;/html&gt;
+							 <br>
+						 </div>
+						</div>
+					</div>
+  				</div>
+			</div>
+			<!-- accordion ends -->
           </div>
 		  <!-- right column ends --->
 		  <!-- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3"> 
-            <h3 class="color-blue text-center">Left Heading</h3>
-            <p>xxxx. </p>
-          </div>
+            <h3 class="color-blue text-center">&#11088;Best Practice&#11088;</h3>
+			<h3 class="color-blue text-center">Referencing an external CSS file</h3>
+            <p>The best practice (and the only accepted one for the final assignment), is to separate the CSS styles even further and to put them in a separate file, with the CSS extension (styles.css). <strong>The benefits are that:</strong></p>
+			<ul>
+				<li>Styles from one HTML page can be reused in another one.</li>
+				<li>It uses less bandwidth and disk space because the styles will be only downloaded once for all the pages.</li>
+				<li>It makes it easier for teams of multiple developers to work on different parts of the code (while keeping style consistency across the website).</li>
+			</ul>
+          </div>			
 		  <!-- left column ends --->
 		  <!-- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+            <h3 class="text-center color-buas">How to Reference an external CSS file?</h3>
+            <p>The HTML file needs to have a reference to a CSS file using the <strong>&lt;link&gt; tag</strong>. The “href” attribute uses the same logic as in &lt;a&gt; links or the “src” of an image.</p>
+			<!-- nested row starts here -->
+			<div class="row py-3">
+				<div class="col-6">
+					<div class="p-2 border border-dark font-monospace bg-dark text-white">index.html
+					</div>
+					<div class="p-2 border border-dark bg-white font-monospace text-primary">
+						&lt;!doctype html&gt;
+						<br>
+						&lt;head&gt;
+						<br>
+						&lt;title&gt;<span class="text-dark">This is the page's title</span>&lt;/title&gt;
+						<br>
+						<div class="bg-warning">
+							&lt;link <span class="text-success">rel="</span><span class="text-danger">stylesheet</span><span class="text-success">"</span> <span class="text-success">type="</span><span class="text-danger">text/css</span><span class="text-success">"</span> <span class="text-success">href="</span><span class="text-danger">css/styles.css</span><span class="text-success">"</span>&gt;
+							<br>
+						</div>
+						&lt;/head&gt;
+						<br>
+						&lt;body&gt;
+						<br>
+						&lt;h2 <span class="text-success">class="<span class="text-danger">myclass</span><span class="text-success">"</span></span>&gt; <span class="text-dark">This is a centred level 2 heading</span>&lt;/h2&gt;
+						<br>
+						&lt;/body&gt;
+						<br>
+						&lt;/html&gt;
+						<br>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="p-2 border border-dark font-monospace bg-dark text-warning">styles.css
+					</div>
+					<div class="p-2 border border-dark bg-light font-monospace text-primary">
+						.myclass {
+						<br>
+						<span class="text-success">color:</span> <span class="text-danger">green</span><span class="text-success">;</span>
+						<br>
+						<span class="text-success">background-color:</span> <span class="text-danger">lightblue</span><span class="text-success">;</span>
+						<br>
+						<span class="text-success">border:</span> <span class="text-danger">5px solid darkblue</span><span class="text-success">;</span>
+						<br>
+						<span class="text-success">text-align:</span> <span class="text-danger">center</span><span class="text-success">;</span>
+						<br>
+						<span class="text-success">padding:</span> <span class="text-danger">0.5em</span><span class="text-success">;</span>
+						<br>
+						}
+					</div>
+				</div>
+			</div>
+			<!-- nested row ends here -->
+			<p>You know now how to link a CSS document to an HTML document, but how can you link the styles that you declare in your styles.css document to specific elements in HTML page? Keep reading to find out!</p>
           </div>
 		  <!-- right column ends --->
+		  <!-- left column starts -->
+		  <div class="col-md-6 col-xxl-5 py-3">
+			  <h3 class="color-blue text-center">Linking CSS styles to specific HTML elements</h3>
+			  <p>How can you define to which elements a set of CSS rules apply? This is done through a CSS selector.</p>
+			  <p>There are different types of selectors, in the table you can see the most commonly used and how they work.</p>
+			  <p>While each type of selector is relevant due to its characteristics, <strong>class selectors</strong> are very special since <strong>you can reuse them</strong> when you need a specific style (different html elements can use the same class attribute).</p>
+			  <p>Selector types:</p>
+			  <ul>
+				  <li><strong>HTML Element</strong>: selects all HTML elements of a given type</li>
+				  <li><strong>Class</strong>: selects all HTML elements with a given class attribute. Prefix the class name with a dot (.) when using this selector in the CSS file.</li>
+				  <li><strong>ID</strong>: selects an HTML tag with a given ID attribute. An ID can only be used once in a document. Prefix it with a # when using this selector in the CSS file</li>
+			  </ul>
+		  </div>
+		  <!-- right column end -->
+		  <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+			  <h3 class="color-blue text-center">Selector types</h3>
+			  <!-- table starts -->
+			  <table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Selector type</th>
+					  <th scope="col">CSS code</th>
+					  <th scope="col">HTML code that gets selected </th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">HTML Element</th>
+					  <td><span class="text-primary">p { </span><span class="text-success">color:</span><span class="text-danger"> red</span><span class="text-success">;</span><span class="text-primary"> }</span></td>
+					  <td><span class="text-primary">&lt;p&gt;</span>A paragraph<span class="text-primary">&lt;/p&gt;</span></td>
+					</tr>
+					<tr>
+					  <th scope="row">Class</th>
+					  <td><span class="text-primary">.myclass { </span><span class="text-success">color:</span><span class="text-danger"> red</span><span class="text-success">;</span><span class="text-primary"> }</span></td>
+					  <td><span class="text-primary">&lt;h2</span><span class="text-success"> class="</span><span class="text-danger">myclass<span class="text-success">"</span><span class="text-primary"> &gt;</span></span>A paragraph<span class="text-primary">&lt;/h2&gt;</span>
+					  <br>
+					  <span class="text-primary">&lt;p</span><span class="text-success"> class="</span><span class="text-danger">myclass  other-class<span class="text-success">"</span><span class="text-primary"> &gt;</span></span>A paragraph<span class="text-primary">&lt;/p&gt;</span>
+					  </td>
+					</tr>
+					<tr>
+					  <th scope="row">ID</th>
+					  <td><span class="text-primary">#my-id { </span><span class="text-success">color:</span><span class="text-danger"> red</span><span class="text-success">;</span><span class="text-primary"> }</span></td>
+					  <td><span class="text-primary">&lt;p</span><span class="text-success"> id="</span><span class="text-danger">my-id<span class="text-success">"</span><span class="text-primary"> &gt;</span></span>A paragraph<span class="text-primary">&lt;/p&gt;</span></td>
+					</tr>
+				  </tbody>
+			  </table>
+			  <!-- table ends -->
+		  </div>
+		  <!-- right column end -->
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
