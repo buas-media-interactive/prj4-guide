@@ -331,8 +331,8 @@
         </header>
 		<article class="row py-3 justify-content-center bg-lightorange">
 			<div class="col-12">
-			<h3 class="color-buas text-center">Let's start with an example</h3>
-			<p>We’ll start with a simple example, where we give our “heading 2” <strong>&lt;h2&gt;</strong> title a green text colour, a light blue background, a dark blue border and we centre it horizontally. The result looks like this:</p>
+			<h3 class="color-buas text-center">Adding styles manually</h3>
+			<p>We’ll first look at how CSS can be created by typing code. This can be done in a basic text editor or in Dreamweaver. We’ll start with a simple example, where we give our “heading 2” <strong>&lt;h2&gt;</strong> title a green text colour, a light blue background, a dark blue border and we centre it horizontally. The result looks like this:</p>
 			<div class="p-3">
 				<h2 style= "color: green; background-color: lightblue; border: 5px solid darkblue; text-align: center; padding: 0.5em; font-family: Times New Roman;"> This is a centered level 2 heading.
 				</h2>
@@ -443,6 +443,7 @@
 				<li>Styles from one HTML page can be reused in another one.</li>
 				<li>It uses less bandwidth and disk space because the styles will be only downloaded once for all the pages.</li>
 				<li>It makes it easier for teams of multiple developers to work on different parts of the code (while keeping style consistency across the website).</li>
+				<img src="images/part-3/referencing-external-css.png" class="img-fluid py-3" alt="ilustration html referencing css">
 			</ul>
           </div>			
 		  <!-- left column ends --->
@@ -515,7 +516,8 @@
 				  <li><strong>ID</strong>: selects an HTML tag with a given ID attribute. An ID can only be used once in a document. Prefix it with a # when using this selector in the CSS file</li>
 			  </ul>
 		  </div>
-		  <!-- right column end -->
+		  <!-- left column end -->
+		  <!-- right column starts -->
 		  <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
 			  <h3 class="color-blue text-center">Selector types</h3>
 			  <!-- table starts -->
@@ -550,7 +552,30 @@
 			  </table>
 			  <!-- table ends -->
 		  </div>
-		  <!-- right column end -->
+		  <!-- right column ends -->
+		  <!-- left column starts -->
+		  <div class="col-md-6 col-xxl-5 py-3">
+		  	 <h3 class="color-buas text-center">Practice: add styles manually</h3>
+			 <ul>
+				 <li>Open the index.html file that you have been working on or start a new one (it can be in Dreamweaver, Sublime or any other code editor). Make sure there is at least one <strong>&lt;p&gt;</strong> element with dummy text, also known as “Lorem ipsum”. You can find dummy text online at <a href="https://loremipsum.io/" target="_blank">https://loremipsum.io/</a></li>
+				 <li>Create a new document: the <strong>styles.css</strong> file and make sure that it is saved inside the same folder as your index.html file and that it is saved with the file extension <strong>.css</strong></li>
+				 <li>Inside the <strong>&lt;head&gt;</strong> of your html document include a <strong>&lt;link&gt;</strong> element with the following attributes and values:
+					 <ul>
+						 <li>rel="stylesheet"</li>
+						 <li>type="text/css"</li>
+						 <li>href="<strong><em>type here the relative path to your css file</em>"</strong></li>
+					 </ul>
+				 </li>
+				 <li>Style three elements in your page are styled, with different styles.</li>
+				 <li>Use one class selector and one id selector.</li>
+			 </ul>
+		  </div>
+		  <!-- left column ends -->
+		  <!-- right column starts -->
+		  <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+			  <h3 class="color-buas text-center">Styles ideas</h3>
+		  </div>
+		  <!-- right column ends -->
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
@@ -698,12 +723,12 @@
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Left Heading</h3>
-            <p>xxxxx.</p>
+            <p>Fonts in CSS are defined with the “font-family” property. If you only use this property, you have to be careful, because you only have access to fonts that are installed. If you want to use additional fonts, you need to embed a web font in your page</p>
           </div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h3 class="text-center">Right Heading</h3>
+            <h3 class="text-center">Google fonts</h3>
             <p>xxxx.</p>
           </div>
 		  <!--- right column ends --->	
