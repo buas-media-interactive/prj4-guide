@@ -52,3 +52,10 @@ main {
 .list-alpha {
 	list-style-type: lower-alpha;
 }
+
+.funky-text {
+    color: #8020cc;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline #ffcc00;
+}
