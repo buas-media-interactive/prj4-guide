@@ -152,6 +152,22 @@
       </ul>
     </nav>
 
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="searchOffcanvas" aria-labelledby="searchOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="searchOffcanvasLabel">Search the guide</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form id="searchForm" class="d-flex">
+          <input class="form-control me-2" id="searchField" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">
+            <img class="" src="images/common/search.svg" width="15" alt="Videos">
+          </button>
+        </form>
+        <div id="searchResults"></div>
+      </div>
+    </div>
+
     <main class="container-fluid position-relative overflow-auto" tabindex="0">
 
       <section id="part_3" class="py-5 bg-hero row justify-content-center">
@@ -253,25 +269,14 @@
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">HTML and CSS: Separating content and style</h3>
             <p><strong>Cascading Style Sheets (CSS)</strong> are a powerful way of modifying the look and feel of a website. Although it is tightly integrated with HTML, it uses its own computing language and syntax. This supports a very powerful pattern whereby the content and its <strong>logical structure</strong> (e.g. which item is a heading, and which one is a paragraph) is separated from its <strong>visual aspect</strong> (e.g. how big is that heading, how it is aligned, what colour is it?)</p>
-            <h3 class="color-blue text-center">What CSS looks like</h3>
-            <p>This is a line of CSS code that turns all paragraphs pink:</p>
-            <img class="img-fluid" src="images/part-3/css-syntax.png" alt="css syntax">
-            <p>CSS and HTML are both programming languages used for the web, but they couldn&rsquo;t look more different.</p>
-            <ul>
-              <li>HTML uses a lot of &ldquo;less-than&rdquo; (&lt;), &ldquo;greater-than&rdquo; (&gt;) and &ldquo;slashes&rdquo; (/)</li>
-              <li>CSS&rsquo; hallmark are the curly braces: { and }</li>
-            </ul>
-            <h3 class="color-buas text-center">Definitions</h3>
-            <ul>
-              <li>A <strong>Rule</strong> is a piece of CSS code (one or more lines) which tells the browser to give specific styles to specific HTML elements</li>
-              <li>A <strong>Selector</strong> is the part of the rule which says which elements the rule applies to.</li>
-              <li>A <strong>Property</strong> is an element of style that should be modified, for example the colour of the text, or the size of the font.</li>
-              <li>A <strong>Value</strong> specifies how this element is modified. It can be a specific colour (pink, #ffcccc, etc.), a size (12pt), etc.</li>
-            </ul>
+            <h4 class="text-center color-blue">What is content without style?</h4>
+            <p>Click on the button below to see what this page would look like using pure HTML and no CSS at all!</p>
+            <button class="btn btn-danger text-center d-block w-75 mx-auto mb-4 btn-lg" onclick="toggleStyles();">Click here to toggle the page&rsquo;s CSS styles</button>
+            <p>You will notice that everything on the page is still legible and visible, and that headings are still bigger than regular paragraph text.</p>
+            <p>This is because your browser has some built-in styles &ndash; but they are not visually appealing, so very few websites use them.</p>
+            <p>After you&rsquo;ve had a look at the &ldquo;basic&rdquo; style of this page, scroll back and click on the button again</p>
           </div>
-          <!---left column ends -->
-          <!---right column starts-->
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue"> 
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange"> 
             <h3 class="text-center">An example: The CSS Zen Garden</h3>
             <p>The CSS Zen Garden is a perfect example of what it means to separate content and style. All 218 pages of this website use the exact same <strong>HTML</strong> code, but different <strong>CSS</strong> code. See for yourself!.</p>
            <!-- mini grid starts -->
@@ -298,7 +303,26 @@
             <!-- mini grid ends -->
             <p>If you want to draw inspiration from these pages, don’t hesitate to “inspect” the page (as you learned in section <a href="part-2.html#dev_tools">2.3 Use Developer Tools</a>).</p>  
           </div>
-      <!---right column ends-->
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="color-buas text-center">The CSS language</h3>
+            <h5 class="text-center">What does it look like?</h5>
+            <p>This is a line of CSS code that turns all paragraphs pink:</p>
+            <img class="img-fluid" src="images/part-3/css-syntax.png" alt="css syntax">
+            <p>CSS and HTML are both programming languages used for the web, but they couldn&rsquo;t look more different.</p>
+            <ul>
+              <li>HTML uses a lot of &ldquo;less-than&rdquo; (&lt;), &ldquo;greater-than&rdquo; (&gt;) and &ldquo;slashes&rdquo; (/)</li>
+              <li>CSS&rsquo; hallmark are the curly braces: { and }</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">Important Definitions</h3>
+            <ul>
+              <li>A <strong>Rule</strong> is a piece of CSS code (one or more lines) which tells the browser to give specific styles to specific HTML elements</li>
+              <li>A <strong>Selector</strong> is the part of the rule which says which elements the rule applies to.</li>
+              <li>A <strong>Property</strong> is an element of style that should be modified, for example the colour of the text, or the size of the font.</li>
+              <li>A <strong>Value</strong> specifies how this element is modified. It can be a specific colour (pink, #ffcccc, etc.), a size (12pt), etc.</li>
+            </ul>
+          </div>
           <div class="col-md-6 col-xxl-5 py-3"> 
             <h3 class="text-center color-blue">Linking CSS Files</h3>
             <p>Although it is possible to put CSS code in HTML files, we will follow the best practices and we won&rsquo;t &ldquo;mix and match&rdquo;.</p>
@@ -548,14 +572,14 @@
                   <p class="mb-1 ms-2 text-success">background: <span class="text-danger">#f0ccff</span>;</p>
                   <p class="mb-1 ms-2 text-success">padding-top: <span class="text-danger">10px</span>;</p>
                   <p class="mb-1 ms-2 text-success">padding-bottom: <span class="text-danger">30px</span>;</p>
-                  <p class="mb-1 ms-2 text-success">border: <span class="text-danger">4px dashed #208020</span>;</p>
+                  <p class="mb-1 ms-2 text-success">border: <span class="text-danger">4px dashed #20cc20</span>;</p>
                   <p class="mb-1 ms-2 text-success">margin: <span class="text-danger">20px</span>;</p>
                   <p class="mb-0 text-secondary">}</p>
                 </div>
               </div>
               <div class="col-6">
                 <div class="border bg-secondary">
-                  <div style="background: #f0ccff; padding-top: 10px; padding-bottom: 20px; border: 2px dashed #208020; margin: 20px;">Hello! This element has symmetrical margins of 20px on all sides, a dashed border 4px wide, and asymmetrical padding (10px on top, 30px on bottom, no padding horizontally).</div>
+                  <div style="background: #f0ccff; padding-top: 10px; padding-bottom: 20px; border: 2px dashed #20cc20; margin: 20px;">Hello! This element has symmetrical margins of 20px on all sides, a dashed border 4px wide, and asymmetrical padding (10px on top, 30px on bottom, no padding horizontally).</div>
                 </div>
               </div>
             </div>
@@ -763,6 +787,13 @@
           }
         });
       });
+      let css_status = false, stylesheets = Array.from(document.querySelectorAll('link[rel=stylesheet]')).map(l => l.sheet);
+      function toggleStyles() {
+        css_status = !css_status;
+        stylesheets.forEach(function(s) {
+          s.disabled = css_status;
+        });
+      }
     </script>
   </body>
 </html>
