@@ -106,13 +106,13 @@
               <a class="dropdown-item" href="#what_is_css"><span class="badge rounded-pill bg-buas">3.2</span> CSS Basics</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#practice_editing_styles"><span class="badge rounded-pill bg-buas">3.3</span> In practice: editing styles.css</a>
+              <a class="dropdown-item" href="#practice_editing_styles"><span class="badge rounded-pill bg-buas">3.3</span> Practice: Edit styles.css</a>
             </li>
             <li>
               <a class="dropdown-item" href="#what_is_bootstrap"><span class="badge rounded-pill bg-buas">3.4</span> What is Bootstrap?</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#practice_using_bootstrap"><span class="badge rounded-pill bg-buas">3.5</span> In practice: using Boostrap</a>
+              <a class="dropdown-item" href="#practice_using_bootstrap"><span class="badge rounded-pill bg-buas">3.5</span> Practice: Add Boostrap classes</a>
             </li>
             <li>
               <a class="dropdown-item" href="#using_fonts"><span class="badge rounded-pill bg-buas">3.6</span> Using Fonts</a>
@@ -181,13 +181,13 @@
               <a class="btn btn-danger fs-4 m-2" href="#what_is_css"><span class="badge text-danger rounded-pill bg-white">3.2</span> CSS Basics</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#practice_editing_styles"><span class="badge text-danger rounded-pill bg-white">3.3</span> In practice: editing styles.css</a>
+              <a class="btn btn-danger fs-4 m-2" href="#practice_editing_styles"><span class="badge text-danger rounded-pill bg-white">3.3</span> Practice: Edit styles.css</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#what_is_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.4</span> What is Bootstrap?</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#practice_using_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.5</span> In practice: using Bootstrap</a>
+              <a class="btn btn-danger fs-4 m-2" href="#practice_using_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.5</span> Practice: Add Bootstrap classes</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#using_fonts"><span class="badge text-danger rounded-pill bg-white">3.6</span> Using Fonts</a>
@@ -606,7 +606,7 @@
             <ul>
               <li>Bootstrap is a library of CSS classes.</li>
               <li>Rather than coming up with your own CSS code, rest on the &ldquo;shoulders of giants&rdquo;</li>
-              <li>You can combine both approaches!</li>
+              <li>Use Boostrap classes to change colours, add margins and borders, etc.</li>
               <li>Check part 4 for advanced uses of bootstrap</li>
             </ul>
           </div>
@@ -671,24 +671,142 @@
 		  <!--- right column ends --->	
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-blue text-center">Colors and typography</h3>
-            <p>xxxxx.</p>
+            <h3 class="color-blue text-center">Colours and text</h3>
+            <p>Bootstrap uses a default palette where colours are named based on their function:</p>
+            <ul class="list-none p-0">
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-primary text-white border border-secondary">Primary</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-secondary text-white border border-dark">Secondary</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-success text-white border border-dark">Success</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-danger text-white border border-dark">Danger</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-warning text-black border border-secondary">Warning</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-info text-black border border-secondary">Info</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-light text-black border border-secondary">Light</li>
+              <li class="d-inline-block px-3 py-1 m-1 rounded bg-dark text-white border border-secondary">Dark</li>
+            </ul>
+            <p>You can use each of these colours as a text colour, by using a class which is <strong>text-</strong> followed by one of these colours, e.g. <strong class="text-danger">text-danger</strong> for red or <strong class="text-primary">text-primary</strong> for blue.</p>
+            <p>You can also use them for backgrounds, by using a class starting with <strong>bg-</strong> such as <strong class="bg-danger text-light">bg-danger</strong> or <strong class="bg-primary text-light">bg-primary</strong></p>
+            <p class="text-center">Text alignment can be controlled by classes <strong>text-start</strong>, <strong>text-center</strong> and <strong>text-end</strong>.</p>
+            <p class="text-end"><strong>text-end</strong> means right-aligned (or left-aligned in Arabic, Hebrew, Persian, etc.).</p>
+            <p>Find more about text classes in the <a href="https://getbootstrap.com/docs/5.1/utilities/text/" target="_blank">Text section of the Bootstrap docuentation</a>.</p>
           </div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
+            <div>
+              <h3 class="text-center">In practice:</h3>
+            </div>
+            <div class="col-sm-7">
+              <h5 class="text-success mt-2 mb-0">Code:</h5>
+              <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                &lt;p <span class="text-success">class="<span class="text-danger"><wbr>text-center text-success<wbr></span>"</span>&gt;<span class="text-black"><wbr>This paragraph is centred (</span>&lt;em&gt;<span class="text-black"><wbr>text-center<wbr></span>&lt;/em&gt;<span class="text-black">) and has green text (</span>&lt;em&gt;<span class="text-black"><wbr>text-success<wbr></span>&lt;/em&gt;<span class="text-black">). It contains a </span>&lt;span <span class="text-success">class="<span class="text-danger"><wbr>bg-danger text-white fw-bold<wbr></span>"</span>&gt;<span class="text-black"><wbr>span with a red background (</span>&lt;em&gt;<span class="text-black"><wbr>bg-danger<wbr></span>&lt;/em&gt;<span class="text-black">) and white (</span>&lt;em&gt;<span class="text-black"><wbr>text-white<wbr></span>&lt;/em&gt;<span class="text-black">), bold (</span>&lt;em&gt;<span class="text-black"><wbr>fw-bold<wbr></span>&lt;/em&gt;<span class="text-black">) text.</span><wbr>&lt;/span&gt;<wbr>&lt;/p&gt;
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              <div class="p-2 border bg-light">
+                  <p class="text-center text-success">This paragraph is centred (<em>text-center</em>) and has green text (<em>text-success</em>). It contains a <span class="bg-danger text-white fw-bold">span with a red background (<em>bg-danger</em>) and white (<em>text-white</em>), bold (<em>fw-bold</em>) text.</span></p>
+              </div>
+            </div>
           </div>
 		  <!--- right column ends --->		
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Box model classes</h3>
+            <p>As we discussed in the previous part, CSS relies on a <strong>box model</strong> to manage spacing between elements. Spacing is essential and makes your pages more legible and the their structure clearer.</p>
+            <p>Bootstrap provides a series of classes to create margins, paddings and borders.</p>
+            <p>For margins and padding, class names are a combination of:</p>
+            <ul>
+              <li><strong>m</strong> for margin, <strong>p</strong> for padding</li>
+              <li>&hellip;followed by information about the position: no letter for margins/paddings on all sides, <strong>x</strong> for horizontal (left and right), <strong>y</strong> for vertical (top and bottom), <strong>s</strong> for start (left), <strong>e</strong> for end (right), <strong>t</strong> for top and <strong>b</strong> for bottom</li>
+              <li>&hellip;followed by an hyphen/dash</li>
+              <li>&hellip;followed by a number from 0 to 5 corresponding to the size of the margin/padding.</li>
+            </ul>
+            <p>For example, <strong>m-1</strong> gives a small margin on all four sides, <strong>my-5</strong> gives a large margin on the vertical axis, <strong>px-3</strong> gives a medium padding on the horizontal axis and <strong>pt-0</strong> removes padding at the top.</p>
+            <p>Borders can be given a specific colour and/or be rounded. In that case, you need to combine multiple classes: <strong>border</strong> to add a border, <strong>border-danger</strong> to make it red and <strong>rounded</strong> to make it rounded.</p>
+            <p>Margins and paddings don&rsquo;t have a colour of their own &mdash; paddings take the colour of the element and margins take the colour of the parent.</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <div class="row">
+              <div>
+                <h3 class="text-center">In practice:</h3>
+                <p>In the examples below, check the position of the blue box within the red one. Borders are identical in all examples, but the paddings and margin of the blue box vary.</p>
+              </div>
+              <div class="col-sm-7 col-md-8">
+                <h5 class="text-success mt-2 mb-0">Code:</h5>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <h5 class="text-danger mt-2 mb-0">Result:</h5>
+              </div>
+              <div class="col-sm-7 col-md-8">
+                <div class="p-2 mb-2 border border-dark bg-white font-monospace text-primary lh-1">
+                  <p class="mb-0">&lt;div <span class="text-success">class="<span class="text-danger">bg-danger border border-3 border-dark</span>"</span>&gt;</p>
+                  <p class="mb-0 ms-2">&lt;div <span class="text-success">class="<span class="text-danger">bg-primary border border-3 border-info rounded text-white</span>"</span>&gt;</p>
+                  <p class="mb-0 ms-3 text-black">No margin, no padding.</p>
+                  <p class="mb-0 ms-2">&lt;/div&gt;</p>
+                  <p class="mb-0">&lt;/div&gt;</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <div class="bg-danger border border-3 border-dark mb-2">
+                  <div class="bg-primary border border-3 border-info rounded text-white">
+                    No margin, no padding.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7 col-md-8">
+                <div class="p-2 mb-2 border border-dark bg-white font-monospace text-primary lh-1">
+                  <p class="mb-0">&lt;div <span class="text-success">class="<span class="text-danger">bg-danger &hellip;</span>"</span>&gt;</p>
+                  <p class="mb-0 ms-2">&lt;div <span class="text-success">class="<span class="text-danger">bg-primary &hellip; <strong>m-3</strong></span>"</span>&gt;</p>
+                  <p class="mb-0 ms-3 text-black">Size 3 margins on all sides, no padding.</p>
+                  <p class="mb-0 ms-2">&lt;/div&gt;</p>
+                  <p class="mb-0">&lt;/div&gt;</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <div class="bg-danger border border-3 border-dark mb-2">
+                  <div class="bg-primary border border-3 border-info rounded text-white m-3">
+                    Size 3 margins on all sides, no padding.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7 col-md-8">
+                <div class="p-2 mb-2 border border-dark bg-white font-monospace text-primary lh-1">
+                  <p class="mb-0">&lt;div <span class="text-success">class="<span class="text-danger">bg-danger &hellip;</span>"</span>&gt;</p>
+                  <p class="mb-0 ms-2">&lt;div <span class="text-success">class="<span class="text-danger">bg-primary &hellip; <strong>p-2</strong></span>"</span>&gt;</p>
+                  <p class="mb-0 ms-3 text-black">No margin, size 2 padding on all sides.</p>
+                  <p class="mb-0 ms-2">&lt;/div&gt;</p>
+                  <p class="mb-0">&lt;/div&gt;</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <div class="bg-danger border border-3 border-dark mb-2">
+                  <div class="bg-primary border border-3 border-info rounded text-white p-2">
+                    No margin, size 2 padding on all sides.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7 col-md-8">
+                <div class="p-2 mb-2 border border-dark bg-white font-monospace text-primary lh-1">
+                  <p class="mb-0">&lt;div <span class="text-success">class="<span class="text-danger">bg-danger &hellip;</span>"</span>&gt;</p>
+                  <p class="mb-0 ms-2">&lt;div <span class="text-success">class="<span class="text-danger">bg-primary &hellip; <strong>mt-2 mb-5 ms-4 me-1 px-3 py-1</strong></span>"</span>&gt;</p>
+                  <p class="mb-0 ms-3 text-black">Margins and paddings of different sizes on different sides.</p>
+                  <p class="mb-0 ms-2">&lt;/div&gt;</p>
+                  <p class="mb-0">&lt;/div&gt;</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-4">
+                <div class="bg-danger border border-3 border-dark mb-2">
+                  <div class="bg-primary border border-3 border-info rounded text-white mt-2 mb-5 ms-4 me-1 px-3 py-1">
+                    Margins and paddings of different sizes on different sides.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
-            <a class="btn btn-outline-secondary m-1" href="#what_is_bootstrap">↑ Back to the top of &ldquo;What is Bootstrap&rdquo;</a>
+            <a class="btn btn-outline-secondary m-1" href="#what_is_bootstrap">↑ Back to the top of &ldquo;Bootstrap basics&rdquo;</a>
           </div>
         </footer>
       </section>
@@ -699,7 +817,7 @@
             <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.5</h2>
           </div>
           <div class="col-10 col-md-5">
-            <h2 class="display-3 fw-bolder lh-1 mb-4">In practice: using Bootstrap</h2>
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Practice: Add Bootstrap classes</h2>
           </div>
           <div class="col-md-6">
             <h5>
