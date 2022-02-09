@@ -59,3 +59,22 @@ main {
     font-style: italic;
     text-decoration: underline #ffcc00;
 }
+
+.owncss-div {
+	background-image: url(../images/common/hero-bg.jpg);
+    background-position: center;
+    border: .5em double #80ff80;
+    border-radius: 1em;
+}
+
+.owncss-heading {
+	font-family: 'Chillax';
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+
+.owncss-paragraph {
+	font-family: 'Plein';
+	color:  #ff80c0;
+	text-shadow: 0 0 5px #ff80c0;
+}

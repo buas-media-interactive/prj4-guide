@@ -112,7 +112,7 @@
               <a class="dropdown-item" href="#what_is_bootstrap"><span class="badge rounded-pill bg-buas">3.4</span> What is Bootstrap?</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#practice_using_bootstrap"><span class="badge rounded-pill bg-buas">3.5</span> Practice: Add Boostrap classes</a>
+              <a class="dropdown-item" href="#combine_bootstrap_css"><span class="badge rounded-pill bg-buas">3.5</span> Combine Bootstrap and your own CSS</a>
             </li>
             <li>
               <a class="dropdown-item" href="#using_fonts"><span class="badge rounded-pill bg-buas">3.6</span> Using Fonts</a>
@@ -187,7 +187,7 @@
               <a class="btn btn-danger fs-4 m-2" href="#what_is_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.4</span> What is Bootstrap?</a>
             </li>
             <li>
-              <a class="btn btn-danger fs-4 m-2" href="#practice_using_bootstrap"><span class="badge text-danger rounded-pill bg-white">3.5</span> Practice: Add Bootstrap classes</a>
+              <a class="btn btn-danger fs-4 m-2" href="#combine_bootstrap_css"><span class="badge text-danger rounded-pill bg-white">3.5</span> Combine Bootstrap and your own CSS</a>
             </li>
             <li>
               <a class="btn btn-danger fs-4 m-2" href="#using_fonts"><span class="badge text-danger rounded-pill bg-white">3.6</span> Using Fonts</a>
@@ -685,26 +685,29 @@
             </ul>
             <p>You can use each of these colours as a text colour, by using a class which is <strong>text-</strong> followed by one of these colours, e.g. <strong class="text-danger">text-danger</strong> for red or <strong class="text-primary">text-primary</strong> for blue.</p>
             <p>You can also use them for backgrounds, by using a class starting with <strong>bg-</strong> such as <strong class="bg-danger text-light">bg-danger</strong> or <strong class="bg-primary text-light">bg-primary</strong></p>
+            <p>Use classes <strong>fw-bold</strong> for <strong>bold</strong> text, <strong>fst-italic</strong> for <em>italic</em> text, <strong>text-decoration-underline</strong> for <u>underlined</u> text. These classes have the same effect as <strong>&lt;strong&gt;, &lt;em&gt;, &lt;u&gt;</strong>, with the advantage that they can be <span class="fst-italic fw-bold text-decoration-underline">combined and/or added to existing elements</span>.</p>
             <p class="text-center">Text alignment can be controlled by classes <strong>text-start</strong>, <strong>text-center</strong> and <strong>text-end</strong>.</p>
             <p class="text-end"><strong>text-end</strong> means right-aligned (or left-aligned in Arabic, Hebrew, Persian, etc.).</p>
             <p>Find more about text classes in the <a href="https://getbootstrap.com/docs/5.1/utilities/text/" target="_blank">Text section of the Bootstrap docuentation</a>.</p>
           </div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange row">
-            <div>
-              <h3 class="text-center">In practice:</h3>
-            </div>
-            <div class="col-sm-7">
-              <h5 class="text-success mt-2 mb-0">Code:</h5>
-              <div class="p-2 border border-dark bg-white font-monospace text-primary">
-                &lt;p <span class="text-success">class="<span class="text-danger"><wbr>text-center text-success<wbr></span>"</span>&gt;<span class="text-black"><wbr>This paragraph is centred (</span>&lt;em&gt;<span class="text-black"><wbr>text-center<wbr></span>&lt;/em&gt;<span class="text-black">) and has green text (</span>&lt;em&gt;<span class="text-black"><wbr>text-success<wbr></span>&lt;/em&gt;<span class="text-black">). It contains a </span>&lt;span <span class="text-success">class="<span class="text-danger"><wbr>bg-danger text-white fw-bold<wbr></span>"</span>&gt;<span class="text-black"><wbr>span with a red background (</span>&lt;em&gt;<span class="text-black"><wbr>bg-danger<wbr></span>&lt;/em&gt;<span class="text-black">) and white (</span>&lt;em&gt;<span class="text-black"><wbr>text-white<wbr></span>&lt;/em&gt;<span class="text-black">), bold (</span>&lt;em&gt;<span class="text-black"><wbr>fw-bold<wbr></span>&lt;/em&gt;<span class="text-black">) text.</span><wbr>&lt;/span&gt;<wbr>&lt;/p&gt;
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <div class="row">
+              <div>
+                <h3 class="text-center">In practice:</h3>
               </div>
-            </div>
-            <div class="col-sm-5">
-              <h5 class="text-danger mt-2 mb-0">Result:</h5>
-              <div class="p-2 border bg-light">
-                  <p class="text-center text-success">This paragraph is centred (<em>text-center</em>) and has green text (<em>text-success</em>). It contains a <span class="bg-danger text-white fw-bold">span with a red background (<em>bg-danger</em>) and white (<em>text-white</em>), bold (<em>fw-bold</em>) text.</span></p>
+              <div class="col-sm-7">
+                <h5 class="text-success mt-2 mb-0">Code:</h5>
+                <div class="p-2 border border-dark bg-white font-monospace text-primary">
+                  &lt;p <span class="text-success">class="<span class="text-danger"><wbr>text-center text-success<wbr></span>"</span>&gt;<span class="text-black"><wbr>This paragraph is centred (</span>&lt;em&gt;<span class="text-black"><wbr>text-center<wbr></span>&lt;/em&gt;<span class="text-black">) and has green text (</span>&lt;em&gt;<span class="text-black"><wbr>text-success<wbr></span>&lt;/em&gt;<span class="text-black">). It contains a </span>&lt;span <span class="text-success">class="<span class="text-danger"><wbr>bg-danger text-white fw-bold<wbr></span>"</span>&gt;<span class="text-black"><wbr>span with a red background (</span>&lt;em&gt;<span class="text-black"><wbr>bg-danger<wbr></span>&lt;/em&gt;<span class="text-black">) and white (</span>&lt;em&gt;<span class="text-black"><wbr>text-white<wbr></span>&lt;/em&gt;<span class="text-black">), bold (</span>&lt;em&gt;<span class="text-black"><wbr>fw-bold<wbr></span>&lt;/em&gt;<span class="text-black">) text.</span><wbr>&lt;/span&gt;<wbr>&lt;/p&gt;
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <h5 class="text-danger mt-2 mb-0">Result:</h5>
+                <div class="p-2 border bg-light">
+                    <p class="text-center text-success">This paragraph is centred (<em>text-center</em>) and has green text (<em>text-success</em>). It contains a <span class="bg-danger text-white fw-bold">span with a red background (<em>bg-danger</em>) and white (<em>text-white</em>), bold (<em>fw-bold</em>) text.</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -724,7 +727,7 @@
             <p>Borders can be given a specific colour and/or be rounded. In that case, you need to combine multiple classes: <strong>border</strong> to add a border, <strong>border-danger</strong> to make it red and <strong>rounded</strong> to make it rounded.</p>
             <p>Margins and paddings don&rsquo;t have a colour of their own &mdash; paddings take the colour of the element and margins take the colour of the parent.</p>
           </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
             <div class="row">
               <div>
                 <h3 class="text-center">In practice:</h3>
@@ -811,59 +814,170 @@
         </footer>
       </section>
 	
-      <section id="practice_using_bootstrap">
+      <section id="combine_bootstrap_css">
         <header class="section-header row justify-content-center text-light bg-gradient py-5">
           <div class="col-2 col-md-1 text-end">
             <h2 class="bg-buas rounded-pill display-6 fw-bold py-1 px-2 d-inline-block">3.5</h2>
           </div>
           <div class="col-10 col-md-5">
-            <h2 class="display-3 fw-bolder lh-1 mb-4">Practice: Add Bootstrap classes</h2>
+            <h2 class="display-3 fw-bolder lh-1 mb-4">Combine Bootstrap and your own CSS</h2>
           </div>
           <div class="col-md-6">
-            <h5>
-              <img class="me-1" src="images/common/film.svg" width="16" alt="film icon">
-              <a class="link-light" href="https://web.microsoftstream.com/video/9120cc9f-71fa-4b37-976b-783c0bef6888" target="_blank">Watch on Microsoft Stream</a>
-            </h5>
+            <h5>Summary</h5>
             <ul>
-              <li>XXXX.</li>
-              <li>XXXX.</li>
-              <li>XXXX.</li>
+              <li>Learn when you should use Bootstrap and when you should use your own CSS classes.</li>
+              <li>Learn how to do &ldquo;mix-and-match&rdquo; Bootstrap and custom styles.</li>
             </ul>
           </div>
         </header>
         <article class="row justify-content-center">
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-buas text-center">Left Heading</h3>
-            <p>xxxxx.</p>
+            <h3 class="color-buas text-center">When to use what?</h3>
+            <p>The basic rule is that you should use Bootstrap when it does what you want to do, and add your own styles when you need more customization.</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Use cases</th>
+                  <th>When to use Boostrap classes?</th>
+                  <th>When to create your own CSS?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Colours <span class="fw-normal fst-italic">(including background and text colours)</span></th>
+                  <td>When one of Bootstrap&rsquo;s built-in colours suits you.</td>
+                  <td>When you want to use specific colours, such as those defined in your brand identity.</td>
+                </tr>
+                <tr>
+                  <th>Fonts</th>
+                  <td>Bootstrap only gives you access to a default sans-serif font. Use Boostrap classes for effects such as bold type, italics, underlines</td>
+                  <td>When you want to use any font that suits your brand identity, follow the instructions below in part 3.6.</td>
+                </tr>
+                <tr>
+                  <th>Layout</th>
+                  <td>Use a combination of the margin/padding and alignment classes (see above) as well as the Bootstrap grid (see part 4.5)</td>
+                  <td>Layout is one of the most complex parts of CSS. We do not recommend using your own CSS.</td>
+                </tr>
+                <tr>
+                  <th>UX Components <span class="fw-normal fst-italic">(e.g. buttons, navigation bars, carousels)</span></th>
+                  <td>Bootstrap provides a wide library of UX Components. Check part 4.4 for examples.</td>
+                  <td>Add your own CSS to adjust the colours and sizes of these components to your needs.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+            <h3 class="text-center">How to combine?</h3>
+            <p>Try following these steps:</p>
+            <ol>
+              <li>Start by looking for Bootstrap classes that do what you want to do.</li>
+              <li>Add these classes to the element where you need them.</li>
+              <li>Create an additional class for the additional styles you need (see <a href="#practice_editing_styles">section 3.3 for details of that step</a>).</li>
+            </ol>
+            <h5>Avoid conflicts</h5>
+            <p>Some instructions in your own CSS file may be contradicting the ones from Bootstrap. For example, a Bootstrap class gives one colour to the text and yours gives another one. Your browser will follow complex rules to decide which style should be applied and which should be ignored.</p>
+            <p>To avoid this type of conflict, you should:</p>
+            <ul>
+              <li>Remove any Bootstrap class that you don't need. For example, if you have a class which is "bg-danger" (red background) and you're adding your own class which also changes the background, you no longer need the Bootstrap one.</li>
+              <li>Make sure that your own CSS file is called <strong>after</strong> the Bootstrap CSS file. This is the case for all templates we provide.</li>
+              <li>If this isn&rsquo;t sufficient, you can increase the priority of your CSS styles by adding <samp class="bg-light d-inline-block px-1 border rounded text-danger">!important</samp> after the CSS properties.</li>
+            </ul>
           </div>
-		  <!--- right column ends --->	
-		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-blue text-center">Left Heading</h3>
-            <p>xxxxx.</p>
+            <h3 class="text-center color-blue">To achieve this result&hellip;</h3>
+            <div class="m-1 py-5 d-flex align-items-center justify-content-center owncss-div">
+              <h4 class="m-0 text-white display-5 owncss-heading">Welcome</h4>
+              <p class="m-0 fs-2 lh-1 w-50 text-center owncss-paragraph">to a world of endless possi&shy;bilities in <strong>style</strong></p>
+            </div>
           </div>
-		  <!--- left column ends --->
-		  <!--- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+            <h3 class="text-center">Combine Bootstrap and CSS this way</h3>
+            <p>This is a simple HTML structure, with one <strong>&lt;div&gt;</strong> element for the frame, containing a <strong>&lt;h4&gt;</strong> heading and a <strong>&lt;p&gt;</strong> paragraph.</p>
+            <h5 class="text-success">The following styles are done with Bootstrap</h5>
+            <ul>
+              <li>On all 3 elements:
+                <ul>
+                  <li>Margins and paddings, with classes such as <strong>m-1 py-5</strong>.</li>
+                </ul>
+              </li>
+              <li>On the main frame:
+                <ul>
+                  <li>Layout classes (not explained in this guide, <a href="https://getbootstrap.com/docs/5.1/utilities/flex/" target="_blank">please check the Bootstrap documentations</a>), with <strong>d-flex align-items-center justify-content-center</strong></li>
+                </ul>
+              </li>
+              <li>On the heading:
+                <ul>
+                  <li>Text colour (<strong>text-white</strong>) and size (<strong>display-5</strong>)</li>
+                </ul>
+              </li>
+            </ul>
+            <h5 class="text-danger">The following styles need specific CSS styles</h5>
+            <ul>
+              <li>On the main frame:
+                <ul>
+                  <li>Border styles, using the <strong>border</strong> CSS property.</li>
+                  <li>The use of a background image, with <strong>background-image</strong></li>
+                </ul>
+              </li>
+              <li>On the heading:
+                <ul>
+                  <li>Text rotation, with <strong>writing-mode</strong> and <strong>transform</strong>.</li>
+                  <li>The use of a web font called Chillax (see section 3.6 about fonts)</li>
+                </ul>
+              </li>
+              <li>On the paragraph:
+                <ul>
+                  <li>The pink text colour (using the <strong>color</strong> property with a value of <strong>#ff80c0</strong>)</li>
+                  <li>The neon glow effect (with the <strong>text-shadow</strong> property).</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-		  <!--- right column ends --->		
-          <div class="col-xxl-10 py-3">
-            <h3 class="color-blue text-center">Center Heading&hellip;</h3>
+          <div class="col-md-6 col-xxl-5 py-3">
+            <h3 class="text-center color-buas">HTML Code</h3>
+            <div class="p-2 mb-2 border border-dark rounded bg-light font-monospace text-primary">
+              <p class="mb-0">&lt;div <span class="text-success">class="<span class="text-danger">m-1 py-5 d-flex align-items-center justify-content-center <strong>owncss-div</strong></span>"</span>&gt;</p>
+              <p class="mb-0 ms-3">&lt;h4 <span class="text-success">class="<span class="text-danger">m-0 text-white display-5 <strong>owncss-heading</strong></span>"</span>&gt;<span class="text-dark">Welcome</span>&lt;/h4&gt;</p>
+              <p class="mb-0 ms-3">&lt;p <span class="text-success">class="<span class="text-danger">m-0 fs-2 lh-1 w-50 text-center <strong>owncss-paragraph</strong></span>"</span>&gt;<span class="text-dark">to a world of endless possi&shy;bilities in &lt;strong&gt;style</span>&lt;/strong&gt;&lt;/p&gt;</p>
+              <p class="mb-0">&lt;/div&gt;</p>
+            </div>
+            <p>This HTML code contains references to many Bootstrap classes:</p>
+            <ul>
+              <li><samp>m-1 py-5 d-flex align-items-center justify-content-center</samp> on the <strong>&lt;div&gt;</strong></li>
+              <li><samp>m-0 text-white display-5</samp> on the <strong>&lt;h4&gt;</strong></li>
+              <li><samp>m-0 fs-2 lh-1 w-50 text-center</samp> on the <strong>&lt;p&gt;</strong></li>
+            </ul>
+            <p>In addition, three CSS classes were created for the purpose of styling these elements: <strong>owncss-div</strong>, <strong>owncss-heading</strong> and <strong>owncss-paragraph</strong></p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
+            <h3 class="text-center">CSS Code</h3>
+            <div class="p-2 mb-2 border border-dark rounded bg-white font-monospace">
+              <p class="text-primary mb-0">.owncss-div {</p>
+              <p class="text-success mb-0 ms-3">background-image: <span class="text-danger">url(../images/common/hero-bg.jpg)</span>;</p>
+              <p class="text-success mb-0 ms-3">background-position: <span class="text-danger">center</span>;</p>
+              <p class="text-success mb-0 ms-3">border: <span class="text-danger">.5em double #80ff80</span>;</p>
+              <p class="text-success mb-0 ms-3">border-radius: <span class="text-danger">1em</span>;</p>
+              <p class="text-primary mb-2">}</p>
+              <p class="text-primary mb-0">.owncss-heading {</p>
+              <p class="text-success mb-0 ms-3">font-family: <span class="text-danger">'Chillax'</span>;</p>
+              <p class="text-success mb-0 ms-3">writing-mode: <span class="text-danger">vertical-lr</span>;</p>
+              <p class="text-success mb-0 ms-3">transform: <span class="text-danger">rotate(180deg)</span>;</p>
+              <p class="text-primary mb-2">}</p>
+              <p class="text-primary mb-0">.owncss-paragraph {</p>
+              <p class="text-success mb-0 ms-3">font-family: <span class="text-danger">'Plein'</span>;</p>
+              <p class="text-success mb-0 ms-3">color: <span class="text-danger">#ff80c0</span>;</p>
+              <p class="text-success mb-0 ms-3">text-shadow: <span class="text-danger">0 0 5px #ff80c0</span>;</p>
+              <p class="text-primary mb-2">}</p>
+            </div>
           </div>
         </article>
         <footer class="row bg-gray">
           <div class="col-12 mt-3 mb-4 d-flex flex-wrap justify-content-evenly">
             <a class="btn btn-outline-secondary m-1" href="#part_3">↑ Back to the top of Part 3</a>
-            <a class="btn btn-outline-secondary m-1" href="#practice_using_bootstrap">↑ Back to the top of &ldquo;In practice: using Bootstrap&rdquo;</a>
+            <a class="btn btn-outline-secondary m-1" href="#practice_using_bootstrap">↑ Back to the top of &ldquo;Combine Bootstrap and your own CSS&rdquo;</a>
           </div>
         </footer>
       </section>
