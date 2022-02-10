@@ -1071,12 +1071,18 @@
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Fonts in CSS</h3>
-            <p>Fonts in CSS are defined with the “font-family” property. If you only use this property, you have to be careful, because you only have access to fonts that are installed. If you want to use additional fonts, you need to embed a web font in your page</p>
-          </div>
+            <p>Fonts in CSS are defined with the <strong>font-family</strong> property. If you only use this property, you have to be careful, because you only have access to fonts that are installed. If you want to use additional fonts, you need to embed a web font in your page</p>
+			<p>It's common practice to start with your desired font and then add a couple of family font values as a "fallback" to ensure maximum compatibility across browsers and devices (in the case your desired font is not available the browser will use the next font listed in the property values). These "fallbacks" are usually generic font families such as: <strong>Serif, Sans-serif, Monospace, Cursive, Fantasy</strong>.</p>
+			<h3 class="color-blue text-center py-3">Installing fonts</h3>
+			<p>A popular method of installing fonts is by using the HTML <strong>&lt;link&gt;</strong> tag to embed them in your website. As you already know, the <strong>&lt;link&gt;</strong> elements should go in the <strong>&lt;head&gt;</strong> of your document and they are used to reference external resources, in the case of the fonts it will reference the resources providing the font. It's good practice to put the <strong>&lt;link&gt;</strong>s to the font resources AFTER the &lt;link&gt; to the CSS.</p>
+			<img class="img-fluid pb-3 d-block mx-auto" src="images/part-3/html-link-fonts.png" alt="example <link> to embed Hanalei font">
+			<p>You then can use the installed font by using <strong>font-family</strong> property in your CSS to specify the font you have installed.</p>
+			<img class="img-fluid pb-3 d-block mx-auto" src="images/part-3/css-fontfamily.png" width="300px" alt="example CSS font family Hanalei">
+		</div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
-            <h3 class="text-center">Google fonts</h3>
+            <h3 class="text-center">Installing Google fonts</h3>
             <p>Google Fonts is the most popular service for Web Fonts. To use one of their fonts:</p>
 			<ul>
 				<li>Go to <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> and choose a font you want to use.</li>
@@ -1091,14 +1097,49 @@
 		  <!--- right column ends --->	
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-blue text-center">Left Heading</h3>
-            <p>xxxxx.</p>
+            <h3 class="color-buas text-center py-3">Styling your fonts</h3>
+			<p>Let's check an example to see different things that we can do to modify the look of fonts</p>
+			<p>This is the HTML code of the website that will be styled</p>
+			<img class="img-fluid d-block mx-auto" src="images/part-3/html-fonts-example.png" alt="example fonts styled">
+			<p>This is the CSS code</p>
+			<div class="py-1 px-2 border border-bottom-0 rounded-top border-dark bg-light font-monospace fw-bold w-75">css/<wbr>styles.css</div>
+			<div class="p-2 border border-dark bg-light font-monospace mb-3">
+				<p class="text-primary mb-0">h1 { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-family:</span><span class="text-danger"> "Roboto Mono", monospace;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-size:</span><span class="text-danger"> 60px;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-weight:</span><span class="text-danger"> bold;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">text-transform:</span><span class="text-danger"> uppercase;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">text-shadow:</span><span class="text-danger"> 5px 5px pink;</span></p>
+				<p class="text-primary">} </p>
+				
+            	<p class="text-primary mb-0">p { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-family:</span><span class="text-danger"> "Nunito Sans", sans-serif;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">color:</span><span class="text-danger"> grey;</span></p>
+				<p class="text-primary">} </p>
+				
+				<p class="text-primary mb-0">p.myclass { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-family:</span><span class="text-danger"> "Nunito Sans", sans-serif;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">font-style:</span><span class="text-danger"> italic;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">text-align:</span><span class="text-danger"> center;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">color:</span><span class="text-danger"> grey;</span></p>
+				<p class="text-primary">} </p>
+			</div>
+			<p>As you can see the example uses 2 Google fonts that have been installed: Roboto Mono and Nunito Sans. It also makes use of different properties to modify the text, some are self explanatory like <strong>font-size</strong>, <strong>text-align</strong> and <strong>color</strong>, but others are a bit more interesting like:</p>
+			<ul>
+				  <li>text-transform:</li>
+				  <li>text-shadow:</li>
+			</ul>
+			<p>This is how the website in the example would look like:</p>
+			  <img class="img-fluid d-block mx-auto py-3" src="images/part-3/example-fonts.png" alt="example fonts styled">
+			  
           </div>
 		  <!--- left column ends --->
 		  <!--- right column starts --->
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h3 class="text-center">Right Heading</h3>
-            <p>xxxx.</p>
+            <h3 class="text-center">Fonts in Bootstrap</h3>
+            <p>Bootstrap comes with a series of classes that allow you to easily control the alignment, weight, size and other characteristics of your text and fonts.</p>
+			 <p>In the <a href="https://getbootstrap.com/docs/5.0/utilities/text/" target="_blank">Text Utilities</a> section  of the Bootrap website you can find detailed Documentation and examples.</p>
+			 <p>Let's check a couple here:</p>
           </div>
 		  <!--- right column ends --->		
           <div class="col-xxl-10 py-3">
