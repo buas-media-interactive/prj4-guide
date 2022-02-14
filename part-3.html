@@ -1097,9 +1097,9 @@
 		  <!--- right column ends --->	
 		  <!--- left column starts --->
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-buas text-center py-3">An Example</h3>
+            <h3 class="color-buas text-center py-3">Styling fonts: an example</h3>
 			<p>Let's check an example to see different things that we can do to modify the look of fonts</p>
-			<p>This is the HTML code of the website that will be styled</p>
+			<p>This is the HTML code of the website that will be styled. You can see that lines 7, 8, 9 and 10 have &lt;link&gt; tags embedding Google Fonts.</p>
 			<img class="img-fluid d-block mx-auto" src="images/part-3/html-fonts-example.png" alt="example fonts styled">
 			<p>This is the CSS code</p>
 			<div class="py-1 px-2 border border-bottom-0 rounded-top border-dark bg-light font-monospace fw-bold w-75">css/<wbr>styles.css</div>
@@ -1130,7 +1130,7 @@
 				  <li><strong>text-shadow:</strong> This propery creates a shadow of the text. And as you can see I have used three values: <strong>5px</strong> correspods to the <em>h-shadow</em>, <strong>5px</strong> to the <em>v-shadow</em> and <strong>pink</strong> to the <em>color</em> of the shadow.</li>
 			</ul>
 			<p>This is how the website in the example would look like:</p>
-			  <img class="img-fluid d-block mx-auto py-3" src="images/part-3/example-fonts.png" alt="example fonts styled">
+			<img class="img-fluid d-block mx-auto py-3" src="images/part-3/example-fonts.png" alt="example fonts styled">
 			  
           </div>
 		  <!--- left column ends --->
@@ -1142,11 +1142,38 @@
 			<p>In order to do it we first need to understand <strong>Pseudo-Class selectors</strong> which are those that specify a special state of the selected element. So for example, in the case of a link, you can specify how you want it to look when:</p>
 			<ul>
 				<li>The link has been visited</li>
-				<li>The link it has not been visited,</li>
-				<li>The user hovers the mouse over it.</li>
+				<li>The link has not been visited</li>
+				<li>The user hovers the mouse over it</li>
 			</ul>
-			<p>Let's check the syntax of pseudo clases, which as you can see uses a colon (:) </p>
-			
+			<p>This is the syntax of pseudo clases, which as you can see uses a colon (:) </p>
+			<p class="text-center text-primary mb-0"> <strong>selector:pseudo-class { <span class="text-success">property:</span><span class="text-danger"> value;</span> }</strong></p>
+			<h3 class="color-buas text-center pt-5 pb-3">Styling links: an example</h3>
+			<p>In the previous example you can see that in line 15 of the HTML code there is a <strong>&lt;a&gt;</strong> element with a hyperlink that has been visited but has not been styled (it's using the default purple color of visited links).</p>
+			<p>Let's style the hyperlink to make it fit with the overall style of the website by using <strong>pseudo-class</strong> selectors in the CSS code.</p>
+			<div class="py-1 px-2 border border-bottom-0 rounded-top border-dark bg-light font-monospace fw-bold w-75">css/<wbr>styles.css</div>
+			<div class="p-2 border border-dark bg-light font-monospace mb-3">
+				<p class="text-primary mb-0">a:link { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">color:</span><span class="text-danger"> black;</span></p>
+				<p class="text-primary">} </p>
+				
+				<p class="text-primary mb-0">a:visited { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">color:</span><span class="text-danger"> grey;</span></p>
+				<p class="text-primary">} </p>
+				
+				<p class="text-primary mb-0">a:hover { </p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">color:</span><span class="text-danger"> black;</span></p>
+				<p class="text-primary mb-0 ms-3"> <span class="text-success">background-color:</span><span class="text-danger"> pink;</span></p>
+				<p class="text-primary">} </p>
+			</div>
+			<p>As you can see the example uses three <strong>pseudo-classes</strong>:</p>
+			<ul>
+				<li><strong>a:link</strong> styles the link that has not been visited (black)</li>
+				<li><strong>a:visited</strong> styles the link that has been visited (grey)</li>
+				<li><strong>a:hover</strong> styles how the link looks when the user hovers the mouse over it (black with a pink background)</li>
+			</ul>
+			<p>This is how the link in website would look like now:</p>
+			<img class="img-fluid d-block mx-auto py-3" src="images/part-3/styled-links.gif" alt="example fonts styled">
+			  
             <h3 class="color-blue text-center py-3">Fonts in Bootstrap</h3>
             <p>Bootstrap comes with a series of classes that allow you to easily control the alignment, weight, size and other characteristics of your text and fonts.</p>
 			<p>In section <a href="#colours-and-text">3.4 Bootstrap Basics - Colours and Text</a> <strong>of this guide </strong>you can find an overview of classes that are very useful to modify text.</p>
