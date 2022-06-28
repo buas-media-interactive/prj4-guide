@@ -215,8 +215,8 @@
         <div class="col-sm-6 col-md-4 col-xxl-3 py-3 bg-lightblue d-print-none">
           <h3 class="text-center">Deadlines</h3>
           <ol>
-            <li><strong>First opportunity:</strong> Friday 18 March 2022 before 23:59</li>
-            <li><strong>Retake opportunity:</strong> Friday 10 June 2022 before 23:59</li>
+            <li><strong>First opportunity:</strong> Friday 17 March 2023 before 23:59</li>
+            <li><strong>Retake opportunity:</strong> Friday 9 June 2023 before 23:59</li>
           </ol>
         </div>
         <div class="col-md-4 col-xxl-3 py-3 d-print-none">
@@ -238,39 +238,57 @@
             </thead>
             <tbody class="align-middle">
               <tr>
-                <th>Content updated</th>
+                <th>Content adjustment</th>
                 <td class="text-center fs-1 lh-1">
-                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Content updated">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Content adjustment">
                 </td>
                 <td>All text has been adapted to match the student’s personal resumé.</td>
               </tr>
               <tr>
-                <th>Styles updated</th>
+                <th rowspan="2">Style adjustment</th>
                 <td class="text-center fs-1 lh-1">
-                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Styles updated">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Style adjustment 1/2">
                 </td>
                 <td>Student has modified at least one text colour, one background colour and one font.</td>
               </tr>
               <tr>
-                <th>Assets packaged</th>
                 <td class="text-center fs-1 lh-1">
-                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Assets packaged">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Style adjustment 2/2">
+                </td>
+                <td>At least one of these styles has been changed by creating a custom CSS class.</td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="bg-secondary bg-opacity-10">File management</th>
+                <td class="text-center fs-1 lh-1">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="File management 1/2">
                 </td>
                 <td>Student’s portrait and icons for schools and/or employers are packaged alongside the resumé.</td>
               </tr>
               <tr>
-                <th>Website published</th>
+                <td class="text-center fs-1 lh-1">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="File management 2/2">
+                </td>
+                <td>All files follow proper naming conventions (all lowercase, no spaces, no special characters).</td>
+              </tr>
+              <tr>
+                <th>Website publication</th>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Website published">
                 </td>
                 <td>The website is published via GitHub Pages via the student’s own GitHub account, and can be visited from any device.</td>
               </tr>
               <tr>
-                <th>Code quality</th>
+                <th rowspan="2">Quality control</th>
                 <td class="text-center fs-1 lh-1">
-                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Code quality">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Code quality 1/2">
                 </td>
-                <td>The website is error-free: it includes no broken image/link/font installation, and there are no errors when checking with the w3c validator at <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></td>
+                <td>There are no visible errors: All images, links and fonts are properly working.</td>
+              </tr>
+              <tr>
+                <td class="text-center fs-1 lh-1">
+                  <input class="form-check-input m-0" type="checkbox" value="" aria-label="Code quality 2/2">
+                </td>
+                <td>There are no coding errors: Using the W3C validator (<a href="https://validator.w3.org/" target="_blank">validator.w3.org</a>) on the web page returns no errors (warnings are accepted).</td>
               </tr>
             </tbody>
           </table>
@@ -293,7 +311,18 @@
               </div>
               <div class="col-4">
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="classfield" type="number" min="1" max="6" required>
+                  <select class="form-select" id="classfield" required>
+                    <option value="" selected>Choose from list</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                    <option value="5">Class 5</option>
+                    <option value="6">Class 6</option>
+                    <option value="7">Class 7</option>
+                    <option value="8">Class 8</option>
+                    <option value="NA">N/A (e.g. retake)</option>
+                  </select>
                   <label for="classfield" class="form-label">Your class</label>
                 </div>
               </div>
