@@ -253,7 +253,7 @@
             <p>This final chapter helps you apply the knowledge you gained in the individual assignment to start working on the group assignment.</p>
             <ul>
               <li>First, we provide a brief reminder of the design process, and the deliverables you will have to provide for the justification document.</li>
-              <li>In the next section, we guide you&rsquo; through the templates that we&rsquo;ve developed for the course.</li>
+              <li>In the next section, we guide you’ through the templates that we’ve developed for the course.</li>
               <li>Then you learn how to implement common UX patterns using Bootstrap.</li>
               <li>One of these patterns is the grid, which is so important we gave it its own section.</li>
               <li>Finally, you get some tips on how to collaborate efficiently and avoid errors.</li>
@@ -265,7 +265,7 @@
             <ul>
               <li>You start by making design decisions and thinking about what your website will contain, how it should be navigated, and how it should look like.</li>
               <li>The justification document will contain information about your design decisions and. Build upon the content from PRO1 and PRJ1 to write this document.</li>
-              <li>To start the actual development work, copy the template and create your own group repository &ndash; choose the name carefully so your website&rsquo;s URL reflects the name of your brand. This is explained in Chapter 1.</li>
+              <li>To start the actual development work, copy the template and create your own group repository &ndash; choose the name carefully so your website’s URL reflects the name of your brand. This is explained in Chapter 1.</li>
               <li></li>
             </ul>
           </div>
@@ -306,8 +306,9 @@
               <li>Edit <strong>css/styles.css</strong> to adjust the colours and fonts to your brand identity.</li>
               <li>Upload your logo and replace it on the landing page.</li>
               <li>Change or remove any placeholder text.</li>
+              <li>Set up Google Analytics (see next sub-section).</li>
               <li>Publish your page in the repository settings.</li>
-              <li>Put it on your social media profiles.</li>
+              <li>Put your URL on your social media profiles.</li>
             </ol>
             <h4>Naming tip:</h4>
             <p>Do you want a short and memorable address (URL) for your website, e.g. <strong>mybrand.github.io</strong>?</p>
@@ -317,6 +318,19 @@
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">Google Analytics</h3>
+            <p>By following the instructions below, you can start tracking visitis to your website.</p>
+            <p>The prerequisites are:</p>
+            <ul>
+              <li>An up and running web page, whose URL you know.</li>
+              <li>A Google account, which you already have if you use GMail or an Android phone.</li>
+            </ul>
+            <p>Go to <a href="" target="_blank">https://analytics.google.com/</a>. If you're not logged in with your Google Account, start by doing so.</p>
+            <p>You will then have to create an "Analytics Account" (in the Admin section of the Analytics site) and then create a "Property" which represents your website.</p>
+            <p>To bring data from your website to your Google Analytics account, you will need to add a bit of code to your website. You can find that code under "Tagging instructions", "Global site tag (gtag.js)"</p>
+            <p>Paste that HTML code into your landing page and synchronize it by using the "save, commit, push" GitHub desktop workflow.</p>
+            <p>Open your web page and check in the source code that you've added the Google Analytics code properly.</p>
+            <p>Wait a bit (data streams can take up to a few hours to work properly), then go back to Google Analytics and you'll be able to see your own page visit!</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Dividing work</h3>
@@ -336,7 +350,9 @@
             <p>Committing and Synchronising your changes takes a few seconds, but it will save you time in the long run.</p>
             <p>If one of you makes important changes at some point, do not hesitate to send a message to the rest of the team so they can update their version and see these changes.</p>
             <p>Branches are another way of working which helps you work in isolation, but they are trickier to use.</p>
-            <h4>Example workflow</h4>
+          </div>
+          <div class="col-lg-11 col-xxl-10 py-3">
+            <h3 class="text-center color-blue">Example workflow</h3>
             <p>Following the steps below will help you prevent errors:</p>
             <ol>
               <li>Create the landing page as discussed above.</li>
@@ -348,7 +364,7 @@
                   <li>Go to Dreamweaver to edit HTML code.</li>
                   <li>After editing, <strong>save</strong> the files on your laptop.</li>
                   <li>Then <strong>commit</strong> and <strong>push</strong> in GitHub.</li>
-                  <li>Never assume that there are no changes to synchronize or that your changes won&rsquo;t affect others, synchronize every time!</li>
+                  <li>Never assume that there are no changes to synchronize or that your changes won’t affect others, synchronize every time!</li>
                   <li>Always check the result on GitHub Pages. Never assume that things that work on your laptop will work online.</li>
                 </ol>
               </li>
@@ -385,55 +401,28 @@
           <div class="col-md-6 col-xxl-5 py-3">
             <h3 class="color-buas text-center">Deliverables</h3>
             <p>As part of the main PRJ4 justification document, you will deliver justifications for your web design choices.</p>
-            <p>The “website justifications” chapter will contain 2 parts:</p>
+            <p>The “website justifications” chapter will comprise:</p>
             <ul>
-              <li>A list of <strong>design elements</strong> alongside their <strong>justifications</strong>:
-                <ul>
-                  <li>A <strong>colour</strong> scheme (with colour codes)</li>
-                  <li><strong>Font</strong> choices</li>
-                  <li>User interface <strong>patterns</strong> (e.g. grids, carousels, menu organizations etc.)</li>
-                  <li>The <strong>structure</strong> of the navigation and content (e.g. how content units are distributed across pages)</li>
-                </ul>
-              </li>
-              <li>A scanned <strong>paper prototype</strong></li>
-              <li>A <strong>testing report</strong>, including:
-                <ul>
-                <li>Testing <strong>goals</strong></li>
-                  <li>The testing methods, i.e.
-                    <ul>
-                      <li>Information about test participants (number, match with target audience, etc.)</li>
-                      <li>Information about the setting (which material is used, is it done remotely, on campus, at home, etc.)</li>
-                      <li>Information about how the test is conducted (what instructions are given, how it is recorded, etc.)</li>
-                    </ul>
-                  </li>
-                  <li>Testing <strong>results</strong></li>
-                  <li><strong>Issues and positive points</strong> that have been identified, ranked by importance.</li>
-                  <li><strong>Improvements</strong> that have been conducted on the final website.</li>
-                </ul>
-              </li>
+              <li>A list of <strong>design elements</strong> alongside their <strong>justifications</strong></li>
+              <li>A <strong>testing report</strong></li>
             </ul>
-            <p>When writing design justifications, students must clearly relate them to:</p>
-            <ul>
-              <li>The theory and <strong>vocabulary of design</strong></li>
-              <li>Insight about the <strong>audience</strong> developed in the other units</li>
-              <li>The marketing, communication and product development <strong>strategies</strong> developed in other students</li>
-            </ul>
-            <p>The appendix to the justification document must contain evidence of testing, such as blank consent forms, photos and/or transcripts.</p>
+            <p>Please check the <a href="checklist-group.html">group checklist</a> and/or the project brief for detailed requirements.</p>
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
             <h3 class="text-center">Deadlines</h3>
             <p>The full website and justification document will be due on the final deadline of <strong>Thursday 14 April 2022</strong>. There are some intermediary deadlines for your progress on the website:</p>
             <ul>
-              <li>At the end of <strong>Project Week 5</strong> <em>(Calendar Week 11, 14 – 18 March 2022)</em>, you must have a <strong>landing page</strong> ready and published online, which only needs to include the name, logo and colours of your brand. One of the goals of this deliverable is that you already have an address for the website that you can use in your communication.</li>
-              <li>At the end of <strong>Project Week 6</strong> <em>(Calendar Week 12, 21 – 25 March 2022)</em>, you must have completed the paper prototype for your website.</li>
-              <li>During <strong>Project Week 7</strong> <em>(Calendar Week 13, 28 March – 1 April 2022)</em>, you should work on user testing on the basis of your paper prototype. This is self-directed work that you must plan yourselves.</li>
-              <li>During <strong>Project Week 8</strong> <em>(Calendar Week 14, 4 – 8 April 2022)</em>, you will receive final feedback on your design and your justification document.</li>
+              <li>At the end of <strong>Project Week 5</strong> <em>(13 – 17 March 2023)</em>, you must have a <strong>landing page</strong> ready and published online, which only needs to include the name, logo and colours of your brand. This means that you already have an address for the website, and you can actively use it in your marketing campaign.</li>
+              <li>During <strong>Project Week 7</strong> <em>(27 – 31 March 2023)</em>, you should have progressed on your website enough to perform usability testing. This is self-directed work that you must plan yourselves.</li>
+              <li>During <strong>Project Week 8</strong> <em>(3 – 6 April 2022)</em>, you will receive final feedback on your design and your justification document.</li>
+              <li>On <strong>Friday 14 April</strong>, you deliver the final website.</li>
             </ul>
-            <p>The retake deadline is at the end of the semester, on <strong>Friday 10 June 2022</strong>.</p>
+            <p>The retake deadline is at the end of the semester, on <strong>Friday 16 June 2023</strong>.</p>
           </div>
           <div class="col-lg-11 col-xxl-10 py-3">
             <h3 class="color-blue text-center">Prototyping</h3>
-            <p>You will create the prototype in 3 steps, starting by defining your content, then creating a task flow and then designing the individual screens.</p>
+            <p>Producing a paper prototype is no longer a hard requirement to pass the course, but it is highly recommended as part of the design process.</p>
+            <p>The recommended process includes three phases: defining your content, creating a task flow and finally designing the individual screens.</p>
             <h4>Define and organise content and features</h4>
             <p>Start by defining the content you want to put on your website, based on the audience you’re targeting and the needs of your audience.</p>
             <p>If you are designing a content-heavy website, like a blog or a portfolio, think of what categories your content will fit into. As with project 1, try to think about whether your content is linked to a specific time.</p>
@@ -466,7 +455,7 @@
           </div>
           <div class="col-lg-11 col-xxl-10 py-3 bg-lightorange">
             <h3 class="text-center">Testing</h3>
-            <p>In the next step, you will have to test the prototype and look at how usable it is.</p>
+            <p>Once a first version of the website is ready, you must check it to verify the level of usability and improve it.</p>
             <h4>Preparing for a usability test</h4>
             <p>During the usability test, you will ask potential users or customer to try out the feature of your website or app.</p>
             <p>You should prepare “scenarios” which describe tasks that users have to perform.</p>
@@ -474,9 +463,8 @@
             <ul>
               <li>When you create scenarios, be generic and focus on high-level activities. For example, for our restaurant website, “book a table for 4 people tomorrow” is a good generic scenario, while “find out which page has the menu” is too specific and will not let users explore your interface.</li>
               <li>Make sure you do not provide too much guidance to your users, because otherwise your usability test will end up being a guided tour rather than an actual test of how people understand your design. Avoid instructions like “click here” in your scenarios.</li>
-              <li>Make sure your prototype can “react” to the users. Prepare post-its that show different states of the same page, so for example you can change the date or time of the reservation just by substituting post-its.</li>
-              <li>Do a quick run of the testing session for yourself to make sure that you have prepared all the screens or pages that are necessary to run the scenario.</li>
-              <li>Write down how you would perform the scenarios, so you can prepare the pages in the right order during the test.</li>
+              <li>Do a quick run of the testing session for yourself to make sure that you have prepared all the pages and content necessary to run the scenario.</li>
+              <li>Write down how you would perform the scenarios yourselves, so you can observe and reflect upon any discrepancies between your intentions and the user’s perception of the website.</li>
             </ul>
             <h3>What to look for during a usability test</h3>
             <p>When testing the usability of a product, we want to check the “5 Es of usability”:</p>
@@ -489,13 +477,6 @@
             </ol>
             <p>Ask your test users to perform your scenarios, and take note: Where are they hesitant? Where do they make mistakes. Listen to their feedback too.</p>
             <p>Most importantly: try not to give them too many clues. If they can’t find a page or do something, then blame the design not the user.</p>
-            <p>In paper prototyping, you can use post-its creatively to simulate how a page works. Check below for an example.</p>
-            <figure>
-              <a href="images/part-4/restaurant-page-2-postits.jpg" target="_blank">
-                <img class="img-fluid d-block mx-auto my-1" src="images/part-4/restaurant-page-2-postits.jpg" alt="Scan of a paper prototype with added post-its">
-              </a>
-              <figcaption class="fst-italic text-center">This is the same paper prototype as above, but with information added via post-its</figcaption>
-            </figure>
             <p>During the usability test, take notes and/or record the session. If you record audio or video for participants, you normally need to make them sign a consent form that clearly states the purpose of data collection.</p>
             <p>Finish the sessions with “debrief” questions, where you ask your participants what they thought of your product and of the testing session. They may provide you with additional feedback that simply observing their behaviour couldn’t elicit. For example, even if they found the experience easy and straightforward, they might not think they would use your product in real life. Try to find out the reasons.</p>
             <h4>Reflecting on a usability test</h4>
@@ -507,7 +488,7 @@
               <li>Whether they involve changing superficial aspects (e.g. button size) or if they would require changing the whole concept of the product.</li>
               <li>Now you’ve written your findings, start writing recommendations and for each of the issues, write down suggestions for fixing it.</li>
             </ul>
-            <p>Don’t hesitate to create a new paper prototype that implements your recommendations before starting to build your website. You can go through the whole cycle of prototyping and testing multiple times, it will always be quicker than coding the wrong product. In industry, because you would have to pay a professional software developer, this also means that prototyping and testing can save you a lot of money!</p>
+            <p>You can choose whether to improve the website immediately after each test, or all at ones. Please write down in your testing report if the website has changed between participants.</p>
           </div>
         </article>
         <footer class="row bg-gray">
@@ -554,47 +535,50 @@
             <ul>
               <li>In the <em>root</em> folder:
                 <ul>
-                  <li>The <strong>index.html</strong> page, which is the landing page that you get if you <u>do not</u> type any HTML file name.</li>
-                  <li>All other HTML files. This includes:
+                  <li>
+                    The <strong>index.html</strong> page, which is the landing page that you get if you <u>do not</u> type any HTML file name.
+                    Use this as your landing page while your website is under construction.
+                  </li>
+                  <li>Examples of HTML files using different <strong>UX Patterns</strong>:
                     <ul>
-                      <li><strong>landing.html</strong> which you can use as a minimal landing page while your website is under construction.</li>
-                      <li>If you decide to divide your content in multiple pages, you will create additional HTML files here. You can duplicate the <strong>index.html</strong> file to do so (this is how the corporate page was create).</li>
+                      <li><strong>two-columns.html</strong> which shows a responsive two-column layout with text.</li>
+                      <li><strong>hero.html</strong> which shows a hero section with calls-to-action (CTAs).</li>
+                      <li><strong>carousel.html</strong> which shows a carousel with rotating images.</li>
+                      <li><strong>cards.html</strong> which shows a grid filled with information cards.</li>
+                      <li>
+                        You can reuse and combine any of these UX patterns, and create as many pages (or as few) as you need.
+                        Each of these &ldquo;pattern pages&rdquo; also includes a <strong>navigation bar</strong> with working links to all pages,
+                        and a <strong>footer</strong> with links to social media. We advise you to use some form of navigation pattern on your own website.
+                      </li>
                     </ul>
                   </li>
+                  <li>A <strong>corporate.html</strong> file, which serves as a template for delivering information that is assessed in other units.</li>
                   <li>You will notice a file named <strong>README.md</strong>. It is not part of the website itself but it provides useful information that is displayed on the GitHub repository</li>
                 </ul>
               </li>
               <li>In the <strong>images</strong> folder:
                 <ul>
-                  <li>This contains all <strong>images</strong> used in the template. Please remove the ones you aren&rsquo;t using.</li>
+                  <li>This contains all <strong>images</strong> used in the template. Please remove the ones you aren’t using.</li>
                   <li>Please notice that all files are smaller than a megabyte and only one is bigger than half a megabyte.</li>
                   <li>File formats were chosen based on the content: SVGs for logos, JPEGs for photos, PNGs for content that includes gradients and text.</li>
-                  <li>Social media icons were obtained via the <a href="https://fontawesome.com/" target="_blank">Font Awesome icon library</a>.</li>
+                  <li>
+                    Social media icons were obtained via the <a href="https://fontawesome.com/" target="_blank">Font Awesome icon library</a>.
+                    Do not hesitate to download more from that website, as they are free to use under specific license conditions.
+                  </li>
                 </ul>
               </li>
               <li>In the <strong>css</strong> folder:
                 <ul>
-                  <li>This contains a single <strong>CSS</strong> file, which is used to create all bespoke styles that couldn&rsquo;t be made using only Bootstrap.</li>
+                  <li>
+                    This contains a single <strong>CSS</strong> file, which is used to create all bespoke styles that couldn’t be made using only Bootstrap.
+                    This is where you should define styles corresponding to your brand identity (fonts, colours, etc.)
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-md-6 col-xxl-5 py-3">
-            <h3 class="color-blue text-center">UX patterns in the group template</h3>
-            <p>Here is a list of patterns used in the <strong>index.html</strong> page.</p>
-            <ul>
-              <li>A navigation bar</li>
-              <li>A hero section with two buttons and a gradient background</li>
-              <li>A carousel with three images</li>
-              <li>A responsive grid with cards and placeholder images</li>
-              <li>A footer</li>
-              <li>Some CSS customization: the navigation bar, hero section and body have their own background color</li>
-              <li>Google Fonts, with the <a href="https://fonts.google.com/specimen/Raleway" target="_blank">Raleway</a> font</li>
-            </ul>
-            <p>More details about these patterns are provided in<a href="#ux_patterns">the next section</a>.</p>
-          </div>
-          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
-            <h3 class="text-center">Additional templates and sources</h3>
+            <h3 class="color-blue text-center">Our other templates</h3>
             <p>The <a href="https://github.com/buas-media-interactive/" target="_blank">buas-media-interactive</a> profile on GitHub contains multiple repositories that you can draw inspiration from:</p>
             <ul>
               <li>You can reuse elements from the <a href="https://github.com/buas-media-interactive/prj4-cv" target="_blank">individual website (<strong>prj4-cv</strong>)</a></li>
@@ -608,8 +592,13 @@
               </li>
               <li>The <a href="https://github.com/buas-media-interactive/prj4-guide" target="_blank">present guide (<strong>prj4-guide</strong>)</a> is built with the exact technologies and skills you are learning here!</li>
             </ul>
-            <p>Beyond our own examples, the Bootstrap documentation has <a href="https://getbootstrap.com/docs/5.1/examples/" target="_blank">a full list of examples</a>.</p>
-            <p>You can also draw inspiration from any website you like!</p>
+          </div>
+          <div class="col-md-6 col-xxl-5 py-3 bg-lightorange">
+            <h3 class="text-center">External templates</h3>
+            <p>
+              Your peers from previous years have found a variety of attractive templates online.
+              Just search for <a href="https://duckduckgo.com/?q=HTML+templates" target="_blank">&ldquo;HTML templates&rdquo;</a> or <a href="https://duckduckgo.com/?q=bootstrap+templates" target="_blank">&ldquo;Bootstrap templates&rdquo;</a> in your favourite search engine.</p>
+            <p><strong class="text-danger">WARNING:</strong> Professional web templates are often <strong>very complex</strong> and they will be harder to customize than ours.</p>
           </div>
         </article>
         <footer class="row bg-gray">
@@ -665,7 +654,7 @@
           </div>
           <div class="col-md-6 col-xxl-5 py-3 bg-lightblue">
             <h3 class="text-center">UX Patterns in Bootstrap</h3>
-            <p>Bootstrap, which you&rsquo; learned about in Part 3, and that is used in all the PRJ4 templates, gives you access to many UX patterns.</p>
+            <p>Bootstrap, which you’ learned about in Part 3, and that is used in all the PRJ4 templates, gives you access to many UX patterns.</p>
             <p>You can find a list of these patterns in the Bootstrap documentation at <a href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/" target="_blank">getbootstrap.com<wbr>/docs</a> or just below.</p>
             <p>For each of these UX elements, the Bootstrap documentation gives you an example of code you can <strong>copy, tweak and reuse</strong> to achieve the same result.</p>
             <figure>
@@ -742,7 +731,7 @@
             <p>Carousels (whose name comes from the fun fair attraction also known as &ldquo;merry-go-round&rdquo;) are a great way of showcasing visual content in a dynamic way.</p>
             <p>Be careful with carousels:</p>
             <ul>
-              <li>Do not put too much text, since your visitors won&rsquo;t have time to read it.</li>
+              <li>Do not put too much text, since your visitors won’t have time to read it.</li>
               <li>Too many moving images can cause overstimulation and can be unpleasant for some of your visitors.</li>
             </ul>
             <p>Find code snippets for carousels at <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">getbootstrap.com/<wbr>docs/<wbr>5.1/<wbr>components/<wbr>carousel/</a></p>
@@ -1181,7 +1170,7 @@
                 </tr>
               </tbody>
             </table>
-            <p>The order of classes doesn&rsquo;t matter for these rules: When there is no explicit rule, your grid shows the behaviour associated with smaller </p>
+            <p>The order of classes doesn’t matter for these rules: When there is no explicit rule, your grid shows the behaviour associated with smaller </p>
           </div>
         </article>
         <footer class="row bg-gray">
