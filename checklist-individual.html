@@ -227,12 +227,12 @@
         </div>
         <div class="col-lg-11 col-xxl-10 py-3 bg-lightorange d-print-none">
           <h3 class="text-center">Assessment criteria</h3>
-          <table class="table table-striped w-100">
+          <table class="table table-striped w-100 border-secondary">
             <thead>
               <tr>
-                <th>Assessment criteria</th>
-                <th class="text-center">Pass/Fail</th>
-                <th>Assessment indicators</th>
+                <th colspan="2"></th>
+                <th class="bg-success bg-opacity-10">Indicators for <strong class="text-success">PASS</strong></th>
+                <th class="bg-danger bg-opacity-10">Indicators for <strong class="text-danger">FAIL</strong></th>
               </tr>
             </thead>
             <tbody class="align-middle">
@@ -241,53 +241,62 @@
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Content adjustment">
                 </td>
-                <td>All text has been adapted to match the student’s personal resumé.</td>
+                <td class="bg-success bg-opacity-10">All text, including the &lt;title&gt; tag, has been adapted to match the student’s personal resumé.</td>
+                <td class="bg-danger bg-opacity-10">Some of the text is still the original from the template (e.g. &ldquo;Firstname Lastname&rdquo;)
+                </td>
               </tr>
               <tr>
                 <th rowspan="2">Style adjustment</th>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Style adjustment 1/2">
                 </td>
-                <td>Student has modified at least one text colour, one background colour and one font.</td>
+                <td class="bg-success bg-opacity-10">Student has modified at least one text colour, one background colour and one font.</td>
+                <td class="bg-danger bg-opacity-10">Fonts and colours are still the original ones, or students have tried adjusting but it didn’t work</td>
               </tr>
               <tr>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Style adjustment 2/2">
                 </td>
-                <td>At least one of these styles has been changed by creating a custom CSS class.</td>
+                <td class="bg-success bg-opacity-10">At least one of these styles has been changed by creating a custom CSS class.</td>
+                <td class="bg-danger bg-opacity-10">Style changes have been made exclusively using other techniques (e.g. existing Bootstrap classes or inline style attributes).</td>
               </tr>
               <tr>
                 <th rowspan="2" class="bg-secondary bg-opacity-10">File management</th>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="File management 1/2">
                 </td>
-                <td>Student’s portrait and icons for schools and/or employers are packaged alongside the resumé.</td>
+                <td class="bg-success bg-opacity-10">Student’s portrait and icons for schools and/or employers are packaged alongside the resumé.</td>
+                <td class="bg-danger bg-opacity-10">Some of the images or other assets are not within the repository.</td>
               </tr>
               <tr>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="File management 2/2">
                 </td>
-                <td>All files follow proper naming conventions (all lowercase, no spaces, no special characters).</td>
+                <td class="bg-success bg-opacity-10">All files follow proper naming conventions (all lowercase, no spaces, no special characters) and are in appropriately named folders.</td>
+                <td class="bg-danger bg-opacity-10">Some files have spaces, uppercase or special characters or are not organized based on conventions described in the Production Guide.</td>
               </tr>
               <tr>
                 <th>Website publication</th>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Website published">
                 </td>
-                <td>The website is published via GitHub Pages via the student’s own GitHub account, and can be visited from any device.</td>
+                <td class="bg-success bg-opacity-10">The website is published via GitHub Pages via the student’s own GitHub account, and can be visited from any device.</td>
+                <td class="bg-danger bg-opacity-10">The website is not published on a public-facing github.io page. Lecturers cannot access it for grading.</td>
               </tr>
               <tr>
                 <th rowspan="2">Quality control</th>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Code quality 1/2">
                 </td>
-                <td>There are no visible errors: All images, links and fonts are properly working.</td>
+                <td class="bg-success bg-opacity-10">There are no visible errors: All images, links and fonts are properly working.</td>
+                <td class="bg-danger bg-opacity-10">Images are not properly showing or links are not leading to the intended destination, or the website is showing a default system font instead of a web font.</td>
               </tr>
               <tr>
                 <td class="text-center fs-1 lh-1">
                   <input class="form-check-input m-0" type="checkbox" value="" aria-label="Code quality 2/2">
                 </td>
-                <td>There are no coding errors: Using the W3C validator (<a href="https://validator.w3.org/" target="_blank">validator.w3.org</a>) on the web page returns no errors (warnings are accepted).</td>
+                <td class="bg-success bg-opacity-10">There are no coding errors: Using the W3C validator (<a href="https://validator.w3.org/" target="_blank">validator.w3.org</a>) on the web page returns no errors (warnings are accepted).</td>
+                <td class="bg-danger bg-opacity-10">Using the W3C validator shows at least one error.</td>
               </tr>
             </tbody>
           </table>
