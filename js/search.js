@@ -27,9 +27,9 @@ function indexChapter() {
 	return JSON.stringify({
 		'page': document.location.pathname.split('/').slice(-1)[0],
 		'sections': Array.from(document.querySelectorAll('section')).slice(1).map(section => ({
-			'title': Array.from(section.querySelectorAll('h2')).map(h => h.textContent).join(' '),
+			'title': Array.from(section.querySelectorAll('h2')).map(h => h.textContent.trim().replace(/\s+/,' ')).join(' '),
 			'id': `#${section.id}`,
-			'lines': section.textContent.split('\n').map(l => l.trim()).filter(l => !!l)
+			'lines': section.textContent.split('\n').map(l => l.trim().replace(/\s+/,' ')).filter(l => !!l)
 		})),
 		'meta': indexMetadata()
 	});
